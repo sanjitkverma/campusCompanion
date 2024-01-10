@@ -8,3 +8,6 @@
 
 </br>
 npm install then npm start in root directory
+</br>
+use plop to generate new pages/components
+npm install -g plop, npx plop to create new pages
