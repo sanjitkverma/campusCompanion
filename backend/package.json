@@ -1,0 +1,25 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "campus companion backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanjitkverma/campusCompanion.git"
+  },
+  "author": "Sanjit Verma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanjitkverma/campusCompanion/issues"
+  },
+  "homepage": "https://github.com/sanjitkverma/campusCompanion#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "scripts": {
+    "start": ""
+  }
+}
