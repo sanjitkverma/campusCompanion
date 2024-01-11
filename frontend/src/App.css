@@ -6,7 +6,14 @@
   height: 40vmin;
   pointer-events: none;
 }
+@font-face {
+  font-family: 'GlyphaLTPro55Rg';
+  src: url('/fonts/GlyphaLTPro55Rg.TTF') format('truetype');
+}
 
+.customFont {
+  font-family: 'GlyphaLTPro55Rg';
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
