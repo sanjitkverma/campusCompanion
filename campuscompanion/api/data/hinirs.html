@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="computer science, ncsu, nc state, cs, csc, cscncsu">
+<meta name="description" content="Department of Computer Science at NC State University">
+
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="cache-control" content="no-store" />
+<meta http-equiv="cache-control" content="must-revalidate" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta name="author" content="Brianna J. Lofton">
+
+<title>Department of Computer Science at North Carolina State University</title>
+<!-- NC State Bootstrap CSS -->
+<link href="https://cdn.ncsu.edu/brand-assets/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css" />
+<!-- jQuery 2.1.0 (NCSU Branding) -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<!-- Bootstrap JS (NCSU Branding) -->
+<script src="https://cdn.ncsu.edu/brand-assets/bootstrap/js/bootstrap.min.js"></script>
+<!-- Brand Utility Bar -->
+<script src="https://cdn.ncsu.edu/brand-assets/utility-bar/ub.php?googleCustomSearchCode=002901563088837147148:wfwx4csyomm&placeholder=search+csc.ncsu.edu&maxWidth=1170&color=gray&showBrick=1"></script>
+<!-- Web Fonts (NCSU Branding) -->
+<link href="https://cdn.ncsu.edu/brand-assets/fonts/include.css" rel="stylesheet" type="text/css" />
+<!-- favicon -->
+<link rel="icon" type="image/x-icon" href="https://brand.ncsu.edu/favicon.ico" />
+<!-- makes site printable -->
+<link rel="stylesheet" type="text/css" href="/print.css" media="print">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8ESTRZV6XC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8ESTRZV6XC');
+</script>
+
+<!-- <head> is left open for custom stylesheets and scripts -->
+
+<!-- Custom styles -->
+<link rel="stylesheet" type="text/css" href="../../navbar_brand.css">
+<link rel="stylesheet" type="text/css" href="../../footer_brand.css">
+<link rel="stylesheet" type="text/css" href="css_undergrad.css">
+
+<style>
+#main p, #main ul {font-size: 14px;}
+#undergrad_content h5 {font-size: 20px;
+	padding-top: 20px;
+	color: #900;}
+
+
+@media (max-width: 767px) {
+	.subtitle {font-size: 24px;}
+}
+@media (max-width: 500px) {
+	.slogan {width: 90%;}
+}
+</style>
+
+</head>
+<body>
+
+	<div id="ncstate-utility-bar"></div>
+
+<script>
+	$(document).ready(() => {
+		console.log("tyler:",  window.location.href);
+		
+		const setActiveLink = (num) => {
+			for(let i = 1; i < 7; i++) {
+				if(i == num) {
+				   $(".bb:nth-child(" + num + ") > a").addClass("active_nav");
+				}
+				else {
+					$(".bb:nth-child(" + i + ") > a").removeClass("active_nav");
+				}
+			}
+		};
+		
+		if(window.location.href.includes("about_us.php")) {
+		    setActiveLink(1);
+		}
+		else if(window.location.href.includes("academics/")) {
+		    setActiveLink(2);
+		}
+		else if(window.location.href.includes("research/")) {
+		    setActiveLink(3);
+		}
+		else if(window.location.href.includes("directories/")) {
+		    setActiveLink(4);
+		}
+		else if(window.location.href.includes("news/")) {
+		    setActiveLink(5);
+		}
+		else if(window.location.href.includes("contactus.php")) {
+		    setActiveLink(6);
+		}
+	});
+</script>
+
+<!-- if $wide = 1, navbar will span the entire page (example: https://www.csc.ncsu.edu/webapps/admin/ra_appointments/admin/list.php) -->
+<div class="container"><div class="row">
+
+<nav class="navbar navar-default" role="navigation">
+	<div class="container-fluid">
+    	<div class="navbar-header">
+        	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsedNav">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+        	</button>
+        
+        	<a href="/index.php" class="navbar-brand">Computer Science</a> 
+        </div>
+		
+			<div class="collapse navbar-collapse" id="collapsedNav">
+				<ul class="nav navbar-nav">
+					<li class="bb"><a href="/about_us.php">About</a></li>
+					<li class="bb"><a href="/academics/index.php">Academics</a></li>
+					<li class="bb"><a href="/research/index.php">Research</a></li>
+					<li class="bb"><a href="/directories/index.php">People</a></li>
+                    <li class="bb"><a href="/news/index.php">News</a></li>
+                    <li class="bb"><a href="/contactus.php">Contact</a></li>
+				</ul>
+			</div>
+
+	</div>
+</nav>
+</div> <!-- end row -->
+
+
+<!-- .container closes in footer_brand.php -->
+    
+   
+
+	
+    <div id="undergrad_content" class="col-lg-12">
+    
+    	<div id="main" class="col-md-8 col-xs-12">
+            <h3 class="subtitle">Undergraduate Program - CSC Honors Program</h3>
+<!--            <p class="cont">-->
+            
+            
+            <p>The Undergraduate Computer Science (CSC) Honors Program provides gifted undergraduate students in computer science the opportunity to enhance their academic experience by doing research or an independent development project with faculty members, taking advanced courses, and participating in occasional meetings or events with other CSC Honors Program students. CSC Honors can be completed within the 121 credit hours required for the BS in Computer Science.</p>
+            
+			<p>Participating in the CSC Honors program can be an enjoyable challenge. It is worthwhile for the experience itself and also earns attention from employers and graduate schools.</p>
+            
+            <p>Students who satisfy the requirements for the CSC Honors Program will receive the following:</p>
+              <ul>
+                <li>Opportunity to do research, and independent development project, and/or graduate coursework in computer science</li>
+                <li>Special designation in the departmental graduation programs</li>
+                <li>Special recognition during the departmental diploma ceremony</li>
+                <li>Designation on academic transcript showing the fulfillment of the CSC Honors Program</li>
+              </ul>
+              
+              
+            
+        	<h5><a name="adminreq" id="adminreq"></a>CSC HONORS PROGRAM APPLICATION REQUIREMENTS</h5>
+        	<p>Students may apply for the CSC Honors Program if they meet the following requirements:</p>
+              <ul>
+                <li>Students must have completed a minimum of fifty (50) credit hours in their undergraduate program in Computer Science, including credits earned from advanced placement</li>
+                <li>Students must have completed a minimum of fifteen (15) credit hours in their Computer Science degree, including credits earned from advanced placement</li>
+                <li>Students must have a minimum accumulated grade point average (GPA) of 3.50/4.00 at NC State</li>
+                <li>Students must have a minimum CSC Major grade point average (GPA) of 3.50/4.00</li>
+				        <li>Students have completed a CSC 498/499 and earned a grade of ‘S’</li>
+              </ul>  
+			<p><b><a href="https://forms.gle/YC6BGJ1YLLSTwfE77" target="_blank">Please click here to apply after finishing your CSC 498/499 requirement</a></b></p>
+            
+      		<h5><a name="particreq" id="particreq"></a>CSC Honors Program Participant Requirements</h5>
+    			<p>To successfully complete the CSC Honors Program, the student must:</p>
+                <ul>
+                  <li><strong><a href="/academics/undergrad/research.php" target="_blank">Complete three credit-hours of CSC 498 -  Independent Study in Computer Science OR 499 - Independent Research in Computer Science</a></strong>. A computer science faculty member will serve as the supervisor of this project course. Students find their own project supervisor, with the help of the CSC Honors Program coordinator and CSC advising, if desired.</li>
+<!--
+                  <li><strong>Write a report about the project.</strong> The report should describe the research problem and the results obtained;
+                    contain references to appropriate sources; and be approved by the supervising faculty member. The report, about 10-20 pages,
+                    should be prepared in HTML format and will be posted on the computer science department&#8217;s Web site.</li>
+-->
+                  <li><strong>Complete 6 additional credit-hours or advanced or selective coursework</strong>, from the following options:
+                      	<ul>
+                            <li>independent study (CSC 498) or undergraduate research (CSC 499) - at most 6 credit hours of CSC 498/499 may count toward CSC Honors or as CSC Restricted Electives.</li>
+                            <li>undergraduate special topics classes (CSC 495), or</li>
+                            <li>classes at the graduate level (CSC 5XX)</li>
+                        </ul></li>
+                  <li><strong>Submit a written report of your CSC 498/499 experience(s).</strong></li>
+                  <li><strong>Graduate with a 3.5 overall GPA and a 3.5 GPA in computer science.</strong></li>
+        		</ul>        
+        
+            <p>Students who are in the CSC Honors Program but who fail to fulfill the criteria will not receive the CSC Honors Program designation. <b>Note</b>: This will not affect eligibility for any other commendations offered by the department or the university.</p>
+                
+            <p>The courses mentioned above apply toward fulfilling the university and department requirements for graduation; there is no difference in the total number of courses required for graduation for computer science students who participate in the CSC Honors Program and those who do not.</p>
+              
+            <br />
+  
+			<div>
+				<p style="font-size: 18px;"><b>Contact:</b></p>
+				<a href="/people/sesmith5" target="_blank">Dr. Sarah Heckman</a><br />
+				<span style="font-size: 14px;">
+					CSC Honors Program Coordinator &amp; Director of Undergraduate Programs<br />
+					Department of Computer Science<br />
+					NC State University<br />
+					2297 EB II<br />
+					Box 8206<br />
+					Raleigh, NC 27695-8206<br />
+					919-515-2042<br />
+					<a href="mailto:csc-ug-research@lists.ncsu.edu">csc-ug-research@lists.ncsu.edu</a>
+				</span>
+			</div>
+           
+        </div>
+        
+        
+    	<div id="menu" class="col-md-4 col-xs-12">
+
+    	<a style="color: white;" href="/future-students/"><button id="tfs" class="col-md-12 col-sm-12 
+       col-xs-12        students future"><h2>Future Students &#8594;</h2></button></a>
+        <a style="color: white;" href="/academics/students.php"><button id="tcs" class="col-md-12 col-sm-12 
+		col-xs-12		
+     students current"><h2>Current Students &#8594;</h2></button></a>
+
+     <div id="programs" class="col-md-12 col-sm-6 col-xs-12">
+        <h3 class="menu_header">Degrees and Programs</h3>
+        
+			<ul class="lists">
+            	<li>
+					<a href="/academics/undergrad/bs-csc.php">Bachelor of Science Degree in Computer Science</a>
+					<li style="margin-left: 30px;"><a href="/academics/undergrad/tracks/index.php">Undergraduate Degree Tracks</a></li>
+				</li>
+          		<li><a href="/academics/undergrad/bs-csc-gdc.php">Bachelor of Science in Computer Science - Game Development Concentration</a></li>
+		 		<li><a href="/academics/undergrad/bs-csc-cyber.php">Bachelor of Science in Computer Science - Cybersecurity Concentration</a></li>
+		 		<li><a href="/academics/undergrad/bs-csc-ai.php">Bachelor of Science in Computer Science - Artificial Intelligence</a></li>
+          		<li><a href="/academics/undergrad/minor.php">Computer Programming Minor</a></li>
+          		<li><a href="/academics/undergrad/bsms.php">Accelerated Bachelor's/Master's (ABM) Degree Program</a></li>
+          		<li><a href="/academics/undergrad/honors.php">CSC Honors Program</a></li>
+		 		<li><a href="/academics/undergrad/outcomes.php">BS in Computer Science - Objectives and Outcomes</a></li>
+            </ul>
+		</div>
+  	  
+<!--
+	<div id="certificate" class="col-md-12 col-sm-6 col-xs-12">
+        <h3 class="menu_header">Certificate</h3>
+			<ul class="lists">
+            	<li><a href="/academics/undergrad/certificate.php">Computer Programming Certificate for Post-baccalaureate Students</a></li>
+            </ul>
+		</div>
+-->
+
+    <div id="general_info" class="col-md-12 col-sm-6 col-xs-12">
+        <h3 class="menu_header">General Info</h3>
+        
+			<ul class="lists">
+				<li><a href="/academics/undergrad/advising/">Academic Advising</a></li>
+				<!-- <li><a href="https://my.csc.ncsu.edu/undergrad-advising/">Academic Advising</a></li> -->
+            	<li><a href="https://studentservices.ncsu.edu/calendars/academic/" target="_blank">Academic Calendars</a></li>
+				<li><a href="/academics/undergrad/cscenter.php">Computing Success Center</a></li>
+                <li><a href="coursework.php">Coursework</a></li>
+                <li><a href="/courses/index.php" target="_blank">Course Listings</a></li>
+ 				<li><a href="/academics/undergrad/tracks/entrepreneurship.php">Entrepreneurship</a></li>  
+				<li><a href="people.php">People</a></li>
+                <li><a href="policies.php">Policies</a></li>
+                <li><a href="/academics/students_financial.php" target="_blank">Scholarships &amp; Financial Aid</a></li>
+				<li><a href="/academics/undergrad/tracks/security.php">Security</a></li> 
+                <li><a href="/academics/undergrad/honor-societies.php">Student Honor Societies</a></li>
+                <li><a href="/academics/students_orgs.php" target="_blank">Student Organizations</a></li>
+                <li><a href="research.php">Undergraduate Research</a></li>
+                <li><a href="contact.php">Who to Contact</a></li>
+            </ul>
+		</div>
+ 	  
+ 	  	  
+</div>
+
+    
+    </div>
+    
+    
+      
+	</div><!-- end container --> <!-- .container opens in navbar_brand.php -->
+ 
+     <div class="row container" style="margin: 0 auto;"> 
+
+<footer class="col-lg-12">
+    <div class="col-md-4 col-sm-6 L_footer">
+<!--    	<img src="https://www.csc.ncsu.edu/images/logo-900.jpg" alt="NC State University" alt="NCSU" width="100px" />-->
+		<a href="https://www.ncsu.edu" target="_blank"><img src="https://www.csc.ncsu.edu/images/ncsu_logo.svg" alt="NC State University" style="width: 120px; padding: 15px 0 0 10px;" /></a>
+        <p style="padding: 30px 0 20px 10px;">
+        <a href="https://www.csc.ncsu.edu/">Department of Computer Science</a><br />
+        <a href="https://www.engr.ncsu.edu/" target="_blank">College of Engineering</a><br />
+        Campus Box 8206<br />
+        890 Oval Drive<br />
+        Engineering Building II<br />
+        Raleigh, NC 27695<br />
+        </p>
+    </div>
+    
+    <div class="col-lg-4 col-md-3 col-sm-6 M_footer">
+    	<ul>
+            <li><a href="/contactus.php">Contact Us</a></li>
+            <li><a href="/employment/index.php">Employment</a></li>
+            <li><a href="/calendar/index.php">Events</a></li>
+            <li><a href="http://www.flickr.com/photos/cscncsu/albums" target="_blank">Gallery</a></li>
+        </ul>
+        <div class="social_media">
+            <a href="http://www.facebook.com/csc.ncsu" alt="NCSU CSC Facebook" target="_blank"><span class="glyphicon glyphicon-fb" data-alt="facebook"></span><span class="sr-only">Facebook</span></a>
+            <a href="http://www.twitter.com/cscncsu" alt="NCSU CSC Twitter" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style=" height: 25px; margin-right: 5px; color: white; padding-right: 10px; width: 40px;"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" fill="#ffffff"></path></svg><span class="sr-only">Twitter</span></a>
+            <a href="https://www.instagram.com/ncstatecsc/" alt="NCSU CSC Instagram" target="_blank"><span class="glyphicon glyphicon-instagram" data-alt="instagram"></span><span class="sr-only">Instagram</span></a>
+            <br />
+            <a href="http://go.ncsu.edu/csc-youtube\" alt="NCSU CSC YouTube" target="_blank"><span class="glyphicon glyphicon-youtube" data-alt="youtube"></span><span class="sr-only">YouTube</span></a>
+            <a href="http://www.linkedin.com/groups/1797254/" alt="NCSU CSC Linked In" target="_blank"><span class="glyphicon glyphicon-linkedin" data-alt="linked in"></span><span class="sr-only">Linked In</span></a>
+            <a href="http://www.flickr.com/photos/cscncsu" alt="NCSU CSC Flickr" target="_blank"><span class="glyphicon glyphicon-flickr" data-alt="flickr"></span><span class="sr-only">Flickr</span></a>
+        </div>
+        
+    </div>
+    
+    <div class="col-md-4 R_footer">
+    	<h6>Campus Map</h6>
+    	<a href="http://maps.ncsu.edu/#/buildings/eb2" target="_blank"><img src="https://www.csc.ncsu.edu/images/eb2_map.jpg" alt="EB2 Map" class="map" /></a>
+    </div>
+    
+    <h6 class="copyright">© 2024 NC State University. All rights reserved.<br /><a href="/about.php">About this site</a></h6>
+        
+</footer>
+
+</div>
+
+
+
+</body>
+</html>

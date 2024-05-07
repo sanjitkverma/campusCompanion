@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="computer science, ncsu, nc state, cs, csc, cscncsu">
+<meta name="description" content="Department of Computer Science at NC State University">
+
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="cache-control" content="no-store" />
+<meta http-equiv="cache-control" content="must-revalidate" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta name="author" content="Brianna J. Lofton">
+
+<title>Department of Computer Science at North Carolina State University</title>
+<!-- NC State Bootstrap CSS -->
+<link href="https://cdn.ncsu.edu/brand-assets/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css" />
+<!-- jQuery 2.1.0 (NCSU Branding) -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<!-- Bootstrap JS (NCSU Branding) -->
+<script src="https://cdn.ncsu.edu/brand-assets/bootstrap/js/bootstrap.min.js"></script>
+<!-- Brand Utility Bar -->
+<script src="https://cdn.ncsu.edu/brand-assets/utility-bar/ub.php?googleCustomSearchCode=002901563088837147148:wfwx4csyomm&placeholder=search+csc.ncsu.edu&maxWidth=1170&color=gray&showBrick=1"></script>
+<!-- Web Fonts (NCSU Branding) -->
+<link href="https://cdn.ncsu.edu/brand-assets/fonts/include.css" rel="stylesheet" type="text/css" />
+<!-- favicon -->
+<link rel="icon" type="image/x-icon" href="https://brand.ncsu.edu/favicon.ico" />
+<!-- makes site printable -->
+<link rel="stylesheet" type="text/css" href="/print.css" media="print">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8ESTRZV6XC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8ESTRZV6XC');
+</script>
+
+<!-- <head> is left open for custom stylesheets and scripts -->
+<!-- Custom styles -->
+<link rel="stylesheet" type="text/css" href="../../footer_brand.css">
+<link rel="stylesheet" type="text/css" href="../../navbar_brand.css">
+<link rel="stylesheet" type="text/css" href="css_undergrad.css">
+<style>
+	.section_header {
+		font-size: 18px;
+	}
+	
+	.to_top {
+		font-size: 14px;
+	}
+	
+	#nav_container a {
+		font-size: 14px;
+	}
+	
+	#nav_container_mobile {
+		display: none;
+	}
+	
+	@media only screen and (max-width: 620px) {
+		#nav_container {
+			display: none;
+		}
+		
+		#nav_container_mobile {
+			display: block;
+		}
+	}
+</style>
+<script>
+	let url = "cp-minor.php";
+	
+	handleAnchorChange = () => {
+		const anchorLocation = $("#anchorSelect").val();
+		
+		window.location = url + anchorLocation;
+	};
+</script>
+</head>
+<body>
+	<div id="ncstate-utility-bar"></div>
+
+<script>
+	$(document).ready(() => {
+		console.log("tyler:",  window.location.href);
+		
+		const setActiveLink = (num) => {
+			for(let i = 1; i < 7; i++) {
+				if(i == num) {
+				   $(".bb:nth-child(" + num + ") > a").addClass("active_nav");
+				}
+				else {
+					$(".bb:nth-child(" + i + ") > a").removeClass("active_nav");
+				}
+			}
+		};
+		
+		if(window.location.href.includes("about_us.php")) {
+		    setActiveLink(1);
+		}
+		else if(window.location.href.includes("academics/")) {
+		    setActiveLink(2);
+		}
+		else if(window.location.href.includes("research/")) {
+		    setActiveLink(3);
+		}
+		else if(window.location.href.includes("directories/")) {
+		    setActiveLink(4);
+		}
+		else if(window.location.href.includes("news/")) {
+		    setActiveLink(5);
+		}
+		else if(window.location.href.includes("contactus.php")) {
+		    setActiveLink(6);
+		}
+	});
+</script>
+
+<!-- if $wide = 1, navbar will span the entire page (example: https://www.csc.ncsu.edu/webapps/admin/ra_appointments/admin/list.php) -->
+<div class="container"><div class="row">
+
+<nav class="navbar navar-default" role="navigation">
+	<div class="container-fluid">
+    	<div class="navbar-header">
+        	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsedNav">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+        	</button>
+        
+        	<a href="/index.php" class="navbar-brand">Computer Science</a> 
+        </div>
+		
+			<div class="collapse navbar-collapse" id="collapsedNav">
+				<ul class="nav navbar-nav">
+					<li class="bb"><a href="/about_us.php">About</a></li>
+					<li class="bb"><a href="/academics/index.php">Academics</a></li>
+					<li class="bb"><a href="/research/index.php">Research</a></li>
+					<li class="bb"><a href="/directories/index.php">People</a></li>
+                    <li class="bb"><a href="/news/index.php">News</a></li>
+                    <li class="bb"><a href="/contactus.php">Contact</a></li>
+				</ul>
+			</div>
+
+	</div>
+</nav>
+</div> <!-- end row -->
+
+
+<!-- .container closes in footer_brand.php -->
+	<script>
+//for dropdown box
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+</script>
+<style>
+	#sidebar {margin-left: -15px;}
+	#sidebar p {font-family: "UniversLight"; font-size: 16px;}
+	#content {border-left: solid 1px #ccc;}
+	.top h2 {margin-top: 0; margin-left: 15px;}
+	.news_jump {display: none;}
+
+	@media (max-width: 767px) {
+		#content {border-left: none;}
+		#sidebar {display: none;}
+		.top h2 {float: left; margin-left: -5px;}
+		.news_jump {display: inherit;
+			float: right; margin-top: 10px;}
+		#main {clear: both;}
+	}
+	@media (max-width: 600px) {
+		.news_jump {clear: both;
+			float: left;
+			margin-bottom: 10px;}
+		.top h2 {font-size: 24px;}
+	}
+</style>
+
+
+<div class="col-sm-3 hidden-xs" id="sidebar">
+						<p><a href="/academics/undergrad/advising/">Academic Advising</a></p>
+				</div>	
+	<div id="content" class="col-sm-9">
+ 		<div class="top">
+			<h2>Computer Programming Minor</h2>
+         	<form name="form" id="form" class="news_jump">
+			  <select name="jumpMenu" id="jumpMenu" onchange="MM_jumpMenu('parent',this,0)">
+								<option value="/academics/undergrad/advising/">Academic Advising</option>
+						  </select>
+		   </form>
+		</div>
+		<div id="nav_container_mobile">
+			<select id="anchorSelect" onchange="handleAnchorChange();">
+				<option value="#admissions">Admissions</option>
+				<option value="#pathways">Pathways</option>
+				<option value="#typical">Typical Path</option>
+				<option value="#shortest">Shortest Path</option>
+				<option value="#sf_enroll">Spring/Fall Enrollment</option>
+				<option value="#summer_enroll">Summer Enrollment</option>
+				<option value="#completion">Completion Requirements</option>
+			</select>
+		</div>
+		<div id="main">
+			<div id="nav_container" style="padding: 10px 15px; background: #ddd;">
+				<div style="display: flex; justify-content: space-around;">
+					<a href="#admissions">Admissions</a>
+					<a href="#pathways">Pathways</a>
+					<a href="#typical">Typical Path</a>
+					<a href="#shortest">Shortest Path</a>
+				</div>
+				<br>
+				<div style="display: flex; justify-content: space-around;">
+					<a href="#sf_enroll">Spring/Fall Enrollment</a>
+					<a href="#summer_enroll">Summer Enrollment</a>
+					<a href="#completion">Completion Requirements</a>
+				</div>
+			</div>
+			<h3 id="admissions"><u>Admissions</u></h3>
+			<p>Undergraduate students who have earned:</p>
+			<ul>
+				<li>a grade of <b>S</b> in E 115*</li>
+				<li>a grade of <b>D minus or higher</b> in a Calculus I class (MA 121/131/141)**</li>
+				<li>And a grade of <b>C or higher</b> in CSC 116**</li>
+			</ul>
+			<p>may declare the CP Minor in <a href="https://studentservices.ncsu.edu/your-degree/coda-home/add-a-minor/" target="_blank">MyPack Portal</a> as long as they are not majoring in Computer Science, Computer Engineering, and/or Electrical Engineering.</p>
+			<p>
+				*A grade of C minus or higher in COS 100 will substitute for E 115. <br>
+				**CR (AP credit or credit by exam) or grades of TA, TB, or TC (from transfer institutions) for CSC 116 direct equivalents (no CSC 1**) and Calculus I are also accepted.
+			</p>
+			<p><b><u>Note:</u></b> There are some course substitutions we do accept, and they are listed <a href="policies.php" target="_blank">here</a>. 1) We also accept transfer grades of C or higher from directly equivalent courses as listed in the <a href="https://webappprd.acs.ncsu.edu/php/transfer/" target="_blank">transfer database</a>, or as evaluated by the <a href="https://forms.gle/bAfGsL31LTbQn4yy6" target="_blank">department  to be added to
+		    the database.</a> 2) Students may pursue <a href="https://www.csc.ncsu.edu/academics/undergrad/advising/credit_by_exam.php" target="_blank">Credit by Exam</a> for all classes in the Computer Programming Minor if they are eligible.</p>
+			<p>Undergraduate students in the Joint <a href="https://bme.unc.edu" target="_blank">Department of Biomedical Engineering</a> who are primarily at UNC-Chapel Hill may join the Computer Programming Minor at NC State only while the minor is suspended at UNC-Chapel Hill. Students who change their major outside of Biomedical engineering may not continue in or recieve the minor.</p>
+			<p>The CSC Undergraduate Advising Office will accept the following external credits (from outside NC State) for Computer Programming Minor students. Note that all external credits must be approved by the Department of Computer Science as appropriate to transfer into specific degree audit slots.</p>
+			<ul>
+			  <li>Calculus I (a grade of C or higher is necessary for transfer)</li>
+			<li>A maximum of 7 hours of “CSC” classes</li></ul>
+			<h3 id="pathways"><u>Pathways</u></h3>
+			<h4 id="typical" class="section_header"><u>Typical Path</u> <a class="to_top" href="#">back to top &#8593;</a></h4>
+			<p>Students tend to take one class a semester, though it is possible to take up to two classes a semester. Some classes may be rearranged as long as all prerequisites are met.</p>
+			<ul>
+				<li><b>Semester 1:</b> E 115 (or COS 100), MA 121/131/141, and CSC 116</li>
+				<li><b>Semester 2:</b> CSC 216/217*</li>
+				<li><b>Semester 3:</b> CSC 226</li>
+				<li><b>Semester 4:</b> CSC 230</li>
+				<li><b>Semester 5:</b> CSC 316</li>
+				<li><b>Semester 6:</b> CSC 246</li>
+			</ul>
+			<h4 id="shortest" class="section_header"><u>Shortest Path</u> <a class="to_top" href="#">back to top &#8593;</a></h4>
+			<p>This path is for students who are able to take more than one class a semester.</p>
+			<ul>
+				<li><b>Semester 1:</b> E 115 (or COS 100), MA 121/131/141, and CSC 116</li>
+				<li><b>Semester 2:</b> CSC 216/217* and CSC 226</li>
+				<li><b>Semester 3:</b> CSC 230 and CSC 316</li>
+				<li><b>Semester 4:</b> CSC 246</li>
+			</ul>
+			<p>Students are required to take the prerequisite courses (Semester 1) first before taking any other CSC classes. Students should work with the Minor coordinator and complete their Pack Planner with all of their major and minor classes up until their intended graduation date.</p>
+			<p>It is possible to change the order of some classes in the paths above (<a href="advising/forms/CSC-ReqStructure-BEGINfall2021.pdf" target="_blank">please see our flow chart here</a>) as long as all prerequisites are met.</p>
+			<p>E 115 and Calc 1 are co-requisites to CSC 116, meaning those two classes may be taken before or at the same time as CSC 116.</p>
+			<p>*For purposes of enrollment request, CSC 216/217 are considered “one” course because they are paired. Students may not take them separately on the first attempt. The lecture or lab does not need to be repeated if only one is passed.</p>
+			<h4 id="enrollment" class="section_header"><u>Enrollment</u> <a class="to_top" href="#">back to top &#8593;</a></h4>
+			<p>After students have been admitted to the minor, they may enroll themselves in any on-campus sections.</p>
+			<p>Students who have not been admitted to the minor should read the below information.</p>
+			<p id="sf_enroll" style="font-size: 17px;"><u>Spring and Fall Enrollment</u> <a class="to_top" href="#">back to top &#8593;</a></p>
+			<p>All minor classes are offered every Spring and Fall semester.</p>
+			<p>If you wish to take E 115 only, you can enroll on your own in E 115 - 302 in Spring semesters. There is generally no room in a Fall semester for a student to take E 115 unless they are co-enrolled in CSC 116.</p>
+			<p>If you need to take E 115, CSC 116,  and/or E 115 and CSC 116 together, please complete the appropriate Enrollment Request form at <a href="http://go.ncsu.edu/cscenrollment" target="_blank">go.ncsu.edu/cscenrollment</a> when it opens. The Fall request form usually opens sometime in November and requests are reviewed in December. The Spring request form usually opens in May, after CODA decisions are made, and the first batch is processed in June.</p>
+			<p>If you are currently enrolled in CSC 116, you may declare the minor as soon as a grade is posted to MyPack and the semester has officially ended. No form is needed for enrollment after that - you can enroll yourself as soon as the minor application is processed.</p>
+			<p><b><u>Note:</u></b> In Spring and Fall, you must enroll in an in-person section. Enrollment in the Distance Education sections (60*) is not permitted during the Fall or Spring semesters. Some situations may allow for you to request a waiver to this policy from the Director of Undergraduate Advising for the CSC Department.</p>
+			<p id="summer_enroll" style=" font-size: 17px;"><u>Summer Enrollment</u> <a class="to_top" href="#">back to top &#8593;</a></p>
+			<p>Most classes are offered over the 10-week summer sessions via in-person instruction or Distance Education offerings.</p>
+			<p>If you have not yet declared the minor and wish to be enrolled in an in-person section, you will fill out the Summer Enrollment Request form at <a href="http://go.ncsu.edu/cscenrollment" target="_blank">go.ncsu.edu/cscenrollment</a>.</p>
+			<p>If you have declared the minor, you may enroll yourself in the in-person sections (usually denoted by Section 051).</p>
+			<p>Regardless of your minor status if you wish to enroll in the Distance Education section (usually denoted by Section 651), you’ll need to complete the enrollment steps through the Engineering Online Registration System. Go to <a href="http://go.ncsu.edu/eol_registration" target="_blank">go.ncsu.edu/eol_registration</a> for more information.</p>
+			<h4 id="completion" class="section_header"><u>Completion Requirements</u> <a class="to_top" href="#">back to top &#8593;</a></h4>
+			<p>In order to complete the Computer Programming Minor, students must achieve:</p>
+			<ul>
+				<li>Grades of <b>C or higher</b> in CSC 116, CSC 216/217, and CSC 226</li>
+				<li>Grades of <b>D minus or higher</b> in CSC 230, CSC 246, and CSC 316</li>
+				<li>A Minor GPA of <b>2.0 or higher</b></li>
+			</ul>
+			<p>before or during the semester they plan to graduate with their major(s).</p>
+		</div><!-- end main -->
+	</div><!-- end content -->
+	
+	</div><!-- end container --> <!-- .container opens in navbar_brand.php -->
+ 
+     <div class="row container" style="margin: 0 auto;"> 
+
+<footer class="col-lg-12">
+    <div class="col-md-4 col-sm-6 L_footer">
+<!--    	<img src="https://www.csc.ncsu.edu/images/logo-900.jpg" alt="NC State University" alt="NCSU" width="100px" />-->
+		<a href="https://www.ncsu.edu" target="_blank"><img src="https://www.csc.ncsu.edu/images/ncsu_logo.svg" alt="NC State University" style="width: 120px; padding: 15px 0 0 10px;" /></a>
+        <p style="padding: 30px 0 20px 10px;">
+        <a href="https://www.csc.ncsu.edu/">Department of Computer Science</a><br />
+        <a href="https://www.engr.ncsu.edu/" target="_blank">College of Engineering</a><br />
+        Campus Box 8206<br />
+        890 Oval Drive<br />
+        Engineering Building II<br />
+        Raleigh, NC 27695<br />
+        </p>
+    </div>
+    
+    <div class="col-lg-4 col-md-3 col-sm-6 M_footer">
+    	<ul>
+            <li><a href="/contactus.php">Contact Us</a></li>
+            <li><a href="/employment/index.php">Employment</a></li>
+            <li><a href="/calendar/index.php">Events</a></li>
+            <li><a href="http://www.flickr.com/photos/cscncsu/albums" target="_blank">Gallery</a></li>
+        </ul>
+        <div class="social_media">
+            <a href="http://www.facebook.com/csc.ncsu" alt="NCSU CSC Facebook" target="_blank"><span class="glyphicon glyphicon-fb" data-alt="facebook"></span><span class="sr-only">Facebook</span></a>
+            <a href="http://www.twitter.com/cscncsu" alt="NCSU CSC Twitter" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style=" height: 25px; margin-right: 5px; color: white; padding-right: 10px; width: 40px;"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" fill="#ffffff"></path></svg><span class="sr-only">Twitter</span></a>
+            <a href="https://www.instagram.com/ncstatecsc/" alt="NCSU CSC Instagram" target="_blank"><span class="glyphicon glyphicon-instagram" data-alt="instagram"></span><span class="sr-only">Instagram</span></a>
+            <br />
+            <a href="http://go.ncsu.edu/csc-youtube\" alt="NCSU CSC YouTube" target="_blank"><span class="glyphicon glyphicon-youtube" data-alt="youtube"></span><span class="sr-only">YouTube</span></a>
+            <a href="http://www.linkedin.com/groups/1797254/" alt="NCSU CSC Linked In" target="_blank"><span class="glyphicon glyphicon-linkedin" data-alt="linked in"></span><span class="sr-only">Linked In</span></a>
+            <a href="http://www.flickr.com/photos/cscncsu" alt="NCSU CSC Flickr" target="_blank"><span class="glyphicon glyphicon-flickr" data-alt="flickr"></span><span class="sr-only">Flickr</span></a>
+        </div>
+        
+    </div>
+    
+    <div class="col-md-4 R_footer">
+    	<h6>Campus Map</h6>
+    	<a href="http://maps.ncsu.edu/#/buildings/eb2" target="_blank"><img src="https://www.csc.ncsu.edu/images/eb2_map.jpg" alt="EB2 Map" class="map" /></a>
+    </div>
+    
+    <h6 class="copyright">© 2024 NC State University. All rights reserved.<br /><a href="/about.php">About this site</a></h6>
+        
+</footer>
+
+</div>
+</body>
+</html>

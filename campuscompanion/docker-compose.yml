@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  apacheshib:
+    image: dockerhub.csc.ncsu.edu/ignacioxd/apacheshib-proxy
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./logs:/var/log/apache2
+
+  app:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    volumes:
+      - ./app/app:/app/app
+
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    volumes:
+      - ./api/app:/app/app
+

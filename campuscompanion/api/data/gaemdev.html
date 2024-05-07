@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="computer science, ncsu, nc state, cs, csc, cscncsu">
+<meta name="description" content="Department of Computer Science at NC State University">
+
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="cache-control" content="no-store" />
+<meta http-equiv="cache-control" content="must-revalidate" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta name="author" content="Brianna J. Lofton">
+
+<title>Department of Computer Science at North Carolina State University</title>
+<!-- NC State Bootstrap CSS -->
+<link href="https://cdn.ncsu.edu/brand-assets/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css" />
+<!-- jQuery 2.1.0 (NCSU Branding) -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<!-- Bootstrap JS (NCSU Branding) -->
+<script src="https://cdn.ncsu.edu/brand-assets/bootstrap/js/bootstrap.min.js"></script>
+<!-- Brand Utility Bar -->
+<script src="https://cdn.ncsu.edu/brand-assets/utility-bar/ub.php?googleCustomSearchCode=002901563088837147148:wfwx4csyomm&placeholder=search+csc.ncsu.edu&maxWidth=1170&color=gray&showBrick=1"></script>
+<!-- Web Fonts (NCSU Branding) -->
+<link href="https://cdn.ncsu.edu/brand-assets/fonts/include.css" rel="stylesheet" type="text/css" />
+<!-- favicon -->
+<link rel="icon" type="image/x-icon" href="https://brand.ncsu.edu/favicon.ico" />
+<!-- makes site printable -->
+<link rel="stylesheet" type="text/css" href="/print.css" media="print">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8ESTRZV6XC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8ESTRZV6XC');
+</script>
+
+<!-- <head> is left open for custom stylesheets and scripts -->
+<!-- Custom styles -->
+<link rel="stylesheet" type="text/css" href="../../navbar_brand.css">
+<link rel="stylesheet" type="text/css" href="../../footer_brand.css">
+<link rel="stylesheet" type="text/css" href="css_undergrad.css">
+<style>
+#main p, #main ol, #main ul, #main table {font-size: 14px;}
+#main table {width: 100%;}
+	#main td, #main th {padding: 5px;
+	border: solid 1px #ccc;}
+	#main table td:nth-child(even) {text-align: center;}
+.subtitle {font-size: 28px;}
+#undergrad_content h5 {font-size: 20px;
+	padding-top: 20px;
+	color: #900;}
+
+@media (max-width: 1200px) {
+	.subtitle {font-size: 22px;}
+}
+@media (max-width: 992px) {
+	.subtitle {font-size: 26px;}
+}
+@media (max-width: 767px) {
+	.subtitle {font-size: 24px;}
+}
+@media (max-width: 500px) {
+	.slogan {width: 90%;}
+}
+</style>
+</head>
+<body>
+	<div id="ncstate-utility-bar"></div>
+
+<script>
+	$(document).ready(() => {
+		console.log("tyler:",  window.location.href);
+		
+		const setActiveLink = (num) => {
+			for(let i = 1; i < 7; i++) {
+				if(i == num) {
+				   $(".bb:nth-child(" + num + ") > a").addClass("active_nav");
+				}
+				else {
+					$(".bb:nth-child(" + i + ") > a").removeClass("active_nav");
+				}
+			}
+		};
+		
+		if(window.location.href.includes("about_us.php")) {
+		    setActiveLink(1);
+		}
+		else if(window.location.href.includes("academics/")) {
+		    setActiveLink(2);
+		}
+		else if(window.location.href.includes("research/")) {
+		    setActiveLink(3);
+		}
+		else if(window.location.href.includes("directories/")) {
+		    setActiveLink(4);
+		}
+		else if(window.location.href.includes("news/")) {
+		    setActiveLink(5);
+		}
+		else if(window.location.href.includes("contactus.php")) {
+		    setActiveLink(6);
+		}
+	});
+</script>
+
+<!-- if $wide = 1, navbar will span the entire page (example: https://www.csc.ncsu.edu/webapps/admin/ra_appointments/admin/list.php) -->
+<div class="container"><div class="row">
+
+<nav class="navbar navar-default" role="navigation">
+	<div class="container-fluid">
+    	<div class="navbar-header">
+        	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsedNav">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+        	</button>
+        
+        	<a href="/index.php" class="navbar-brand">Computer Science</a> 
+        </div>
+		
+			<div class="collapse navbar-collapse" id="collapsedNav">
+				<ul class="nav navbar-nav">
+					<li class="bb"><a href="/about_us.php">About</a></li>
+					<li class="bb"><a href="/academics/index.php">Academics</a></li>
+					<li class="bb"><a href="/research/index.php">Research</a></li>
+					<li class="bb"><a href="/directories/index.php">People</a></li>
+                    <li class="bb"><a href="/news/index.php">News</a></li>
+                    <li class="bb"><a href="/contactus.php">Contact</a></li>
+				</ul>
+			</div>
+
+	</div>
+</nav>
+</div> <!-- end row -->
+
+
+<!-- .container closes in footer_brand.php -->
+    
+    <div id="undergrad_content" class="col-lg-12">
+    
+    	<div id="main" class="col-md-8 col-xs-12">
+            <h3 class="subtitle">Undergraduate Program - Concentration in Game Development</h3>
+            <p class="cont">
+            <p>The Department of Computer Science offers a concentration in game development to undergraduate students majoring in 
+            Computer Science at NC State. The game development concentration allows the student to develop an understanding of the 
+            scientific and technological principles associated with the design and development of computer and console games for both 
+            entertainment and serious applications. Current CSC BS students may apply to the Game Development Concentration after passing through several courses. The application is available <a href="advising/forms.php" target="_blank">here</a>.</p>
+ 
+            <div style="padding:5px 0 8px 0;  color:#C00; font-weight:bolder; text-align:center">North Carolina Now Segment on NC Video Games</div>
+          	<div><iframe width="100%" height="400px" src="https://www.youtube.com/embed/ZynmYC4ac6w?rel=0" frameborder="0" allowfullscreen></iframe></div>
+ 
+  			<h5>Objectives of the Concentration in Game Development</h5>
+  			The objectives of concentration are to: </p>
+              <ul>
+                <li>graduate skilled computer scientists with deep knowledge in the algorithms, processes and technologies used to make games</li>
+                <li>balance training in the technologies of games with the same breadth in Computer Science instruction as all Computer Science students</li>
+                <li>provide students with a a multi-disciplinary view of game creation by requiring specific courses from other disciplines that contribute to the process of game creation</li>
+              </ul>
+  			<h5>Program of Study</h5>
+              <p>Students take all courses required for the CSC major. Concentration course selection for Restricted and Other Electives is constrained to focus on specific courses directly related to game design and development. Specifically, all students pursuing the concentration must take both CSC 461, Computer Graphics, and CSC 481, Game Design and Development. Further, students must take either one of the Advanced Game Projects. Students must select two additional CSC courses from the <a href="http://catalog.ncsu.edu/undergraduate/engineering/computer-science/computer-science-bs-game-development-concentration/#planrequirementstext" target="_blank">CSC Games Restricted Elective list</a>.</p>
+			<h5>Games Restricted Electives</h5>
+				<!--<img src="../../images/undergrad/prereqs-games.gif" alt="diagram" />-->
+              <p>Students pursuing the Game Development Concentration must select their Games Restricted Electives from a <a href="http://catalog.ncsu.edu/undergraduate/engineering/computer-science/computer-science-bs-game-development-concentration/#planrequirementstext" target="_blank">select list</a>. These are different than the "Other Restricted Electives" required for the CSC major.</p>
+		<h5><a href="https://catalog.ncsu.edu/undergraduate/engineering/computer-science/computer-science-bs-game-development-concentration/#semestersequencetext" target="_blank">Click Here For Semester-by-Semester Curriculum</a></h5>
+<!--
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>Fall Semester</th>
+			<th>Credit</th>
+			<th>Spring Semester</th>
+			<th>Credit</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>CH 101Chemistry – A Molecular Science<sup>1,2,B</sup>
+			</td>
+			<td>3</td>
+			<td>CSC 116 Intro to Computing- Java<sup>2</sup>
+			</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>CH 102 General Chemistry Laboratory<sup>1,2,B</sup>
+			</td>
+			<td>1</td>
+			<td>MA 241 Calculus II<sup>1,2,A</sup>
+			</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>E 101 Intro to Engineering<br/> &amp; Prob Solving <sup>1,9</sup>
+			</td>
+			<td>1</td>
+			<td>PY 205 Physics for Engineers &amp; Scientists I <sup>1,2,B</sup>
+			</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>E 115 Intro to Computing Environments<sup>1</sup>
+			</td>
+			<td>1</td>
+			<td>PY 206 Physics for Engineers &amp; Scientists I Lab</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>ENG 101 Academic Writing &amp; Research <sup>1,9,H</sup>
+			</td>
+			<td>4</td>
+			<td>EC 205 Fund of Econ<sup>D</sup><br/> (
+				<strong><em>or</em></strong> EC 201 <strong><em>or </em></strong>ARE 201)</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>MA 141 Calculus I<sup>1,2,A</sup>
+			</td>
+			<td>4</td>
+			<td>E 102 Engineering in the 21st Century <sup>1,2,G</sup>
+			</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>14</td>
+			<td></td>
+			<td>16</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3>Sophomore Year</h3>
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>Fall Semester</th>
+			<th>Credit</th>
+			<th>Spring Semester</th>
+			<th>Credit</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>CSC 216 Software Development Fundamentals<sup>2</sup></td>
+			<td>3</td>
+			<td>CSC 230 C and Software Tools</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>CSC 217 Software Development Fundamentals Lab</td>
+			<td>1</td>
+			<td>CSC 316 Data Structures and Algorithms</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>CSC 226 Discrete Mathematics for CSC<sup>2</sup>
+			</td>
+			<td>3</td>
+			<td>MA 305 Elementary Linear Algebra</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>MA 242 Calculus III</td>
+			<td>4</td>
+			<td>GEP Requirement<strong>*</strong>
+			</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>PY 208 Physics for Engineers &amp; Scientists II<sup>B</sup>
+			</td>
+			<td>3</td>
+			<td>Basic Science Elective<sup>3,B</sup>
+			</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>PY 209 Physics for Engineers<br/> &amp; Scientists II Lab<sup>B</sup>
+			</td>
+			<td>1</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Health and Exercise Studies Course<sup>E</sup>
+			</td>
+			<td>1</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>16</td>
+			<td></td>
+			<td>15</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3>Junior Year</h3>
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>Fall Semester</th>
+			<th>Credit</th>
+			<th>Spring Semester</th>
+			<th>Credit</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>CSC 236 Comp Org &amp; Assem Lang for CSC</td>
+			<td>3</td>
+			<td>CSC 326 Software Engineering</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>CSC 246 Operating<br/> Systems for CSC</td>
+			<td>3</td>
+			<td>CSC 379 Ethics in Computing</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>CSC 333 Automata, Grammars, &amp; Computability</td>
+			<td>3</td>
+			<td>CSC *** CSC Games Restricted Elective<sup>4,2</sup>
+			</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>ST 370 Probability &amp; Statistics for Engrs</td>
+			<td>3</td>
+			<td>ENG 331 Comm. for Engr and Tech</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>GEP Requirement<strong>*</strong>
+			</td>
+			<td>3</td>
+			<td>Health and Exercise Studies Course<sup>E</sup>
+			</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>Games Restricted Elective<sup>5</sup>
+			</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>15</td>
+			<td></td>
+			<td>15</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3>Senior Year</h3>
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>Fall Semester</th>
+			<th>Credit</th>
+			<th>Spring Semester</th>
+			<th>Credit</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>CSC 461 Computer Graphics<sup>2</sup>
+			</td>
+			<td>3</td>
+			<td>CSC 492 Senior Design Project<sup>7</sup>
+			</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>CSC 481 Game Development<sup>2</sup>
+			</td>
+			<td>3</td>
+			<td>CSC 4** Advanced Games Elective<sup>6,2</sup>
+			</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>GEP Requirement<strong>*</strong>
+			</td>
+			<td>3</td>
+			<td>CSC Games Restricted Elective<sup>4,2</sup>
+			</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>GEP Requirement<strong>*</strong>
+			</td>
+			<td>3</td>
+			<td>Games Restricted Elective<sup>5</sup>
+			</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>Games Restricted Elective<sup>5</sup>
+			</td>
+			<td>3</td>
+			<td>GEP Requirement<strong><sup>*</sup></strong>
+			</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td> 15</td>
+			<td></td>
+			<td>15</td>
+		</tr>
+	</tbody>
+-->
+<!--
+</table>
+<p>&nbsp;</p>
+
+		
+		<h4>Minimum Credit Hours Required for Graduation<sup>,8,I,J,K</sup> <strong style="margin-left: 20px;">121</strong></h4> 
+				<p>&nbsp;</p>
+				<p><strong>Major/Program requirements and footnotes</strong>
+				</p>
+				<p><strong><sup>1</sup></strong> Courses required for matriculation (CODA)<br/>
+					<strong><sup>2</sup></strong> Grade of C or higher required.<br/>
+					<strong><sup>3</sup></strong> To be selected from CH 201, PY 123, 124, any PY course with a prerequisite of PY 208, or any PB, BIO, MEA, or ZO course.<br/>
+					<strong><sup>4</sup></strong> To be selected from CSC 281, 411, 454, 462, 482, 484, or 582.<br/>
+					<strong><sup>5</sup></strong> To be selected from ENG 282, 288, 376, 377, 492 (Special Topics in Film), COM 327, 427 or MUS 306.<br/>
+					<strong><sup>6 </sup></strong>To be selected from CSC 462 or CSC 482. CSC 462 may not be offered every academic year.<br/>
+					<strong><sup>7 </sup></strong>CSC 492 is the only course that meets this requirement in all CSC curricula effective August 2008 or thereafter.<br/>
+					<strong><sup>8 </sup></strong>The GPA earned in all courses attempted at NCSU must be 2.0 or higher. One of the following two conditions regarding the major GPA is required: 1) the major GPA, which consists of all CSC courses attempted at NCSU, must be 2.0 of higher or 2) a student whose major grade point average is below a 2.0 may graduate if no CSC course used to satisfy the major requirements has a grade below a C-.<br/>
+					<strong><sup>9</sup></strong> Grade of C- or higher required.</p>
+				<p>*<strong>General Education Program (GEP) requirements and GEP footnotes</strong><br/> To complete the requirements for graduation and the General Education Program, the following category credit hours and co-requisites must be satisfied.<br/> University approved GEP course lists for each of the following categories can be found at <a href="https://oucc.dasa.ncsu.edu/general-education-program/" target="_blank" rel="noopener noreferrer">https://oucc.dasa.ncsu.edu/general-education-program/</a>.</p>
+				<p><strong>A.</strong> <strong>Mathematical Sciences</strong> (6 credit hours – one course with MA or ST prefix)<u><br />
+</u><em>Choose from the University approved GEP Mathematical Sciences course list or the following course(s) if completed as part of the Major requirements may fulfill part or all of this requirement: MA 141, 241</em><br/>
+					<strong>B.</strong> <strong>Natural Sciences</strong> (7 credit hours – include one laboratory course or course with a lab)<u><br />
+</u><em>Choose from the University approved GEP Natural Sciences course list or the following course(s) if completed as part of the Major requirements may fulfill part or all of this requirement: CH 101, 102, PY 205, 208</em><br/>
+					<strong>C. Humanities</strong> (6 credit hours selected from two different disciplines/course prefixes)<u><br />
+</u><em>Choose from the University approved GEP Humanities course list or the following course(s) if completed as part of the Major requirements may fulfill part or all of this requirement:<strong> </strong>None</em><br/>
+					<strong>D. Social Sciences</strong> (6 credit hours selected from two different disciplines/course prefixes)<u><br />
+</u><em>Choose from the University approved GEP Social Sciences course list or the following course(s) if completed as part of the Major requirements may fulfill part or all of this requirement:<strong> </strong>EC 205 or EC 201 or ARE 201</em><br/>
+					<strong>E. Health &amp; Exercise Studies</strong> (2 credit hours – at least one 100-level Health &amp; Exercise Studies Course)<br/>
+					<em>Choose from the University approved GEP Health &amp; Exercise Studies course list. </em><br/>
+					<strong>F.</strong> <strong>Additional Breadth</strong> &#8211; (3 credit hours to be selected from the following checked University approved GEP course lists)<br/>
+					<strong>   <u>X</u> </strong>Humanities/Social Sciences/Visual and Performing Arts or __Mathematical Sciences/Natural Sciences/Engineering<br/>
+					<strong>G</strong>. <strong>Interdisciplinary Perspectives</strong> (5-6 credit hours)<br/>
+					<em>Choose from University approved GEP Interdisciplinary Perspectives course list or the following course(s) if completed as part of the Major requirements may fulfill part or all of this requirement: E 102</em><br/>
+					<strong>H.</strong> <strong>Introduction to Writing</strong> (4 credit hours satisfied by completing ENG 101 with a C- or better)<em><br />
+</em><u><br />
+</u>The following Co-Requisites must be satisfied to complete the General Education Program requirements</p>
+				<p><strong>I. U.S. Diversity</strong><br/>
+					<em>Choose from the University approved GEP U.S. Diversity course list or choose a course identified on the approved GEP course lists as meeting the U.S. Diversity (USD) co-requisite. The following course(s) if completed as part of the Major requirements may fulfill this requirement:<strong> </strong>None</em><br/>
+					<strong>J.</strong> <strong>Global Knowledge</strong><br/>
+					<em>Choose from the University approved GEP Global Knowledge course  list or choose a course identified on the approved GEP course lists as meeting the Global Knowledge (GK) co-requisite. The following course(s) if completed as part of the Major requirements may fulfill this requirement:<strong> </strong>None</em><br/>
+					<strong>K. Foreign Language proficiency</strong> &#8211; Proficiency at the FL_102 level is required for graduation.</p>
+-->
+		               
+		                <p>&nbsp;</p> 
+                <p><a href="/academics/undergrad/gdc_areas.php">Curriculum Requirements for B.S. in Computer Science: Game Development Concentration</a></p>
+                  <p><b>For more information,</b> interested students should contact the appropriate advisor as listed on the topic chart here: <a href="https://www.csc.ncsu.edu/academics/undergrad/advising/">go.ncsu.edu/cscadvising</a></p>
+          <center>
+  <img alt="Meet us at the intersection of technology and life" src="images/meet_us_slogan.jpg" width="400px" class="slogan" style="padding:100px 0 35px 0;" />
+          </center>
+            
+            
+            
+          	</p>
+                  
+            
+        </div>
+        
+        
+    	<div id="menu" class="col-md-4 col-xs-12">
+
+    	<a style="color: white;" href="/future-students/"><button id="tfs" class="col-md-12 col-sm-12 
+       col-xs-12        students future"><h2>Future Students &#8594;</h2></button></a>
+        <a style="color: white;" href="/academics/students.php"><button id="tcs" class="col-md-12 col-sm-12 
+		col-xs-12		
+     students current"><h2>Current Students &#8594;</h2></button></a>
+
+     <div id="programs" class="col-md-12 col-sm-6 col-xs-12">
+        <h3 class="menu_header">Degrees and Programs</h3>
+        
+			<ul class="lists">
+            	<li>
+					<a href="/academics/undergrad/bs-csc.php">Bachelor of Science Degree in Computer Science</a>
+					<li style="margin-left: 30px;"><a href="/academics/undergrad/tracks/index.php">Undergraduate Degree Tracks</a></li>
+				</li>
+          		<li><a href="/academics/undergrad/bs-csc-gdc.php">Bachelor of Science in Computer Science - Game Development Concentration</a></li>
+		 		<li><a href="/academics/undergrad/bs-csc-cyber.php">Bachelor of Science in Computer Science - Cybersecurity Concentration</a></li>
+		 		<li><a href="/academics/undergrad/bs-csc-ai.php">Bachelor of Science in Computer Science - Artificial Intelligence</a></li>
+          		<li><a href="/academics/undergrad/minor.php">Computer Programming Minor</a></li>
+          		<li><a href="/academics/undergrad/bsms.php">Accelerated Bachelor's/Master's (ABM) Degree Program</a></li>
+          		<li><a href="/academics/undergrad/honors.php">CSC Honors Program</a></li>
+		 		<li><a href="/academics/undergrad/outcomes.php">BS in Computer Science - Objectives and Outcomes</a></li>
+            </ul>
+		</div>
+  	  
+<!--
+	<div id="certificate" class="col-md-12 col-sm-6 col-xs-12">
+        <h3 class="menu_header">Certificate</h3>
+			<ul class="lists">
+            	<li><a href="/academics/undergrad/certificate.php">Computer Programming Certificate for Post-baccalaureate Students</a></li>
+            </ul>
+		</div>
+-->
+
+    <div id="general_info" class="col-md-12 col-sm-6 col-xs-12">
+        <h3 class="menu_header">General Info</h3>
+        
+			<ul class="lists">
+				<li><a href="/academics/undergrad/advising/">Academic Advising</a></li>
+				<!-- <li><a href="https://my.csc.ncsu.edu/undergrad-advising/">Academic Advising</a></li> -->
+            	<li><a href="https://studentservices.ncsu.edu/calendars/academic/" target="_blank">Academic Calendars</a></li>
+				<li><a href="/academics/undergrad/cscenter.php">Computing Success Center</a></li>
+                <li><a href="coursework.php">Coursework</a></li>
+                <li><a href="/courses/index.php" target="_blank">Course Listings</a></li>
+ 				<li><a href="/academics/undergrad/tracks/entrepreneurship.php">Entrepreneurship</a></li>  
+				<li><a href="people.php">People</a></li>
+                <li><a href="policies.php">Policies</a></li>
+                <li><a href="/academics/students_financial.php" target="_blank">Scholarships &amp; Financial Aid</a></li>
+				<li><a href="/academics/undergrad/tracks/security.php">Security</a></li> 
+                <li><a href="/academics/undergrad/honor-societies.php">Student Honor Societies</a></li>
+                <li><a href="/academics/students_orgs.php" target="_blank">Student Organizations</a></li>
+                <li><a href="research.php">Undergraduate Research</a></li>
+                <li><a href="contact.php">Who to Contact</a></li>
+            </ul>
+		</div>
+ 	  
+ 	  	  
+</div>
+
+    
+    </div>
+    
+    
+      
+	</div><!-- end container --> <!-- .container opens in navbar_brand.php -->
+ 
+     <div class="row container" style="margin: 0 auto;"> 
+
+<footer class="col-lg-12">
+    <div class="col-md-4 col-sm-6 L_footer">
+<!--    	<img src="https://www.csc.ncsu.edu/images/logo-900.jpg" alt="NC State University" alt="NCSU" width="100px" />-->
+		<a href="https://www.ncsu.edu" target="_blank"><img src="https://www.csc.ncsu.edu/images/ncsu_logo.svg" alt="NC State University" style="width: 120px; padding: 15px 0 0 10px;" /></a>
+        <p style="padding: 30px 0 20px 10px;">
+        <a href="https://www.csc.ncsu.edu/">Department of Computer Science</a><br />
+        <a href="https://www.engr.ncsu.edu/" target="_blank">College of Engineering</a><br />
+        Campus Box 8206<br />
+        890 Oval Drive<br />
+        Engineering Building II<br />
+        Raleigh, NC 27695<br />
+        </p>
+    </div>
+    
+    <div class="col-lg-4 col-md-3 col-sm-6 M_footer">
+    	<ul>
+            <li><a href="/contactus.php">Contact Us</a></li>
+            <li><a href="/employment/index.php">Employment</a></li>
+            <li><a href="/calendar/index.php">Events</a></li>
+            <li><a href="http://www.flickr.com/photos/cscncsu/albums" target="_blank">Gallery</a></li>
+        </ul>
+        <div class="social_media">
+            <a href="http://www.facebook.com/csc.ncsu" alt="NCSU CSC Facebook" target="_blank"><span class="glyphicon glyphicon-fb" data-alt="facebook"></span><span class="sr-only">Facebook</span></a>
+            <a href="http://www.twitter.com/cscncsu" alt="NCSU CSC Twitter" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style=" height: 25px; margin-right: 5px; color: white; padding-right: 10px; width: 40px;"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" fill="#ffffff"></path></svg><span class="sr-only">Twitter</span></a>
+            <a href="https://www.instagram.com/ncstatecsc/" alt="NCSU CSC Instagram" target="_blank"><span class="glyphicon glyphicon-instagram" data-alt="instagram"></span><span class="sr-only">Instagram</span></a>
+            <br />
+            <a href="http://go.ncsu.edu/csc-youtube\" alt="NCSU CSC YouTube" target="_blank"><span class="glyphicon glyphicon-youtube" data-alt="youtube"></span><span class="sr-only">YouTube</span></a>
+            <a href="http://www.linkedin.com/groups/1797254/" alt="NCSU CSC Linked In" target="_blank"><span class="glyphicon glyphicon-linkedin" data-alt="linked in"></span><span class="sr-only">Linked In</span></a>
+            <a href="http://www.flickr.com/photos/cscncsu" alt="NCSU CSC Flickr" target="_blank"><span class="glyphicon glyphicon-flickr" data-alt="flickr"></span><span class="sr-only">Flickr</span></a>
+        </div>
+        
+    </div>
+    
+    <div class="col-md-4 R_footer">
+    	<h6>Campus Map</h6>
+    	<a href="http://maps.ncsu.edu/#/buildings/eb2" target="_blank"><img src="https://www.csc.ncsu.edu/images/eb2_map.jpg" alt="EB2 Map" class="map" /></a>
+    </div>
+    
+    <h6 class="copyright">© 2024 NC State University. All rights reserved.<br /><a href="/about.php">About this site</a></h6>
+        
+</footer>
+
+</div>
+
+
+
+</body>
+</html>

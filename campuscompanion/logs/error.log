@@ -1,0 +1,76 @@
+[Mon Apr 22 03:05:45.359688 2024] [ssl:warn] [pid 34:tid 140737476159360] AH01906: local.ncsu.edu:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Mon Apr 22 03:05:45.413304 2024] [ssl:warn] [pid 34:tid 140737476159360] AH01906: local.ncsu.edu:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Mon Apr 22 03:05:45.417002 2024] [core:warn] [pid 34:tid 140737476159360] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Apr 22 03:05:45.422038 2024] [mpm_event:notice] [pid 34:tid 140737476159360] AH00489: Apache/2.4.41 (Ubuntu) OpenSSL/1.1.1f configured -- resuming normal operations
+[Mon Apr 22 03:05:45.422293 2024] [core:notice] [pid 34:tid 140737476159360] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Mon Apr 22 05:38:12.521792 2024] [ssl:warn] [pid 34:tid 140737476159360] AH01906: local.ncsu.edu:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Mon Apr 22 05:38:12.594732 2024] [ssl:warn] [pid 34:tid 140737476159360] AH01906: local.ncsu.edu:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Mon Apr 22 05:38:12.598360 2024] [core:warn] [pid 34:tid 140737476159360] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Apr 22 05:38:12.602764 2024] [mpm_event:notice] [pid 34:tid 140737476159360] AH00489: Apache/2.4.41 (Ubuntu) OpenSSL/1.1.1f configured -- resuming normal operations
+[Mon Apr 22 05:38:12.603239 2024] [core:notice] [pid 34:tid 140737476159360] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Mon Apr 22 06:09:42.705376 2024] [proxy_http:error] [pid 36:tid 140736708192000] (70007)The timeout specified has expired: [client 192.168.65.1:53817] AH01102: error reading status line from remote server api:80, referer: https://localhost/pages/chat
+[Mon Apr 22 06:09:42.707760 2024] [proxy_http:error] [pid 36:tid 140737136023296] (70007)The timeout specified has expired: [client 192.168.65.1:53813] AH01102: error reading status line from remote server api:80, referer: https://localhost/pages/chat
+[Mon Apr 22 06:09:42.709167 2024] [proxy:error] [pid 36:tid 140737136023296] [client 192.168.65.1:53813] AH00898: Error reading from remote server returned by /api/api/users/login, referer: https://localhost/pages/chat
+[Mon Apr 22 06:09:42.709153 2024] [proxy:error] [pid 36:tid 140736708192000] [client 192.168.65.1:53817] AH00898: Error reading from remote server returned by /api/api/users/login, referer: https://localhost/pages/chat
+[Mon Apr 22 13:29:01.737719 2024] [ssl:warn] [pid 34:tid 140737476159360] AH01906: local.ncsu.edu:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Mon Apr 22 13:29:01.787403 2024] [ssl:warn] [pid 34:tid 140737476159360] AH01906: local.ncsu.edu:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Mon Apr 22 13:29:01.790889 2024] [core:warn] [pid 34:tid 140737476159360] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Apr 22 13:29:01.792822 2024] [mpm_event:notice] [pid 34:tid 140737476159360] AH00489: Apache/2.4.41 (Ubuntu) OpenSSL/1.1.1f configured -- resuming normal operations
+[Mon Apr 22 13:29:01.793040 2024] [core:notice] [pid 34:tid 140737476159360] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Mon Apr 22 13:34:51.632186 2024] [ssl:warn] [pid 33:tid 140737476159360] AH01906: local.ncsu.edu:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Mon Apr 22 13:34:51.713351 2024] [ssl:warn] [pid 33:tid 140737476159360] AH01906: local.ncsu.edu:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Mon Apr 22 13:34:51.718084 2024] [core:warn] [pid 33:tid 140737476159360] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Apr 22 13:34:51.734303 2024] [mpm_event:notice] [pid 33:tid 140737476159360] AH00489: Apache/2.4.41 (Ubuntu) OpenSSL/1.1.1f configured -- resuming normal operations
+[Mon Apr 22 13:34:51.737029 2024] [core:notice] [pid 33:tid 140737476159360] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Mon Apr 22 13:40:30.481101 2024] [ssl:warn] [pid 34:tid 140737476159360] AH01906: local.ncsu.edu:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Mon Apr 22 13:40:30.543233 2024] [ssl:warn] [pid 34:tid 140737476159360] AH01906: local.ncsu.edu:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Mon Apr 22 13:40:30.547003 2024] [core:warn] [pid 34:tid 140737476159360] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Apr 22 13:40:30.548891 2024] [mpm_event:notice] [pid 34:tid 140737476159360] AH00489: Apache/2.4.41 (Ubuntu) OpenSSL/1.1.1f configured -- resuming normal operations
+[Mon Apr 22 13:40:30.549363 2024] [core:notice] [pid 34:tid 140737476159360] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Mon Apr 22 14:16:26.037477 2024] [proxy:error] [pid 35:tid 140736951482112] (32)Broken pipe: [client 192.168.65.1:25008] AH01084: pass request body failed to 172.18.0.3:80 (api), referer: https://localhost/pages/chat
+[Mon Apr 22 14:16:26.040764 2024] [proxy_http:error] [pid 35:tid 140736951482112] [client 192.168.65.1:25008] AH01097: pass request body failed to 172.18.0.3:80 (api) from 192.168.65.1 (), referer: https://localhost/pages/chat
+[Tue Apr 23 03:25:32.234526 2024] [ssl:warn] [pid 34:tid 140737476159360] AH01906: local.ncsu.edu:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Apr 23 03:25:32.296671 2024] [ssl:warn] [pid 34:tid 140737476159360] AH01906: local.ncsu.edu:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Apr 23 03:25:32.300733 2024] [core:warn] [pid 34:tid 140737476159360] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue Apr 23 03:25:32.304267 2024] [mpm_event:notice] [pid 34:tid 140737476159360] AH00489: Apache/2.4.41 (Ubuntu) OpenSSL/1.1.1f configured -- resuming normal operations
+[Tue Apr 23 03:25:32.305737 2024] [core:notice] [pid 34:tid 140737476159360] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Tue Apr 23 03:26:55.066619 2024] [ssl:warn] [pid 33:tid 140737476159360] AH01906: local.ncsu.edu:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Apr 23 03:26:55.116703 2024] [ssl:warn] [pid 33:tid 140737476159360] AH01906: local.ncsu.edu:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Apr 23 03:26:55.120439 2024] [core:warn] [pid 33:tid 140737476159360] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue Apr 23 03:26:55.122625 2024] [mpm_event:notice] [pid 33:tid 140737476159360] AH00489: Apache/2.4.41 (Ubuntu) OpenSSL/1.1.1f configured -- resuming normal operations
+[Tue Apr 23 03:26:55.122899 2024] [core:notice] [pid 33:tid 140737476159360] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Tue Apr 23 03:35:31.353880 2024] [ssl:warn] [pid 35:tid 140737476159360] AH01906: local.ncsu.edu:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Apr 23 03:35:31.433899 2024] [ssl:warn] [pid 35:tid 140737476159360] AH01906: local.ncsu.edu:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Apr 23 03:35:31.438608 2024] [core:warn] [pid 35:tid 140737476159360] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue Apr 23 03:35:31.442084 2024] [mpm_event:notice] [pid 35:tid 140737476159360] AH00489: Apache/2.4.41 (Ubuntu) OpenSSL/1.1.1f configured -- resuming normal operations
+[Tue Apr 23 03:35:31.443105 2024] [core:notice] [pid 35:tid 140737476159360] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Tue Apr 23 05:43:48.057626 2024] [ssl:warn] [pid 34:tid 140737476159360] AH01906: local.ncsu.edu:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Apr 23 05:43:48.139250 2024] [ssl:warn] [pid 34:tid 140737476159360] AH01906: local.ncsu.edu:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Apr 23 05:43:48.143662 2024] [core:warn] [pid 34:tid 140737476159360] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue Apr 23 05:43:48.150231 2024] [mpm_event:notice] [pid 34:tid 140737476159360] AH00489: Apache/2.4.41 (Ubuntu) OpenSSL/1.1.1f configured -- resuming normal operations
+[Tue Apr 23 05:43:48.150595 2024] [core:notice] [pid 34:tid 140737476159360] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Fri Apr 26 11:20:49.809491 2024] [ssl:warn] [pid 34:tid 140737476159360] AH01906: local.ncsu.edu:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Fri Apr 26 11:20:49.865562 2024] [ssl:warn] [pid 34:tid 140737476159360] AH01906: local.ncsu.edu:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Fri Apr 26 11:20:49.870005 2024] [core:warn] [pid 34:tid 140737476159360] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Fri Apr 26 11:20:49.872151 2024] [mpm_event:notice] [pid 34:tid 140737476159360] AH00489: Apache/2.4.41 (Ubuntu) OpenSSL/1.1.1f configured -- resuming normal operations
+[Fri Apr 26 11:20:49.872462 2024] [core:notice] [pid 34:tid 140737476159360] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Fri Apr 26 15:58:04.732181 2024] [ssl:warn] [pid 34:tid 140737476159360] AH01906: local.ncsu.edu:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Fri Apr 26 15:58:04.779675 2024] [ssl:warn] [pid 34:tid 140737476159360] AH01906: local.ncsu.edu:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Fri Apr 26 15:58:04.783308 2024] [core:warn] [pid 34:tid 140737476159360] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Fri Apr 26 15:58:04.785328 2024] [mpm_event:notice] [pid 34:tid 140737476159360] AH00489: Apache/2.4.41 (Ubuntu) OpenSSL/1.1.1f configured -- resuming normal operations
+[Fri Apr 26 15:58:04.785588 2024] [core:notice] [pid 34:tid 140737476159360] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Fri Apr 26 18:33:08.000475 2024] [ssl:warn] [pid 34:tid 140737476159360] AH01906: local.ncsu.edu:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Fri Apr 26 18:33:08.049072 2024] [ssl:warn] [pid 34:tid 140737476159360] AH01906: local.ncsu.edu:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Fri Apr 26 18:33:08.052658 2024] [core:warn] [pid 34:tid 140737476159360] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Fri Apr 26 18:33:08.054847 2024] [mpm_event:notice] [pid 34:tid 140737476159360] AH00489: Apache/2.4.41 (Ubuntu) OpenSSL/1.1.1f configured -- resuming normal operations
+[Fri Apr 26 18:33:08.055228 2024] [core:notice] [pid 34:tid 140737476159360] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Fri Apr 26 18:48:04.749029 2024] [ssl:warn] [pid 34:tid 140737476159360] AH01906: local.ncsu.edu:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Fri Apr 26 18:48:04.794828 2024] [ssl:warn] [pid 34:tid 140737476159360] AH01906: local.ncsu.edu:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Fri Apr 26 18:48:04.798724 2024] [core:warn] [pid 34:tid 140737476159360] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Fri Apr 26 18:48:04.807873 2024] [mpm_event:notice] [pid 34:tid 140737476159360] AH00489: Apache/2.4.41 (Ubuntu) OpenSSL/1.1.1f configured -- resuming normal operations
+[Fri Apr 26 18:48:04.811070 2024] [core:notice] [pid 34:tid 140737476159360] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Sun Apr 28 20:33:06.848721 2024] [ssl:warn] [pid 34:tid 140737476159360] AH01906: local.ncsu.edu:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sun Apr 28 20:33:06.910659 2024] [ssl:warn] [pid 34:tid 140737476159360] AH01906: local.ncsu.edu:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sun Apr 28 20:33:06.914617 2024] [core:warn] [pid 34:tid 140737476159360] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sun Apr 28 20:33:06.916977 2024] [mpm_event:notice] [pid 34:tid 140737476159360] AH00489: Apache/2.4.41 (Ubuntu) OpenSSL/1.1.1f configured -- resuming normal operations
+[Sun Apr 28 20:33:06.920207 2024] [core:notice] [pid 34:tid 140737476159360] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'

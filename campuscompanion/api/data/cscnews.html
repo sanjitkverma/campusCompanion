@@ -1,0 +1,530 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="computer science, ncsu, nc state, cs, csc, cscncsu">
+<meta name="description" content="Department of Computer Science at NC State University">
+
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="cache-control" content="no-store" />
+<meta http-equiv="cache-control" content="must-revalidate" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta name="author" content="Brianna J. Lofton">
+
+<title>Department of Computer Science at North Carolina State University</title>
+<!-- NC State Bootstrap CSS -->
+<link href="https://cdn.ncsu.edu/brand-assets/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css" />
+<!-- jQuery 2.1.0 (NCSU Branding) -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<!-- Bootstrap JS (NCSU Branding) -->
+<script src="https://cdn.ncsu.edu/brand-assets/bootstrap/js/bootstrap.min.js"></script>
+<!-- Brand Utility Bar -->
+<script src="https://cdn.ncsu.edu/brand-assets/utility-bar/ub.php?googleCustomSearchCode=002901563088837147148:wfwx4csyomm&placeholder=search+csc.ncsu.edu&maxWidth=1170&color=gray&showBrick=1"></script>
+<!-- Web Fonts (NCSU Branding) -->
+<link href="https://cdn.ncsu.edu/brand-assets/fonts/include.css" rel="stylesheet" type="text/css" />
+<!-- favicon -->
+<link rel="icon" type="image/x-icon" href="https://brand.ncsu.edu/favicon.ico" />
+<!-- makes site printable -->
+<link rel="stylesheet" type="text/css" href="/print.css" media="print">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8ESTRZV6XC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8ESTRZV6XC');
+</script>
+
+<!-- <head> is left open for custom stylesheets and scripts -->
+
+
+<!-- Custom styles -->
+<link rel="stylesheet" type="text/css" href="../footer_brand.css">
+<link rel="stylesheet" type="text/css" href="../navbar_brand.css">
+<link rel="stylesheet" type="text/css" href="css_news.css">
+
+</head>
+
+<body>
+   
+   <div id="ncstate-utility-bar"></div>
+
+<script>
+	$(document).ready(() => {
+		console.log("tyler:",  window.location.href);
+		
+		const setActiveLink = (num) => {
+			for(let i = 1; i < 7; i++) {
+				if(i == num) {
+				   $(".bb:nth-child(" + num + ") > a").addClass("active_nav");
+				}
+				else {
+					$(".bb:nth-child(" + i + ") > a").removeClass("active_nav");
+				}
+			}
+		};
+		
+		if(window.location.href.includes("about_us.php")) {
+		    setActiveLink(1);
+		}
+		else if(window.location.href.includes("academics/")) {
+		    setActiveLink(2);
+		}
+		else if(window.location.href.includes("research/")) {
+		    setActiveLink(3);
+		}
+		else if(window.location.href.includes("directories/")) {
+		    setActiveLink(4);
+		}
+		else if(window.location.href.includes("news/")) {
+		    setActiveLink(5);
+		}
+		else if(window.location.href.includes("contactus.php")) {
+		    setActiveLink(6);
+		}
+	});
+</script>
+
+<!-- if $wide = 1, navbar will span the entire page (example: https://www.csc.ncsu.edu/webapps/admin/ra_appointments/admin/list.php) -->
+<div class="container"><div class="row">
+
+<nav class="navbar navar-default" role="navigation">
+	<div class="container-fluid">
+    	<div class="navbar-header">
+        	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsedNav">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+        	</button>
+        
+        	<a href="/index.php" class="navbar-brand">Computer Science</a> 
+        </div>
+		
+			<div class="collapse navbar-collapse" id="collapsedNav">
+				<ul class="nav navbar-nav">
+					<li class="bb"><a href="/about_us.php">About</a></li>
+					<li class="bb"><a href="/academics/index.php">Academics</a></li>
+					<li class="bb"><a href="/research/index.php">Research</a></li>
+					<li class="bb"><a href="/directories/index.php">People</a></li>
+                    <li class="bb"><a href="/news/index.php">News</a></li>
+                    <li class="bb"><a href="/contactus.php">Contact</a></li>
+				</ul>
+			</div>
+
+	</div>
+</nav>
+</div> <!-- end row -->
+
+
+<!-- .container closes in footer_brand.php -->
+
+
+<!-- #sidebar -->
+	
+<script>
+	$(function() {
+       $('#more_arc').click(function() {
+           $('#archives').toggle('fast');
+           return false;
+       });        
+   });
+</script>
+
+<div id="sidebar" class="col-sm-3 hidden-xs">
+
+	<ul>
+    	<li><a href="/news/index.php">CSC News</a></li>
+        <li><a href="/enews/index.php">CSC eNewsletter</a></li>
+        <li><a href="/news/features.php">Featured News</a></li>
+        <li><a href="/news/graduate.php">Graduate News</a></li>
+        <li><a href="/news/research.php">Research News</a></li>
+        <li><a href="/news/undergrad.php">Undergraduate News</a></li>
+        <li><a href="/news/inthenews/index.php">In the News</a></li>
+        <li><a href="/calendar/index.php">Lectures &amp; Seminars</a></li>
+        <li><a href="https://www.engr.ncsu.edu/news/" target="_blank">College of Engineering News</a></li>
+        <li><a href="https://news.ncsu.edu/tag/computer-science/" target="_blank">NC State CSC News</a></li>
+        <li><a href="https://news.ncsu.edu/" target="_blank">NC State News</a></li>
+        <li><a href="https://oit.ncsu.edu/category/oit-news/" target="_blank">OIT News</a></li>
+        <li><a href="https://sysnews.ncsu.edu/" target="_blank">NC State SYS News</a></li>
+        <li><a href="#" id="more_arc">News Archives</a></li>
+    </ul>
+    
+    
+    
+    
+    <ul id="archives" style="display: none;">
+        	<li><a href="/news/archives/2023">2023 News Archives</a></li>
+        	<li><a href="/news/archives/2022">2022 News Archives</a></li>
+        	<li><a href="/news/archives/2021">2021 News Archives</a></li>
+        	<li><a href="/news/archives/2020">2020 News Archives</a></li>
+        	<li><a href="/news/archives/2019">2019 News Archives</a></li>
+        	<li><a href="/news/archives/2018">2018 News Archives</a></li>
+        	<li><a href="/news/archives/2017">2017 News Archives</a></li>
+        	<li><a href="/news/archives/2016">2016 News Archives</a></li>
+        	<li><a href="/news/archives/2015">2015 News Archives</a></li>
+        	<li><a href="/news/archives/2014">2014 News Archives</a></li>
+        	<li><a href="/news/archives/2013">2013 News Archives</a></li>
+        	<li><a href="/news/archives/2012">2012 News Archives</a></li>
+        	<li><a href="/news/archives/2011">2011 News Archives</a></li>
+        	<li><a href="/news/archives/2010">2010 News Archives</a></li>
+        	<li><a href="/news/archives/2009">2009 News Archives</a></li>
+        	<li><a href="/news/archives/2008">2008 News Archives</a></li>
+        	<li><a href="/news/archives/2007">2007 News Archives</a></li>
+        	<li><a href="/news/archives/2006">2006 News Archives</a></li>
+        	<li><a href="/news/archives/2005">2005 News Archives</a></li>
+        	<li><a href="/news/archives/2004">2004 News Archives</a></li>
+        	<li><a href="/news/archives/2003">2003 News Archives</a></li>
+    <!--
+    	<li><a href="/news/archives/2017">2017 News Archives</a></li>
+    	<li><a href="/news/archives/2016">2016 News Archives</a></li>
+    	<li><a href="/news/archives/2015">2015 News Archives</a></li>	
+        <li><a href="/news/archives/2014">2014 News Archives</a></li>	
+        <li><a href="/news/archives/2013">2013 News Archives</a></li>	
+        <li><a href="/news/archives/2012">2012 News Archives</a></li>	
+        <li><a href="/news/archives/2011">2011 News Archives</a></li>
+        <li><a href="/news/archives/2010">2010 News Archives</a></li>	
+        <li><a href="/news/archives/2009">2009 News Archives</a></li>	
+        <li><a href="/news/archives/2008">2008 News Archives</a></li>	
+        <li><a href="/news/archives/2007">2007 News Archives</a></li>	
+        <li><a href="/news/archives/2006">2006 News Archives</a></li>	
+        <li><a href="/news/archives/2005">2005 News Archives</a></li>	
+        <li><a href="/news/archives/2004">2004 News Archives</a></li>	
+        <li><a href="/news/archives/2003">2003 News Archives</a></li>	
+        <li><a href="/news/archives/2002">2002 News Archives</a></li>	
+-->
+    </ul>
+
+</div>
+
+
+<!-- Content -->
+<div id="content" class="col-sm-9">
+				
+      <div class="top">
+            <h2>CSC News</h2>
+               
+                       
+               <form name="form" id="form" class="hidden-lg hidden-md hidden-sm news_jump">
+                  <select name="jumpMenu" id="jumpMenu" onchange="MM_jumpMenu('parent',this,0)">
+                  	<option value="index.php">CSC News</option>
+                    <option value="/enews/">CSC eNewsletter</option>
+                    <option value="https://news.ncsu.edu/tag/computer-science/">NC State CSC News</option>
+                    <option value="features.php">Featured News</option>
+                    <option value="graduate.php">Graduate News</option>
+                    <option value="research.php">Research News</option>
+                    <option value="undergrad.php">Undergraduate News</option>
+                    <option value="inthenews/index.php">In the News</option>
+                    <option value="/calendar/index.php">Lectures  &amp; Seminars</option>
+                    <option value="https://news.engr.ncsu.edu/">College of Engineering News</option>
+                    <option value="https://news.ncsu.edu/">NC State News</option>
+                    <option value="https://oit.ncsu.edu/category/oit-news/">OIT News</option>
+                    <option value="https://sysnews.ncsu.edu/">NC State SYS News</option>
+                    <option value="news_archives.php">News Archives</option>
+                  </select>
+               </form>
+               
+               
+        </div>
+               
+ <div id="main_news">
+ 
+  	
+ <h4>April 2024</h4><h6></h6>                    <div id="story">
+                    
+					<div class="img_block">
+                		<img src="https://www.csc.ncsu.edu/enews/images2/features/2588-thumb.jpg" alt="Thumbnail: news story 2588" class="story_img"/>
+					</div>
+					 
+                     <div class="headline_block">
+									<a href="/news/2588" style="font-family:UniversLight;"><h4 style="font-size: 18px;">Tillmans Establish Scholarship Endowment</h4></a><br />
+					<span class="blurb">
+					<h4 style="font-size: 14px";>CSC Alum and Hall of Fame inductee Jerry Tillman, and his wife, Courtney, have made a generous gift to provide scholarships to first generation engineering and computer science students from under-resourced communities.</h4> 
+					 						<h4 style="color: #c00;font-size: 14px;">4/18/24</h4></span>
+                        
+					 					 
+					 
+					 <span class="blurb_short">
+					<h4 style="font-size: 14px;">CSC Alum and Hall of Fame inductee Jerry Tillman, and his wife, Courtney, have made a gene...</h4>					 						<h4 style="color: #c00;font-size: 14px;">4/18/24</h4></span>
+					   
+                       					
+					</div></div>                    <div id="story">
+                    
+					<div class="img_block">
+                		<img src="https://www.csc.ncsu.edu/enews/images2/features/2587-thumb.jpg" alt="Thumbnail: news story 2587" class="story_img"/>
+					</div>
+					 
+                     <div class="headline_block">
+				<h4 style="font-size: 18px;">Feature:&nbsp;</h4>					<a href="/news/2587" style="font-family:UniversLight;"><h4 style="font-size: 18px;">Dr. Laurie Williams One of Four Faculty to Win Holladay Medal</h4></a><br />
+					<span class="blurb">
+					<h4 style="font-size: 14px";>Congratulations to Dr. Laurie Williams on being one of four NC State faculty members selected to receive the 2024 Alexander Quarles Holladay Medal for Excellence, the highest honor bestowed by NC State and the university’s Board of Trustees.</h4> 
+					 						<h4 style="color: #c00;font-size: 14px;">4/04/24</h4></span>
+                        
+					 					 
+					 
+					 <span class="blurb_short">
+					<h4 style="font-size: 14px;">Congratulations to Dr. Laurie Williams on being one of four NC State faculty members selec...</h4>					 						<h4 style="color: #c00;font-size: 14px;">4/04/24</h4></span>
+					   
+                       					
+					</div></div><div>&nbsp;</div><h4>March 2024</h4><h6></h6>                    <div id="story">
+                    
+					<div class="img_block">
+                		<img src="https://www.csc.ncsu.edu/enews/images2/features/2584-thumb.jpg" alt="Thumbnail: news story 2584" class="story_img"/>
+					</div>
+					 
+                     <div class="headline_block">
+									<a href="/news/2584" style="font-family:UniversLight;"><h4 style="font-size: 18px;">Computer Science Spring 2024 Diploma Ceremony Set for May 2nd</h4></a><br />
+					<span class="blurb">
+					<h4 style="font-size: 14px";>Congratulations Class of 2024!  Please join us on May 2nd as we celebrate our Spring 2024 graduates! The ceremony will be held in NC State’s Reynolds Coliseum at 2:00 p.m.</h4> 
+					 						<h4 style="color: #c00;font-size: 14px;">3/29/24</h4></span>
+                        
+					 					 
+					 
+					 <span class="blurb_short">
+					<h4 style="font-size: 14px;">Congratulations Class of 2024!  Please join us on May 2nd as we celebrate our Spring 2024 ...</h4>					 						<h4 style="color: #c00;font-size: 14px;">3/29/24</h4></span>
+					   
+                       					
+					</div></div>                    <div id="story">
+                    
+					<div class="img_block">
+                		<img src="https://www.csc.ncsu.edu/enews/images2/features/2585-thumb.jpg" alt="Thumbnail: news story 2585" class="story_img"/>
+					</div>
+					 
+                     <div class="headline_block">
+									<a href="/news/2585" style="font-family:UniversLight;"><h4 style="font-size: 18px;">Senior Design Center's Spring Posters & Pies Planned for April 26</h4></a><br />
+					<span class="blurb">
+					<h4 style="font-size: 14px";>Please join us as the NC State Computer Science Senior Design Center students showcase their work during our Spring “Posters & Pies” event on Friday, April 26th in NC State’s McKimmon Center.</h4> 
+					 						<h4 style="color: #c00;font-size: 14px;">3/29/24</h4></span>
+                        
+					 					 
+					 
+					 <span class="blurb_short">
+					<h4 style="font-size: 14px;">Please join us as the NC State Computer Science Senior Design Center students showcase the...</h4>					 						<h4 style="color: #c00;font-size: 14px;">3/29/24</h4></span>
+					   
+                       					
+					</div></div>                    <div id="story">
+                    
+					<div class="img_block">
+                		<img src="https://www.csc.ncsu.edu/enews/images2/features/2582-thumb.jpg" alt="Thumbnail: news story 2582" class="story_img"/>
+					</div>
+					 
+                     <div class="headline_block">
+									<a href="/news/2582" style="font-family:UniversLight;"><h4 style="font-size: 18px;">Three New Members Named to Strategic Advisory Board</h4></a><br />
+					<span class="blurb">
+					<h4 style="font-size: 14px";>This dynamic group of industry executives and academic leaders provide input and guidance that is critical to helping shape the computer science department’s strategic direction.</h4> 
+					 						<h4 style="color: #c00;font-size: 14px;">3/28/24</h4></span>
+                        
+					 					 
+					 
+					 <span class="blurb_short">
+					<h4 style="font-size: 14px;">This dynamic group of industry executives and academic leaders provide input and guidance ...</h4>					 						<h4 style="color: #c00;font-size: 14px;">3/28/24</h4></span>
+					   
+                       					
+					</div></div>                    <div id="story">
+                    
+					<div class="img_block">
+                		<img src="https://www.csc.ncsu.edu/enews/images2/features/2583-thumb.jpg" alt="Thumbnail: news story 2583" class="story_img"/>
+					</div>
+					 
+                     <div class="headline_block">
+									<a href="/news/2583" style="font-family:UniversLight;"><h4 style="font-size: 18px;">Assunção Wins Distinguished Paper Award at IEEE SANER Conference </h4></a><br />
+					<span class="blurb">
+					<h4 style="font-size: 14px";>Congratulations to Dr. Wesley K. G. Assunção and his co-authors on recently winning the IEEE Computer Society TCSE Distinguished Paper Award at the 31st IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER 2024).</h4> 
+					 						<h4 style="color: #c00;font-size: 14px;">3/28/24</h4></span>
+                        
+					 					 
+					 
+					 <span class="blurb_short">
+					<h4 style="font-size: 14px;">Congratulations to Dr. Wesley K. G. Assunção and his co-authors on recently winning the ...</h4>					 						<h4 style="color: #c00;font-size: 14px;">3/28/24</h4></span>
+					   
+                       					
+					</div></div>                    <div id="story">
+                    
+					<div class="img_block">
+                		<img src="https://www.csc.ncsu.edu/enews/images2/features/2579-thumb.jpg" alt="Thumbnail: news story 2579" class="story_img"/>
+					</div>
+					 
+                     <div class="headline_block">
+									<a href="/news/2579" style="font-family:UniversLight;"><h4 style="font-size: 18px;">Spring 2024 Carla Savage Award Winners Announced</h4></a><br />
+					<span class="blurb">
+					<h4 style="font-size: 14px";>Congratulations to Dr. Zhishan Guo, Dr. Dongkuan (DK) Xu, and Mr. Parvez Rashid who were named the Spring 2024 winners of The Carla Savage Award for their exceptional contributions to the NC State Department of Computer Science.</h4> 
+					 						<h4 style="color: #c00;font-size: 14px;">3/04/24</h4></span>
+                        
+					 					 
+					 
+					 <span class="blurb_short">
+					<h4 style="font-size: 14px;">Congratulations to Dr. Zhishan Guo, Dr. Dongkuan (DK) Xu, and Mr. Parvez Rashid who were n...</h4>					 						<h4 style="color: #c00;font-size: 14px;">3/04/24</h4></span>
+					   
+                       					
+					</div></div>                    <div id="story">
+                    
+					<div class="img_block">
+                		<img src="https://www.csc.ncsu.edu/enews/images2/features/2580-thumb.jpg" alt="Thumbnail: news story 2580" class="story_img"/>
+					</div>
+					 
+                     <div class="headline_block">
+				<h4 style="font-size: 18px;">Feature:&nbsp;</h4>					<a href="/news/2580" style="font-family:UniversLight;"><h4 style="font-size: 18px;">Will Our Best Teachers Be Robots?</h4></a><br />
+					<span class="blurb">
+					<h4 style="font-size: 14px";>AI could help even those who struggle the most learn better in the future, say computer scientists and educators James Lester and Noboru Matsuda.</h4> 
+					 						<h4 style="color: #c00;font-size: 14px;">3/04/24</h4></span>
+                        
+					 					 
+					 
+					 <span class="blurb_short">
+					<h4 style="font-size: 14px;">AI could help even those who struggle the most learn better in the future, say computer sc...</h4>					 						<h4 style="color: #c00;font-size: 14px;">3/04/24</h4></span>
+					   
+                       					
+					</div></div><div>&nbsp;</div><h4>February 2024</h4><h6></h6>                    <div id="story">
+                    
+					<div class="img_block">
+                		<img src="https://www.csc.ncsu.edu/enews/images2/features/2578-thumb.jpg" alt="Thumbnail: news story 2578" class="story_img"/>
+					</div>
+					 
+                     <div class="headline_block">
+									<a href="/news/2578" style="font-family:UniversLight;"><h4 style="font-size: 18px;">DK Xu Awarded Microsoft’s AFMR Award</h4></a><br />
+					<span class="blurb">
+					<h4 style="font-size: 14px";>Dr. Dongkuan (DK) Xu was recently honored with Microsoft’s AFMR Award for his ground-breaking research proposal that seeks to address the critical challenge of assessing the trustworthiness of large language models (LLMs).</h4> 
+					 						<h4 style="color: #c00;font-size: 14px;">2/29/24</h4></span>
+                        
+					 					 
+					 
+					 <span class="blurb_short">
+					<h4 style="font-size: 14px;">Dr. Dongkuan (DK) Xu was recently honored with Microsoft’s AFMR Award for his ground-bre...</h4>					 						<h4 style="color: #c00;font-size: 14px;">2/29/24</h4></span>
+					   
+                       					
+					</div></div>                    <div id="story">
+                    
+					<div class="img_block">
+                		<img src="https://www.csc.ncsu.edu/enews/images2/features/2575-thumb.jpg" alt="Thumbnail: news story 2575" class="story_img"/>
+					</div>
+					 
+                     <div class="headline_block">
+				<h4 style="font-size: 18px;">Feature:&nbsp;</h4>					<a href="/news/2575" style="font-family:UniversLight;"><h4 style="font-size: 18px;">Udo Sglavo of SAS Wraps Up the Spring Session of the Labcorp “Leadership in Technology” Speakers Series </h4></a><br />
+					<span class="blurb">
+					<h4 style="font-size: 14px";>Please join us on Tuesday, March 26th when Udo Sglavo, Vice President of Applied AI and Modeling R&D at SAS, will be our special guest speaker.</h4> 
+					 						<h4 style="color: #c00;font-size: 14px;">2/28/24</h4></span>
+                        
+					 					 
+					 
+					 <span class="blurb_short">
+					<h4 style="font-size: 14px;">Please join us on Tuesday, March 26th when Udo Sglavo, Vice President of Applied AI and Mo...</h4>					 						<h4 style="color: #c00;font-size: 14px;">2/28/24</h4></span>
+					   
+                       					
+					</div></div>                    <div id="story">
+                    
+					<div class="img_block">
+                		<img src="https://www.csc.ncsu.edu/enews/images2/features/2576-thumb.jpg" alt="Thumbnail: news story 2576" class="story_img"/>
+					</div>
+					 
+                     <div class="headline_block">
+									<a href="/news/2576" style="font-family:UniversLight;"><h4 style="font-size: 18px;">2024 Day of Giving Set for March 20th</h4></a><br />
+					<span class="blurb">
+					<h4 style="font-size: 14px";>Calling all CSC alumni, students, faculty, staff, and friends!  Help us hit 100 gifts and unlock a $10,000 challenge pledge by CSC alumnus, Tony Brown!</h4> 
+					 						<h4 style="color: #c00;font-size: 14px;">2/27/24</h4></span>
+                        
+					 					 
+					 
+					 <span class="blurb_short">
+					<h4 style="font-size: 14px;">Calling all CSC alumni, students, faculty, staff, and friends!  Help us hit 100 gifts and ...</h4>					 						<h4 style="color: #c00;font-size: 14px;">2/27/24</h4></span>
+					   
+                       					
+					</div></div>                    <div id="story">
+                    
+					<div class="img_block">
+                		<img src="https://www.csc.ncsu.edu/enews/images2/features/2577-thumb.jpg" alt="Thumbnail: news story 2577" class="story_img"/>
+					</div>
+					 
+                     <div class="headline_block">
+									<a href="/news/2577" style="font-family:UniversLight;"><h4 style="font-size: 18px;">Chi Named 2023-24 University Faculty Scholar</h4></a><br />
+					<span class="blurb">
+					<h4 style="font-size: 14px";>Dr. Min Chi, professor of computer science in the NC State Computer Science Department, has been named one of twenty-two 2023-24 University Faculty Scholars.</h4> 
+					 						<h4 style="color: #c00;font-size: 14px;">2/19/24</h4></span>
+                        
+					 					 
+					 
+					 <span class="blurb_short">
+					<h4 style="font-size: 14px;">Dr. Min Chi, professor of computer science in the NC State Computer Science Department, ha...</h4>					 						<h4 style="color: #c00;font-size: 14px;">2/19/24</h4></span>
+					   
+                       					
+					</div></div> <br />
+           
+</div>
+
+    
+    
+    <h4><a href="more_news.php">More News...</a></h4>
+    
+<div>
+<p style="text-align: center;clear:both;"><a href="https://webapps.csc.ncsu.edu/news/index.php">Submit news/announcements</a></p> </div>
+    	
+    	
+</div> <!-- End of Content -->
+						
+   
+   
+  
+	</div><!-- end container --> <!-- .container opens in navbar_brand.php -->
+ 
+     <div class="row container" style="margin: 0 auto;"> 
+
+<footer class="col-lg-12">
+    <div class="col-md-4 col-sm-6 L_footer">
+<!--    	<img src="https://www.csc.ncsu.edu/images/logo-900.jpg" alt="NC State University" alt="NCSU" width="100px" />-->
+		<a href="https://www.ncsu.edu" target="_blank"><img src="https://www.csc.ncsu.edu/images/ncsu_logo.svg" alt="NC State University" style="width: 120px; padding: 15px 0 0 10px;" /></a>
+        <p style="padding: 30px 0 20px 10px;">
+        <a href="https://www.csc.ncsu.edu/">Department of Computer Science</a><br />
+        <a href="https://www.engr.ncsu.edu/" target="_blank">College of Engineering</a><br />
+        Campus Box 8206<br />
+        890 Oval Drive<br />
+        Engineering Building II<br />
+        Raleigh, NC 27695<br />
+        </p>
+    </div>
+    
+    <div class="col-lg-4 col-md-3 col-sm-6 M_footer">
+    	<ul>
+            <li><a href="/contactus.php">Contact Us</a></li>
+            <li><a href="/employment/index.php">Employment</a></li>
+            <li><a href="/calendar/index.php">Events</a></li>
+            <li><a href="http://www.flickr.com/photos/cscncsu/albums" target="_blank">Gallery</a></li>
+        </ul>
+        <div class="social_media">
+            <a href="http://www.facebook.com/csc.ncsu" alt="NCSU CSC Facebook" target="_blank"><span class="glyphicon glyphicon-fb" data-alt="facebook"></span><span class="sr-only">Facebook</span></a>
+            <a href="http://www.twitter.com/cscncsu" alt="NCSU CSC Twitter" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style=" height: 25px; margin-right: 5px; color: white; padding-right: 10px; width: 40px;"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" fill="#ffffff"></path></svg><span class="sr-only">Twitter</span></a>
+            <a href="https://www.instagram.com/ncstatecsc/" alt="NCSU CSC Instagram" target="_blank"><span class="glyphicon glyphicon-instagram" data-alt="instagram"></span><span class="sr-only">Instagram</span></a>
+            <br />
+            <a href="http://go.ncsu.edu/csc-youtube\" alt="NCSU CSC YouTube" target="_blank"><span class="glyphicon glyphicon-youtube" data-alt="youtube"></span><span class="sr-only">YouTube</span></a>
+            <a href="http://www.linkedin.com/groups/1797254/" alt="NCSU CSC Linked In" target="_blank"><span class="glyphicon glyphicon-linkedin" data-alt="linked in"></span><span class="sr-only">Linked In</span></a>
+            <a href="http://www.flickr.com/photos/cscncsu" alt="NCSU CSC Flickr" target="_blank"><span class="glyphicon glyphicon-flickr" data-alt="flickr"></span><span class="sr-only">Flickr</span></a>
+        </div>
+        
+    </div>
+    
+    <div class="col-md-4 R_footer">
+    	<h6>Campus Map</h6>
+    	<a href="http://maps.ncsu.edu/#/buildings/eb2" target="_blank"><img src="https://www.csc.ncsu.edu/images/eb2_map.jpg" alt="EB2 Map" class="map" /></a>
+    </div>
+    
+    <h6 class="copyright">© 2024 NC State University. All rights reserved.<br /><a href="/about.php">About this site</a></h6>
+        
+</footer>
+
+</div>
+                
+<script>
+//for dropdown box
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+</script>                   
+</body>
+</html>

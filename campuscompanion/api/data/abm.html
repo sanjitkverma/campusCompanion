@@ -1,0 +1,418 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="computer science, ncsu, nc state, cs, csc, cscncsu">
+<meta name="description" content="Department of Computer Science at NC State University">
+
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="cache-control" content="no-store" />
+<meta http-equiv="cache-control" content="must-revalidate" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta name="author" content="Brianna J. Lofton">
+
+<title>Department of Computer Science at North Carolina State University</title>
+<!-- NC State Bootstrap CSS -->
+<link href="https://cdn.ncsu.edu/brand-assets/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css" />
+<!-- jQuery 2.1.0 (NCSU Branding) -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<!-- Bootstrap JS (NCSU Branding) -->
+<script src="https://cdn.ncsu.edu/brand-assets/bootstrap/js/bootstrap.min.js"></script>
+<!-- Brand Utility Bar -->
+<script src="https://cdn.ncsu.edu/brand-assets/utility-bar/ub.php?googleCustomSearchCode=002901563088837147148:wfwx4csyomm&placeholder=search+csc.ncsu.edu&maxWidth=1170&color=gray&showBrick=1"></script>
+<!-- Web Fonts (NCSU Branding) -->
+<link href="https://cdn.ncsu.edu/brand-assets/fonts/include.css" rel="stylesheet" type="text/css" />
+<!-- favicon -->
+<link rel="icon" type="image/x-icon" href="https://brand.ncsu.edu/favicon.ico" />
+<!-- makes site printable -->
+<link rel="stylesheet" type="text/css" href="/print.css" media="print">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8ESTRZV6XC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8ESTRZV6XC');
+</script>
+
+<!-- <head> is left open for custom stylesheets and scripts -->
+
+<!-- Custom styles -->
+<link rel="stylesheet" type="text/css" href="../../navbar_brand.css">
+<link rel="stylesheet" type="text/css" href="../../footer_brand.css">
+<link rel="stylesheet" type="text/css" href="css_undergrad.css">
+
+<style>
+	thead > tr {
+		background: #cc0000;
+		color: white;
+	}
+	
+	tr {
+		padding: 10px;
+		text-align: center;
+	}
+	
+	td {
+		width: 300px;
+		padding: 0 10px;
+		border: 1px black solid;
+	}
+	
+#main p, #main ul {font-size: 14px;}
+#undergrad_content h5 {font-size: 20px;
+	padding-top: 20px;
+	color: #900;}
+
+@media (max-width: 1200px) {
+	.subtitle {font-size: 28px;}
+}
+@media (max-width: 992px) {
+	.subtitle {font-size: 30px;}
+}
+@media (max-width: 767px) {
+	.subtitle {font-size: 24px;}
+}
+@media (max-width: 500px) {
+	.slogan {width: 90%;}
+}
+</style>
+
+</head>
+<body>
+
+	<div id="ncstate-utility-bar"></div>
+
+<script>
+	$(document).ready(() => {
+		console.log("tyler:",  window.location.href);
+		
+		const setActiveLink = (num) => {
+			for(let i = 1; i < 7; i++) {
+				if(i == num) {
+				   $(".bb:nth-child(" + num + ") > a").addClass("active_nav");
+				}
+				else {
+					$(".bb:nth-child(" + i + ") > a").removeClass("active_nav");
+				}
+			}
+		};
+		
+		if(window.location.href.includes("about_us.php")) {
+		    setActiveLink(1);
+		}
+		else if(window.location.href.includes("academics/")) {
+		    setActiveLink(2);
+		}
+		else if(window.location.href.includes("research/")) {
+		    setActiveLink(3);
+		}
+		else if(window.location.href.includes("directories/")) {
+		    setActiveLink(4);
+		}
+		else if(window.location.href.includes("news/")) {
+		    setActiveLink(5);
+		}
+		else if(window.location.href.includes("contactus.php")) {
+		    setActiveLink(6);
+		}
+	});
+</script>
+
+<!-- if $wide = 1, navbar will span the entire page (example: https://www.csc.ncsu.edu/webapps/admin/ra_appointments/admin/list.php) -->
+<div class="container"><div class="row">
+
+<nav class="navbar navar-default" role="navigation">
+	<div class="container-fluid">
+    	<div class="navbar-header">
+        	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsedNav">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+        	</button>
+        
+        	<a href="/index.php" class="navbar-brand">Computer Science</a> 
+        </div>
+		
+			<div class="collapse navbar-collapse" id="collapsedNav">
+				<ul class="nav navbar-nav">
+					<li class="bb"><a href="/about_us.php">About</a></li>
+					<li class="bb"><a href="/academics/index.php">Academics</a></li>
+					<li class="bb"><a href="/research/index.php">Research</a></li>
+					<li class="bb"><a href="/directories/index.php">People</a></li>
+                    <li class="bb"><a href="/news/index.php">News</a></li>
+                    <li class="bb"><a href="/contactus.php">Contact</a></li>
+				</ul>
+			</div>
+
+	</div>
+</nav>
+</div> <!-- end row -->
+
+
+<!-- .container closes in footer_brand.php -->
+    
+   
+
+	
+    <div id="undergrad_content" class="col-lg-12">
+    
+    	<div id="main" class="col-md-8 col-xs-12">
+            <h3 class="subtitle">Undergraduate Program - Accelerated Bachelor's / Master's (ABM) Degree</h3>
+            <p class="cont">
+            
+            
+            <p>The Accelerated Bachelor's/Master's (ABM) degree program allows exceptional undergraduate students at NC State an opportunity to complete the requirements for both the Bachelor's and Master's degrees at an accelerated pace. Undergraduates apply for the NC State Master of Computer Science (non-thesis) or Master of Science in Computer Science (thesis) while completing their Bachelor’s degree.  These undergraduate students may double count up to 12 credits of graduate course work towards both their Bachelor’s and Master's degrees and obtain a non-thesis Master's degree in the same field within 12 months of completing the Bachelor's degree or obtain a thesis based Master's degree in the same field within 18 months of completing the Bachelor's degree.</p>
+
+            <h5>Eligibility Requirements:</h5>
+            	<ul>
+                	<li>A minimum of seventy-five (75) credit hours in their undergraduate programs, including credits earned from advanced placement, and they must apply before completion of the undergraduate degree.</li>
+            		<li>Transfer students must have completed a minimum of two semesters as a full-time student at NC State, a minimum of 24 hours.</li>
+            		<li>Students must have a minimum accumulated grade point average (GPA) of 3.500 at NC State at the time of admission into the ABM degree program.</li>
+            	</ul>
+			<h5>Timeline</h5>
+			<table>
+				<thead>
+					<tr>
+						<td><b>Expected Undergraduate Graduation Term</b></td>
+						<td><b>Meet with Director of Undergraduate Advising no later than</b></td>
+						<td><b>ABM application deadline</b></td>
+						<td><b>Begin Graduate School</b></td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Spring/Summer 2025</td>
+						<td>March 15, 2024</td>
+						<td>May 1, 2024</td>
+						<td>Fall 2025</td>
+					</tr>
+					<tr>
+						<td>Fall 2025</td>
+						<td>September 1, 2024</td>
+						<td>October 15, 2024</td>
+						<td>Spring 2026</td>
+					</tr>
+					<tr>
+						<td>Spring/Summer 2026</td>
+						<td>March 16, 2025</td>
+						<td>May 1, 2025</td>
+						<td>Fall 2026</td>
+					</tr>
+					<tr>
+						<td>Fall 2026</td>
+						<td>September 1, 2025</td>
+						<td>October 15, 2025</td>
+						<td>Spring 2027</td>
+					</tr>
+				</tbody>
+			</table>
+			<h5>Interested in the ABM?</h5>
+			<p>Students should follow these four steps, in order:</p>
+			<ol>
+				<li>Review the information in the <a href="http://catalog.ncsu.edu/graduate/graduate-handbook/accelerated-bachelors-masters-program/" target="_blank">Graduate Handbook</a>.</li>
+				<li>Review the <a href="https://my.csc.ncsu.edu/dgp/services-info-for-students/applying-to-the-abm-program/" target="_blank">Graduate Program Office page</a>.</li>
+				<li>Complete the <a href="https://forms.gle/4x2nSwXYWyoWseKd6" target="_blank">ABM Interest Form</a></li>
+				<li>Attend <a href="/people/bjadams5" target="_blank">drop-in, no appointment needed office hours</a> with Dr. Adams to discuss the program and develop a plan. If none of her hours are convenient for your schedule, you may use the appointment request form.</li>
+			</ol>
+            <p>At this meeting, Dr. Adams will explain the correct timeline for you to:</p>
+			<ul>
+				<li>Apply to the Graduate School and pay the application fee.</li>
+				<li>Develop a Plan of Graduate Work to be signed by the Director of Undergraduate Advising <b>and</b> then the Director of the Graduate Program.</li>
+			</ul>
+                    
+        	<p><strong>Students applying for the program should read the description and rules carefully. The Department of Computer Science will not seek exceptions to the requirements and stipulations stated in the handbook.</strong></p>
+        
+        
+        	<h5>Degree Restrictions:</h5>
+        		<p>There are no changes or modifications in the bachelor’s degree requirements nor the master's degree requirements, except that up to four CSC 500 level courses (12 credits) that a student takes to satisfy the bachelor’s degree restricted elective requirement may be "double counted" toward also satisfying the master's degree requirements.</p>
+                    
+                <p>However, students may not receive credit for both with any of the following pairs of courses (the list is subject to revision):</p>
+				<ul>
+					  <li>CSC 302 and CSC 580</li>
+					  <li>CSC 401 and CSC 570 (Fall 2021 and earlier)</li>
+					  <li>CSC 401 and CSC 573 (Spring 2022 and later)</li>
+					  <li>CSC 411 and CSC 520</li>
+					  <li>CSC 412 and CSC 512</li>
+					  <li>CSC 413 and CSC 513</li>
+					  <li>CSC/MA 414 and CSC/MA 514</li>
+					  <li>CSC 415 and CSC 515</li>
+					  <li>CSC 419 and CSC 519</li>
+					  <li>CSC 422 and CSC 522</li>
+					  <li>CSC 433 and CSC 533</li>
+					  <li>CSC 440 and CSC 540</li>
+					  <li>CSC 451 and CSC 501</li>
+					  <li>CSC 454 and CSC 554</li>
+					  <li>CSC 455 and CSC 555</li>
+					  <li>CSC 456 and CSC 506</li>
+					  <li>CSC 461 and CSC 561</li>
+					  <li>CSC 462 and CSC 562</li>
+					  <li>CSC 463 and CSC 563</li>
+					  <li>CSC 467 and CSC 557</li>
+					  <li>CSC 474 and CSC 574</li>
+					  <li>CSC 484 and CSC 584</li>
+					  <li>CSC 495 and CSC 591 of the same topic/course title</li>
+				</ul>
+				<p>Undergraduate ABM and prospective ABM students may request their graduate classes by completing and submitting the <b>Graduate Class Request Form</b> available <a href="/academics/undergrad/advising/forms.php" target="_blank">here</a>.</p>
+
+				<p>The program description is in the <a href="http://catalog.ncsu.edu/graduate/graduate-handbook/accelerated-bachelors-masters-program/" target="_blank">Graduate Handbook</a>. This program will follow the ABM Program description and rules as recommended by the Administrative Board of the Graduate School on March 7, 2002, or as subsequently revised.</p>
+      
+        	<strong>Contact:</strong>
+     		<p><a href="https://www.csc.ncsu.edu/people/bjadams5" target="_blank">Dr. Barbara Jasmine Adams</a><br />
+                Director of Undergraduate Advising<br />
+				Department of Computer Science<br />
+				NC State University<br />
+				1204C-EB II<br />
+				Box 8206<br />
+				Raleigh, NC 27695-8206<br />
+				919-513-7888<br />
+				<a href="mailto:barbara_adams@ncsu.edu">barbara_adams@ncsu.edu</a><br />
+				<br />
+				and
+				<br /><br />
+				CSC Graduate Admissions
+				<a href="mailto:csc_gradadmissions@ncsu.edu">csc_gradadmissions@ncsu.edu</a>
+			</p>
+                        
+            
+            
+ <center>
+
+
+<img alt="Meet us at the intersection of technology and life" src="images/meet_us_slogan.jpg" width="400px" class="slogan" style="padding:100px 0 35px 0;" />
+</center>
+            
+            
+            
+          	</p>
+                  
+            
+        </div>
+        
+        
+    	<div id="menu" class="col-md-4 col-xs-12">
+
+    	<a style="color: white;" href="/future-students/"><button id="tfs" class="col-md-12 col-sm-12 
+       col-xs-12        students future"><h2>Future Students &#8594;</h2></button></a>
+        <a style="color: white;" href="/academics/students.php"><button id="tcs" class="col-md-12 col-sm-12 
+		col-xs-12		
+     students current"><h2>Current Students &#8594;</h2></button></a>
+
+     <div id="programs" class="col-md-12 col-sm-6 col-xs-12">
+        <h3 class="menu_header">Degrees and Programs</h3>
+        
+			<ul class="lists">
+            	<li>
+					<a href="/academics/undergrad/bs-csc.php">Bachelor of Science Degree in Computer Science</a>
+					<li style="margin-left: 30px;"><a href="/academics/undergrad/tracks/index.php">Undergraduate Degree Tracks</a></li>
+				</li>
+          		<li><a href="/academics/undergrad/bs-csc-gdc.php">Bachelor of Science in Computer Science - Game Development Concentration</a></li>
+		 		<li><a href="/academics/undergrad/bs-csc-cyber.php">Bachelor of Science in Computer Science - Cybersecurity Concentration</a></li>
+		 		<li><a href="/academics/undergrad/bs-csc-ai.php">Bachelor of Science in Computer Science - Artificial Intelligence</a></li>
+          		<li><a href="/academics/undergrad/minor.php">Computer Programming Minor</a></li>
+          		<li><a href="/academics/undergrad/bsms.php">Accelerated Bachelor's/Master's (ABM) Degree Program</a></li>
+          		<li><a href="/academics/undergrad/honors.php">CSC Honors Program</a></li>
+		 		<li><a href="/academics/undergrad/outcomes.php">BS in Computer Science - Objectives and Outcomes</a></li>
+            </ul>
+		</div>
+  	  
+<!--
+	<div id="certificate" class="col-md-12 col-sm-6 col-xs-12">
+        <h3 class="menu_header">Certificate</h3>
+			<ul class="lists">
+            	<li><a href="/academics/undergrad/certificate.php">Computer Programming Certificate for Post-baccalaureate Students</a></li>
+            </ul>
+		</div>
+-->
+
+    <div id="general_info" class="col-md-12 col-sm-6 col-xs-12">
+        <h3 class="menu_header">General Info</h3>
+        
+			<ul class="lists">
+				<li><a href="/academics/undergrad/advising/">Academic Advising</a></li>
+				<!-- <li><a href="https://my.csc.ncsu.edu/undergrad-advising/">Academic Advising</a></li> -->
+            	<li><a href="https://studentservices.ncsu.edu/calendars/academic/" target="_blank">Academic Calendars</a></li>
+				<li><a href="/academics/undergrad/cscenter.php">Computing Success Center</a></li>
+                <li><a href="coursework.php">Coursework</a></li>
+                <li><a href="/courses/index.php" target="_blank">Course Listings</a></li>
+ 				<li><a href="/academics/undergrad/tracks/entrepreneurship.php">Entrepreneurship</a></li>  
+				<li><a href="people.php">People</a></li>
+                <li><a href="policies.php">Policies</a></li>
+                <li><a href="/academics/students_financial.php" target="_blank">Scholarships &amp; Financial Aid</a></li>
+				<li><a href="/academics/undergrad/tracks/security.php">Security</a></li> 
+                <li><a href="/academics/undergrad/honor-societies.php">Student Honor Societies</a></li>
+                <li><a href="/academics/students_orgs.php" target="_blank">Student Organizations</a></li>
+                <li><a href="research.php">Undergraduate Research</a></li>
+                <li><a href="contact.php">Who to Contact</a></li>
+            </ul>
+		</div>
+ 	  
+ 	  	  
+</div>
+
+    
+    </div>
+    
+    
+      
+	</div><!-- end container --> <!-- .container opens in navbar_brand.php -->
+ 
+     <div class="row container" style="margin: 0 auto;"> 
+
+<footer class="col-lg-12">
+    <div class="col-md-4 col-sm-6 L_footer">
+<!--    	<img src="https://www.csc.ncsu.edu/images/logo-900.jpg" alt="NC State University" alt="NCSU" width="100px" />-->
+		<a href="https://www.ncsu.edu" target="_blank"><img src="https://www.csc.ncsu.edu/images/ncsu_logo.svg" alt="NC State University" style="width: 120px; padding: 15px 0 0 10px;" /></a>
+        <p style="padding: 30px 0 20px 10px;">
+        <a href="https://www.csc.ncsu.edu/">Department of Computer Science</a><br />
+        <a href="https://www.engr.ncsu.edu/" target="_blank">College of Engineering</a><br />
+        Campus Box 8206<br />
+        890 Oval Drive<br />
+        Engineering Building II<br />
+        Raleigh, NC 27695<br />
+        </p>
+    </div>
+    
+    <div class="col-lg-4 col-md-3 col-sm-6 M_footer">
+    	<ul>
+            <li><a href="/contactus.php">Contact Us</a></li>
+            <li><a href="/employment/index.php">Employment</a></li>
+            <li><a href="/calendar/index.php">Events</a></li>
+            <li><a href="http://www.flickr.com/photos/cscncsu/albums" target="_blank">Gallery</a></li>
+        </ul>
+        <div class="social_media">
+            <a href="http://www.facebook.com/csc.ncsu" alt="NCSU CSC Facebook" target="_blank"><span class="glyphicon glyphicon-fb" data-alt="facebook"></span><span class="sr-only">Facebook</span></a>
+            <a href="http://www.twitter.com/cscncsu" alt="NCSU CSC Twitter" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style=" height: 25px; margin-right: 5px; color: white; padding-right: 10px; width: 40px;"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" fill="#ffffff"></path></svg><span class="sr-only">Twitter</span></a>
+            <a href="https://www.instagram.com/ncstatecsc/" alt="NCSU CSC Instagram" target="_blank"><span class="glyphicon glyphicon-instagram" data-alt="instagram"></span><span class="sr-only">Instagram</span></a>
+            <br />
+            <a href="http://go.ncsu.edu/csc-youtube\" alt="NCSU CSC YouTube" target="_blank"><span class="glyphicon glyphicon-youtube" data-alt="youtube"></span><span class="sr-only">YouTube</span></a>
+            <a href="http://www.linkedin.com/groups/1797254/" alt="NCSU CSC Linked In" target="_blank"><span class="glyphicon glyphicon-linkedin" data-alt="linked in"></span><span class="sr-only">Linked In</span></a>
+            <a href="http://www.flickr.com/photos/cscncsu" alt="NCSU CSC Flickr" target="_blank"><span class="glyphicon glyphicon-flickr" data-alt="flickr"></span><span class="sr-only">Flickr</span></a>
+        </div>
+        
+    </div>
+    
+    <div class="col-md-4 R_footer">
+    	<h6>Campus Map</h6>
+    	<a href="http://maps.ncsu.edu/#/buildings/eb2" target="_blank"><img src="https://www.csc.ncsu.edu/images/eb2_map.jpg" alt="EB2 Map" class="map" /></a>
+    </div>
+    
+    <h6 class="copyright">© 2024 NC State University. All rights reserved.<br /><a href="/about.php">About this site</a></h6>
+        
+</footer>
+
+</div>
+
+
+
+</body>
+</html>

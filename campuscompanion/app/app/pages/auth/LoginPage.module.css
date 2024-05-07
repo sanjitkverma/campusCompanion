@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('/fonts/GlyphaLTPro45LtObl.TTF') format('truetype');
+}
+.customFont {
+    font-family: 'CustomFont';
+}
+
+.ncsuImage {
+    position: relative;
+    top: 0;
+    right: 400;
+    width: 700px; 
+    height: 100px; 
+    background-image: url('/ncstate-brick-4x1-blk-rgb.jpg');
+    background-size: cover; 
+    background-position: center;
+    z-index: 1; 
+    scale: .8;
+    margin-top: 30px;
+  }
+  .errorMessage {
+    position: absolute;
+    padding-left: 25px;
+    color: #848273;
+    margin-top: 60px;
+    font-size: 12px;
+    display: flex;
+    justify-content: left; 
+    color: red;
+  }
+
+  

@@ -1,0 +1,425 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="computer science, ncsu, nc state, cs, csc, cscncsu">
+<meta name="description" content="Department of Computer Science at NC State University">
+
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="cache-control" content="no-store" />
+<meta http-equiv="cache-control" content="must-revalidate" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta name="author" content="Brianna J. Lofton">
+
+<title>Department of Computer Science at North Carolina State University</title>
+<!-- NC State Bootstrap CSS -->
+<link href="https://cdn.ncsu.edu/brand-assets/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css" />
+<!-- jQuery 2.1.0 (NCSU Branding) -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<!-- Bootstrap JS (NCSU Branding) -->
+<script src="https://cdn.ncsu.edu/brand-assets/bootstrap/js/bootstrap.min.js"></script>
+<!-- Brand Utility Bar -->
+<script src="https://cdn.ncsu.edu/brand-assets/utility-bar/ub.php?googleCustomSearchCode=002901563088837147148:wfwx4csyomm&placeholder=search+csc.ncsu.edu&maxWidth=1170&color=gray&showBrick=1"></script>
+<!-- Web Fonts (NCSU Branding) -->
+<link href="https://cdn.ncsu.edu/brand-assets/fonts/include.css" rel="stylesheet" type="text/css" />
+<!-- favicon -->
+<link rel="icon" type="image/x-icon" href="https://brand.ncsu.edu/favicon.ico" />
+<!-- makes site printable -->
+<link rel="stylesheet" type="text/css" href="/print.css" media="print">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8ESTRZV6XC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8ESTRZV6XC');
+</script>
+
+<!-- <head> is left open for custom stylesheets and scripts -->
+
+<!-- Custom styles -->
+<link rel="stylesheet" type="text/css" href="../../navbar_brand.css">
+<link rel="stylesheet" type="text/css" href="../../footer_brand.css">
+<link rel="stylesheet" type="text/css" href="css_grad.css">
+
+<style>
+#main h4 {color: #c00;}
+</style>
+
+
+
+</head>
+<body>
+
+	<div id="ncstate-utility-bar"></div>
+
+<script>
+	$(document).ready(() => {
+		console.log("tyler:",  window.location.href);
+		
+		const setActiveLink = (num) => {
+			for(let i = 1; i < 7; i++) {
+				if(i == num) {
+				   $(".bb:nth-child(" + num + ") > a").addClass("active_nav");
+				}
+				else {
+					$(".bb:nth-child(" + i + ") > a").removeClass("active_nav");
+				}
+			}
+		};
+		
+		if(window.location.href.includes("about_us.php")) {
+		    setActiveLink(1);
+		}
+		else if(window.location.href.includes("academics/")) {
+		    setActiveLink(2);
+		}
+		else if(window.location.href.includes("research/")) {
+		    setActiveLink(3);
+		}
+		else if(window.location.href.includes("directories/")) {
+		    setActiveLink(4);
+		}
+		else if(window.location.href.includes("news/")) {
+		    setActiveLink(5);
+		}
+		else if(window.location.href.includes("contactus.php")) {
+		    setActiveLink(6);
+		}
+	});
+</script>
+
+<!-- if $wide = 1, navbar will span the entire page (example: https://www.csc.ncsu.edu/webapps/admin/ra_appointments/admin/list.php) -->
+<div class="container"><div class="row">
+
+<nav class="navbar navar-default" role="navigation">
+	<div class="container-fluid">
+    	<div class="navbar-header">
+        	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsedNav">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+        	</button>
+        
+        	<a href="/index.php" class="navbar-brand">Computer Science</a> 
+        </div>
+		
+			<div class="collapse navbar-collapse" id="collapsedNav">
+				<ul class="nav navbar-nav">
+					<li class="bb"><a href="/about_us.php">About</a></li>
+					<li class="bb"><a href="/academics/index.php">Academics</a></li>
+					<li class="bb"><a href="/research/index.php">Research</a></li>
+					<li class="bb"><a href="/directories/index.php">People</a></li>
+                    <li class="bb"><a href="/news/index.php">News</a></li>
+                    <li class="bb"><a href="/contactus.php">Contact</a></li>
+				</ul>
+			</div>
+
+	</div>
+</nav>
+</div> <!-- end row -->
+
+
+<!-- .container closes in footer_brand.php -->
+    
+   
+   
+    <div class="row jumbo" id="skip" tabindex="-1">
+		
+            
+             <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="7000" data-keyboard="true" aria-live="polite">
+    <ol class="carousel-indicators">
+       
+        				<li data-target="#carousel" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel" data-slide-to="1"></li>
+						<li data-target="#carousel" data-slide-to="2"></li>
+						<li data-target="#carousel" data-slide-to="3"></li>
+						<li data-target="#carousel" data-slide-to="4"></li>
+		       
+<!--
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+        <li data-target="#carousel" data-slide-to="3"></li>
+-->
+        
+    </ol>
+    
+    
+    <!-- Carousel items -->
+    <div class="carousel-inner" role="listbox">
+    
+    
+    
+                
+            <div class="item active">
+            
+                        	
+                <img src="/enews/images2/features/2587-large.jpg" alt="Banner image: news story 2587" style="clear:both;"/>
+            		         
+                    <div class="headline_container">     
+                        <h4 class="header">Dr. Laurie Williams One of Four Faculty to Win Holladay Medal</h4>
+                            
+                                  <a href="http://www.csc.ncsu.edu/news/2587"><span class="readmore">READ MORE</span></a>
+                                                
+                    </div>
+                    <h6 class="sm_headline"><a href="http://www.csc.ncsu.edu/news/2587">Dr. Laurie Williams One of Four Faculty to Win Holladay Medal</a></h6>
+                    </div>
+                   
+             <div class="item">
+			            	
+                <img src="/enews/images2/features/2561-large.jpg" alt="Banner image: news story 2561" style="clear:both;"/>
+            		         
+                    <div class="headline_container">     
+                        <h4 class="header">Department Honors Hall of Fame Inductees and Rising Stars</h4>
+                            
+                                  <a href="http://www.csc.ncsu.edu/news/2561"><span class="readmore">READ MORE</span></a>
+                                                
+                    </div>
+                    <h6 class="sm_headline"><a href="http://www.csc.ncsu.edu/news/2561">Department Honors Hall of Fame Inductees and Rising Stars</a></h6>
+                    </div>
+                   
+             <div class="item">
+			            	
+                <img src="/enews/images2/features/2544-large.jpg" alt="Banner image: news story 2544" style="clear:both;"/>
+            		         
+                    <div class="headline_container">     
+                        <h4 class="header">A New Weapon in the War on Robocall Scams</h4>
+                            
+                                  <a href="http://www.csc.ncsu.edu/news/2544"><span class="readmore">READ MORE</span></a>
+                                                
+                    </div>
+                    <h6 class="sm_headline"><a href="http://www.csc.ncsu.edu/news/2544">A New Weapon in the War on Robocall Scams</a></h6>
+                    </div>
+                   
+             <div class="item">
+			            	
+                <img src="/enews/images2/features/2535-large.jpg" alt="Banner image: news story 2535" style="clear:both;"/>
+            		         
+                    <div class="headline_container">     
+                        <h4 class="header">Singh Named SAS Institute Distinguished Professor of Computer Science</h4>
+                            
+                                  <a href="http://www.csc.ncsu.edu/news/2535"><span class="readmore">READ MORE</span></a>
+                                                
+                    </div>
+                    <h6 class="sm_headline"><a href="http://www.csc.ncsu.edu/news/2535">Singh Named SAS Institute Distinguished Professor of Computer Science</a></h6>
+                    </div>
+                   
+             <div class="item">
+			            	
+                <img src="/enews/images2/features/2528-large.jpg" alt="Banner image: news story 2528" style="clear:both;"/>
+            		         
+                    <div class="headline_container">     
+                        <h4 class="header">Lester Named Goodnight Distinguished University Professor</h4>
+                            
+                                  <a href="http://www.csc.ncsu.edu/news/2528"><span class="readmore">READ MORE</span></a>
+                                                
+                    </div>
+                    <h6 class="sm_headline"><a href="http://www.csc.ncsu.edu/news/2528">Lester Named Goodnight Distinguished University Professor</a></h6>
+                    </div>
+                   
+             
+            </div> 
+            
+            
+        
+    <!-- Carousel nav -->
+    <a class="carousel-control left" href="#carousel" role="button" data-slide="prev" aria-controls="carousel"><span class="glyphicon glyphicon-left-arrow" aria-hidden="true"></span><span class="sr-only">Previous</span></a>
+    <a class="carousel-control right" href="#carousel" role="button" data-slide="next" aria-controls="carousel"><span class="glyphicon glyphicon-right-arrow" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+	
+   
+    
+    </div>
+
+        
+    </div> <!-- end row -->
+    
+
+	
+    <div id="grad_content" class="col-lg-12">
+    
+    	<div id="main" class="col-md-8 col-xs-12">
+            <h3 class="subtitle">Graduate Program</h3>
+            <p class="cont">
+            <h4>What's special about our Graduate Program?</h4>
+                
+                <p>Our nationally recognized faculty consists of approximately 50
+                tenure-track professors, as well as a number of adjunct professors
+                and visiting lecturers, many of whom possess extensive experience in
+                industry. Included in this elite group of faculty are two Alumni
+                Distinguished Professors, twenty recipients of the National Science
+                Foundation's prestigious CAREER Award (which go to the nation's
+                outstanding young faculty), a member of the National Academy of
+                Engineering, a number of ACM and IEEE Fellows, and several
+                University Outstanding Teachers.</p>      
+                
+                <p>Graduate programs in Computer Science provide a variety of
+                excellent educational and research opportunities to 
+                students from across the U.S. and all over the world. Our
+                Master's Degree Program offers several options:
+                the Master of Science (thesis), the Master of Computer
+                Science (non-thesis, available via either distance learning or on-campus
+                enrollment,) and a Master of Computer Networking (thesis or non-thesis,
+                on campus or via distance learning). The flagship degree is
+                the Ph.D. in Computer Science, which prepares students for
+                leadership positions in academia, industry research labs, and government.
+                </p>          
+                
+                <p>All Graduate Programs within  the Department of Computer Science
+                are operated on NC State's Centennial  Campus, which is adjacent
+                to the University's Historic Campus in Raleigh, NC.  The NC State
+                Department of Computer Science now occupies a new building (Engineering
+                Building II - EB II) on Centennial Campus.
+                Several corporate headquarters, research &amp;
+                development labs, and satellite  offices are nestled among NC State
+                University teaching and research facilities  on Centennial Campus.
+                This extension of NC State was designed with the intent  of building
+                strong relationships and partnerships between the University and
+                area industry.</p>          
+                
+                <p>Raleigh, the state capital of North Carolina, is home to NC State
+                University and is consistently rated as one of "America's Best
+                Places to Live." Research Triangle Park, also referred to as RTP, is
+                a technological mecca of the East Coast that combines the needs
+                and resources of area industry with the teaching and research
+                capabilities of North Carolina State University, Duke University and
+                the University of North Carolina at Chapel Hill. Upon graduation, NC
+                State students have the advantage of close proximity to great
+                employment opportunities in this technologically oriented area.</p>          
+                
+                <p>We hope that you will be persuaded that the Computer Science
+                    Department at N.C. State University is the
+                    right place to get your graduate degree!  
+                </p>          
+                
+                <p>
+                For more about "Why N.C. State", and "Why Computer Science", see
+                <a href="http://www.csc.ncsu.edu/future-students/" target="blank"> for Computer Science Future Students</a>.
+                </p>
+            </p>
+                  
+            
+        </div>
+        
+        
+    	<div id="menu" class="col-md-4 col-xs-12">
+    	<a style="color: white;" href="/academics/graduate/future-students.php"><button class="col-md-12 col-sm-12 col-xs-12 students future"><h2>Future Students &#8594;</h2></button></a>
+							
+  <a style="color: white;" href="/academics/graduate/current-students.php"><button class="col-md-12 col-sm-12 col-xs-12 students current"><h2>Current Students &#8594;</h2></button></a>
+  			                 		
+		
+     <div id="degrees" class="col-md-12 col-sm-6 col-xs-12">
+        <h3 class="menu_header">Degrees</h3>
+        
+			<ul class="lists">
+            	<li><a href="/academics/graduate/degrees/phd.php">PhD</a></li>
+                <li><a href="/academics/graduate/degrees/ms.php">Master of Science</a></li>
+                <li><a href="/academics/graduate/degrees/mcs.php">Master of Computer Science</a></li>
+                <ul><li><a href="/academics/graduate/degrees/ds.php">Track in Data Science</a></li>
+                	<li><a href="/academics/graduate/degrees/security.php">Track in Security</a></li>
+                	<li><a href="/academics/graduate/degrees/se.php">Track in Software Engineering</a></li>
+                </ul>
+                <li><a href="/academics/graduate/degrees/mcsdl.php">Master of Computer Science (Distance Education)</a></li>
+                <li><a href="http://networking.ncsu.edu/" target="_blank">Master of Science in Computer Networking</a></li>
+                <li><a href="https://www.networking.ncsu.edu/distance-education/" target="_blank">Master of Science in Computer Networking (Distance Education)</a></li>
+            </ul>
+		</div>
+  	  
+      <div id="certificate" class="col-md-12 col-sm-6 col-xs-12">
+        <h3 class="menu_header">Certificate</h3>
+        
+			<ul class="lists">
+				<li><a href="/academics/graduate/degrees/cs.php">Computer Science</a></li>
+				<li><a href="/academics/graduate/degrees/cyber.php">Cybersecurity</a></li>
+            	<li><a href="/academics/graduate/degrees/dsf.php">Data Science Foundations</a></li>
+            </ul>
+		</div>
+        
+    <div id="general_info" class="col-md-12 col-sm-6 col-xs-12">
+        <h3 class="menu_header">General Info</h3>
+        
+			<ul class="lists">
+            	<li><a href="/academics/graduate/graduate_awards.php" target="_blank">Graduate Awards</a></li>
+            	<li><a href="https://studentservices.ncsu.edu/calendars/academic/" target="_blank">Academic Calendars</a></li>
+                <li><a href="/academics/graduate/people.php" target="_blank">People</a></li>
+                <li><a href="/academics/graduate/facts.php" target="_blank">Some Facts...</a></li>
+                <li><a href="/academics/graduate/contact.php" target="_blank">Who to Contact</a></li>
+                <li><a href="/news/graduate.php" target="_blank">Graduate Program News</a></li>
+	            <li><a href="https://grad.ncsu.edu/" target="_blank">The Graduate School</a></li>
+                <li><a href="https://catalog.ncsu.edu/graduate/graduate-handbook/" target="_blank">The Graduate Handbook</a></li>
+                <li><a href="/academics/students_orgs.php" target="_blank">Student Organizations</a></li>
+            </ul>
+		</div>
+  	  
+</div>
+    
+    </div>
+    
+    
+      
+	</div><!-- end container --> <!-- .container opens in navbar_brand.php -->
+ 
+     <div class="row container" style="margin: 0 auto;"> 
+
+<footer class="col-lg-12">
+    <div class="col-md-4 col-sm-6 L_footer">
+<!--    	<img src="https://www.csc.ncsu.edu/images/logo-900.jpg" alt="NC State University" alt="NCSU" width="100px" />-->
+		<a href="https://www.ncsu.edu" target="_blank"><img src="https://www.csc.ncsu.edu/images/ncsu_logo.svg" alt="NC State University" style="width: 120px; padding: 15px 0 0 10px;" /></a>
+        <p style="padding: 30px 0 20px 10px;">
+        <a href="https://www.csc.ncsu.edu/">Department of Computer Science</a><br />
+        <a href="https://www.engr.ncsu.edu/" target="_blank">College of Engineering</a><br />
+        Campus Box 8206<br />
+        890 Oval Drive<br />
+        Engineering Building II<br />
+        Raleigh, NC 27695<br />
+        </p>
+    </div>
+    
+    <div class="col-lg-4 col-md-3 col-sm-6 M_footer">
+    	<ul>
+            <li><a href="/contactus.php">Contact Us</a></li>
+            <li><a href="/employment/index.php">Employment</a></li>
+            <li><a href="/calendar/index.php">Events</a></li>
+            <li><a href="http://www.flickr.com/photos/cscncsu/albums" target="_blank">Gallery</a></li>
+        </ul>
+        <div class="social_media">
+            <a href="http://www.facebook.com/csc.ncsu" alt="NCSU CSC Facebook" target="_blank"><span class="glyphicon glyphicon-fb" data-alt="facebook"></span><span class="sr-only">Facebook</span></a>
+            <a href="http://www.twitter.com/cscncsu" alt="NCSU CSC Twitter" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style=" height: 25px; margin-right: 5px; color: white; padding-right: 10px; width: 40px;"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" fill="#ffffff"></path></svg><span class="sr-only">Twitter</span></a>
+            <a href="https://www.instagram.com/ncstatecsc/" alt="NCSU CSC Instagram" target="_blank"><span class="glyphicon glyphicon-instagram" data-alt="instagram"></span><span class="sr-only">Instagram</span></a>
+            <br />
+            <a href="http://go.ncsu.edu/csc-youtube\" alt="NCSU CSC YouTube" target="_blank"><span class="glyphicon glyphicon-youtube" data-alt="youtube"></span><span class="sr-only">YouTube</span></a>
+            <a href="http://www.linkedin.com/groups/1797254/" alt="NCSU CSC Linked In" target="_blank"><span class="glyphicon glyphicon-linkedin" data-alt="linked in"></span><span class="sr-only">Linked In</span></a>
+            <a href="http://www.flickr.com/photos/cscncsu" alt="NCSU CSC Flickr" target="_blank"><span class="glyphicon glyphicon-flickr" data-alt="flickr"></span><span class="sr-only">Flickr</span></a>
+        </div>
+        
+    </div>
+    
+    <div class="col-md-4 R_footer">
+    	<h6>Campus Map</h6>
+    	<a href="http://maps.ncsu.edu/#/buildings/eb2" target="_blank"><img src="https://www.csc.ncsu.edu/images/eb2_map.jpg" alt="EB2 Map" class="map" /></a>
+    </div>
+    
+    <h6 class="copyright">© 2024 NC State University. All rights reserved.<br /><a href="/about.php">About this site</a></h6>
+        
+</footer>
+
+</div>
+
+
+<script>
+$('.carousel').carousel();
+</script>
+</body>
+</html>

@@ -1,0 +1,2623 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="computer science, ncsu, nc state, cs, csc, cscncsu">
+<meta name="description" content="Department of Computer Science at NC State University">
+
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="cache-control" content="no-store" />
+<meta http-equiv="cache-control" content="must-revalidate" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta name="author" content="Brianna J. Lofton">
+
+<title>Department of Computer Science at North Carolina State University</title>
+<!-- NC State Bootstrap CSS -->
+<link href="https://cdn.ncsu.edu/brand-assets/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css" />
+<!-- jQuery 2.1.0 (NCSU Branding) -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<!-- Bootstrap JS (NCSU Branding) -->
+<script src="https://cdn.ncsu.edu/brand-assets/bootstrap/js/bootstrap.min.js"></script>
+<!-- Brand Utility Bar -->
+<script src="https://cdn.ncsu.edu/brand-assets/utility-bar/ub.php?googleCustomSearchCode=002901563088837147148:wfwx4csyomm&placeholder=search+csc.ncsu.edu&maxWidth=1170&color=gray&showBrick=1"></script>
+<!-- Web Fonts (NCSU Branding) -->
+<link href="https://cdn.ncsu.edu/brand-assets/fonts/include.css" rel="stylesheet" type="text/css" />
+<!-- favicon -->
+<link rel="icon" type="image/x-icon" href="https://brand.ncsu.edu/favicon.ico" />
+<!-- makes site printable -->
+<link rel="stylesheet" type="text/css" href="/print.css" media="print">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8ESTRZV6XC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8ESTRZV6XC');
+</script>
+
+<!-- <head> is left open for custom stylesheets and scripts -->
+
+<!-- Custom styles -->
+<link rel="stylesheet" type="text/css" href="../footer_brand.css">
+<link rel="stylesheet" type="text/css" href="../navbar_brand.css">
+
+<script>
+//for dropdown box
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+</script>
+
+<style>
+#profile {margin-left: 0;
+	margin-right: 0;}
+.top h2 {margin: 0 0 20px 3px;}
+.top form {float: right;}
+#main {clear: both;}
+.person {
+	display: inline-block; 
+	background-color: #f2f2f2;
+	padding: 20px 0 20px 20px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	width: 45%;
+	height: 160px;
+}
+.person h5 {margin-top: 0;}
+.person h6 {margin: 0 0 0 -15px;
+	font-family: "UniversLight";}
+.person_img, .info {float: left;}
+.person_img {padding-right: 10px;}
+
+
+@media (max-width: 1200px) {
+	#content {margin-left: -25px;}
+	.info {width: 65%;}
+}
+@media (max-width: 992px) {
+	#content {margin-left: 0;}
+	.person {width: 100%;}
+}
+@media (max-width: 767px) {
+	.top h2 span {float: left;}
+	.top form {float: left; clear: both; padding: 5px 0;}
+}
+@media (max-width: 620px) {
+	#sidebar {display: none;}
+	.news_jump {display: inherit;
+		float: right;}
+	#content {border-left: none;
+		padding-left: 15px;
+		width: 90%;}
+}
+@media (max-width: 525px) {
+	#content {margin-left: -20px;}
+}
+@media (max-width: 480px) {
+	.top form {float: left; clear: both; padding: 5px 0;}
+	#content {width: 95%;}
+	.info {width: 60%;}
+}
+@media (max-width: 350px) {
+	.news_jump {float: left;
+		margin-left: 15px;
+		clear: both;}
+	.top h2 {float: left;}
+}
+</style>
+<script>
+	function showHint(str) {
+	  var xhttp;
+	  if (str.length == 0) { 
+		document.getElementById("sfaculty").innerHTML = "";
+		return;
+	  }
+	  xhttp = new XMLHttpRequest();
+	  xhttp.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+
+		  document.getElementById("sfaculty").innerHTML = this.responseText; 
+
+		}
+	  };
+	  xhttp.open("GET", "search/people_search.php?q="+str, true);
+	  xhttp.send();
+	}
+</script>
+</head>
+
+<body>
+    <div id="ncstate-utility-bar"></div>
+
+<script>
+	$(document).ready(() => {
+		console.log("tyler:",  window.location.href);
+		
+		const setActiveLink = (num) => {
+			for(let i = 1; i < 7; i++) {
+				if(i == num) {
+				   $(".bb:nth-child(" + num + ") > a").addClass("active_nav");
+				}
+				else {
+					$(".bb:nth-child(" + i + ") > a").removeClass("active_nav");
+				}
+			}
+		};
+		
+		if(window.location.href.includes("about_us.php")) {
+		    setActiveLink(1);
+		}
+		else if(window.location.href.includes("academics/")) {
+		    setActiveLink(2);
+		}
+		else if(window.location.href.includes("research/")) {
+		    setActiveLink(3);
+		}
+		else if(window.location.href.includes("directories/")) {
+		    setActiveLink(4);
+		}
+		else if(window.location.href.includes("news/")) {
+		    setActiveLink(5);
+		}
+		else if(window.location.href.includes("contactus.php")) {
+		    setActiveLink(6);
+		}
+	});
+</script>
+
+<!-- if $wide = 1, navbar will span the entire page (example: https://www.csc.ncsu.edu/webapps/admin/ra_appointments/admin/list.php) -->
+<div class="container"><div class="row">
+
+<nav class="navbar navar-default" role="navigation">
+	<div class="container-fluid">
+    	<div class="navbar-header">
+        	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsedNav">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+        	</button>
+        
+        	<a href="/index.php" class="navbar-brand">Computer Science</a> 
+        </div>
+		
+			<div class="collapse navbar-collapse" id="collapsedNav">
+				<ul class="nav navbar-nav">
+					<li class="bb"><a href="/about_us.php">About</a></li>
+					<li class="bb"><a href="/academics/index.php">Academics</a></li>
+					<li class="bb"><a href="/research/index.php">Research</a></li>
+					<li class="bb"><a href="/directories/index.php">People</a></li>
+                    <li class="bb"><a href="/news/index.php">News</a></li>
+                    <li class="bb"><a href="/contactus.php">Contact</a></li>
+				</ul>
+			</div>
+
+	</div>
+</nav>
+</div> <!-- end row -->
+
+
+<!-- .container closes in footer_brand.php -->
+	
+	<!-- #sidebar -->
+		
+<style>
+#content {border-left: 1px solid #ccc;}
+.table-responsive {border: none;
+	margin-left: 20px;}
+.table tr {border-top: none;}
+td {font-family: "UniversCondensed";}
+#sidebar {margin-left: -15px;}
+#sidebar ul {line-height: 2;
+	font-family: "UniversLight";
+	font-size: 16px;
+	margin-top: 0;}
+#sidebar ul li:before {content: "";}
+.news_jump {display: none;}
+.top h2 {margin: 0 0 20px 20px;}
+
+
+@media (max-width: 1200px) {
+	#content {margin-left: -30px;}
+}
+@media (max-width: 992px) {
+	#content {margin-left: 0;}
+}
+@media (max-width: 768px) {
+	#sidebar {display: none;}
+	.news_jump {display: inherit;
+		float: right;}
+	#content {width: 100%;
+		margin-left: -30px;
+		border-left: none;}
+}
+@media (max-width: 480px) {
+	.news_jump {clear: both;
+		float: left;
+		margin-left: 15px;
+		margin-bottom: 10px;}	
+	.top h2 {font-size: 20px;
+		clear: both;}
+}
+</style>
+
+
+<div id="sidebar" class="col-lg-2 col-sm-3">
+
+	<ul>
+        					<li><a href="/directories/admin.php">Administration</a></li>
+									<li><a href="/directories/professors.php">Professors</a></li>
+									<li><a href="/directories/research_faculty.php">Research Faculty</a></li>
+									<li><a href="/directories/staff.php">Staff</a></li>
+									<li><a href="/directories/lecturer.php">Lecturers</a></li>
+									<li><a href="/directories/adjunct.php">Adjunct Faculty</a></li>
+									<li><a href="/directories/emeritus.php">Emeritus Faculty</a></li>
+									<li><a href="/directories/graduate_faculty.php">Graduate Faculty</a></li>
+									<li><a href="/directories/scholars.php">Visiting & Research Scholars</a></li>
+									<li><a href="/directories/faculty.php">All Faculty</a></li>
+									<li><a href="/directories/students.php" target="_blank">Students</a></li>
+									<li><a href="/alumni/" target="_blank">Alumni</a></li>
+									<li><a href="/directories/sab/">Strategic Advisory Board</a></li>
+				    </ul>
+
+</div>	
+	<!-- Content -->
+	<div id="content" class="col-sm-9">
+		<form name="form" id="form" class="news_jump">
+			<select name="jumpMenu" id="jumpMenu" onchange="MM_jumpMenu('parent',this,0)">
+								<option value="/directories/admin.php">Administration</option>
+							<option value="/directories/professors.php">Professors</option>
+							<option value="/directories/research_faculty.php">Research Faculty</option>
+							<option value="/directories/staff.php">Staff</option>
+							<option value="/directories/lecturer.php">Lecturers</option>
+							<option value="/directories/adjunct.php">Adjunct Faculty</option>
+							<option value="/directories/emeritus.php">Emeritus Faculty</option>
+							<option value="/directories/graduate_faculty.php">Graduate Faculty</option>
+							<option value="/directories/scholars.php">Visiting & Research Scholars</option>
+							<option value="/directories/faculty.php">All Faculty</option>
+							<option value="/directories/students.php">Students</option>
+							<option value="/alumni/">Alumni</option>
+							<option value="/directories/sab/">Strategic Advisory Board</option>
+						</select>
+		</form>
+		<div class="top">
+			<h2><span>CSC Directory</span>
+				<form>
+					<input type="text" class="form-control" id="" placeholder="Search People" onkeyup="showHint(this.value)">
+				</form>
+			</h2>
+		</div>
+        <div id="main">
+        	<div id="sfaculty" style="margin-left: 20px;"></div>
+			<div class="people_container">
+											<div class="person"> 
+														<img width="90px" src="/directories/photos/bjadams5.jpg" border="0" alt="Photo of B. Jasmine Adams" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/bjadams5">Dr.  B. Jasmine   Adams</a> 
+									</h5>
+									<ul>
+										<h6>
+											Director of Advising (Undergradua...										</h6>
+										<h6>1204C EB II</h6>
+										<h6>919-513-7888</h6>
+										<h6>barbara_adams@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/bakram.jpg" border="0" alt="Photo of Bita Akram" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/bakram">Dr.  Bita   Akram</a> 
+									</h5>
+									<ul>
+										<h6>
+											Assistant Research Professor										</h6>
+										<h6>403 Venture 4</h6>
+										<h6>919-515-3614</h6>
+										<h6>bakram@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/aallard.jpg" border="0" alt="Photo of Aimee Allard" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/aallard">Dr.  Aimee   Allard</a> 
+									</h5>
+									<ul>
+										<h6>
+											Communications Coordinator										</h6>
+										<h6>1222D EBII</h6>
+										<h6>919-515-7003</h6>
+										<h6>aallard@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/allen.jpg" border="0" alt="Photo of Carol Allen" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/allen">  Carol   Allen</a> 
+									</h5>
+									<ul>
+										<h6>
+											Administrative Support Associate										</h6>
+										<h6>3320 EB II</h6>
+										<h6>919-515-2858</h6>
+										<h6>allen@csc.ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/tandrew.jpg" border="0" alt="Photo of Tim Andrews" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/tandrew">  Tim   Andrews</a> 
+									</h5>
+									<ul>
+										<h6>
+											Linux Admin										</h6>
+										<h6>2208 EB II </h6>
+										<h6>919-513-4455</h6>
+										<h6>tandrew@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/kogan.jpg" border="0" alt="Photo of Kemafor Anyanwu Ogan" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/kogan">Dr.  Kemafor   Anyanwu Ogan</a> 
+									</h5>
+									<ul>
+										<h6>
+											Associate Professor										</h6>
+										<h6>2270 EB II</h6>
+										<h6>919-513-2850</h6>
+										<h6>kogan@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/wguezas.jpg" border="0" alt="Photo of Wesley K.G. Assuncao" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/wguezas">Dr.   Wesley K.G.   Assuncao</a> 
+									</h5>
+									<ul>
+										<h6>
+											Associate Professor										</h6>
+										<h6>3263 EB II</h6>
+										<h6>919-513-3666</h6>
+										<h6>wguezas@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/bahler.jpg" border="0" alt="Photo of Dennis  Bahler" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/bahler">Dr.  Dennis    Bahler</a> 
+									</h5>
+									<ul>
+										<h6>
+											Associate Professor Emeritus										</h6>
+										<h6></h6>
+										<h6></h6>
+										<h6>bahler@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/spbalik.jpg" border="0" alt="Photo of Suzanne Balik" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/spbalik">Dr.  Suzanne   Balik</a> 
+									</h5>
+									<ul>
+										<h6>
+											Assistant Teaching Professor										</h6>
+										<h6>250  - 111 Lampe Dr.</h6>
+										<h6>919-515-3654</h6>
+										<h6>spbalik@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/tmbarnes.jpg" border="0" alt="Photo of Tiffany Barnes" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/tmbarnes">Dr.  Tiffany   Barnes</a> 
+									</h5>
+									<ul>
+										<h6>
+											Distinguished Professor										</h6>
+										<h6>405 Venture 4</h6>
+										<h6>919-515-5764</h6>
+										<h6>tmbarnes@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/blank_profile_dark.jpg" border="0" alt="Blank profile photo"  class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/cjbarron">Ms.  Courtney   Barron</a> 
+									</h5>
+									<ul>
+										<h6>
+											Multimedia Specialist										</h6>
+										<h6>Research IV</h6>
+										<h6></h6>
+										<h6>cjbarron@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/cbatist4.jpg" border="0" alt="Photo of Caio Batista de Melo" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/cbatist4">Dr.  Caio   Batista de Melo</a> 
+									</h5>
+									<ul>
+										<h6>
+											Assistant Teaching Professor										</h6>
+										<h6>3322 EB II</h6>
+										<h6>919-513-5049</h6>
+										<h6>cbatist4@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/tbdimitr.jpg" border="0" alt="Photo of Lina Battestilli" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/tbdimitr">Dr.  Lina   Battestilli</a> 
+									</h5>
+									<ul>
+										<h6>
+											Associate Teaching Professor										</h6>
+										<h6>2256 EB II</h6>
+										<h6>919-513-0638</h6>
+										<h6>lbattestilli@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/cabenave.jpg" border="0" alt="Photo of Carlos Benavente" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/cabenave">Mr.  Carlos   Benavente</a> 
+									</h5>
+									<ul>
+										<h6>
+											IT Manager										</h6>
+										<h6>2210 EB II</h6>
+										<h6>919-515-1964</h6>
+										<h6>cabenave@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/bitzer.jpg" border="0" alt="Photo of Donald Bitzer" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/bitzer">Dr.  Donald   Bitzer</a> 
+									</h5>
+									<ul>
+										<h6>
+											Distinguished University Research...										</h6>
+										<h6>3302 EB II</h6>
+										<h6>919-515-3998</h6>
+										<h6></h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/blank_profile_dark.jpg" border="0" alt="Blank profile photo"  class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/kcsmith">  Kiresten   Branch</a> 
+									</h5>
+									<ul>
+										<h6>
+											Graduate Services Coordinator										</h6>
+										<h6>2308 EB II</h6>
+										<h6>919-515-8662</h6>
+										<h6>kcsmith@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/brglez.jpg" border="0" alt="Photo of Franc Brglez" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/brglez">Dr.  Franc   Brglez</a> 
+									</h5>
+									<ul>
+										<h6>
+											Research Professor										</h6>
+										<h6></h6>
+										<h6></h6>
+										<h6>brglez@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/blank_profile_dark.jpg" border="0" alt="Blank profile photo"  class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/abruno2">  Adrian   Bruno</a> 
+									</h5>
+									<ul>
+										<h6>
+											Web Developer										</h6>
+										<h6>2204 EB II</h6>
+										<h6>919-515-3235</h6>
+										<h6>abruno2@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/acard.jpg" border="0" alt="Photo of Alexander Card" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/acard">Dr.  Alexander   Card</a> 
+									</h5>
+									<ul>
+										<h6>
+											Assistant Teaching Professor										</h6>
+										<h6>2292 EB II</h6>
+										<h6>919-515-2017</h6>
+										<h6>acard@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/swcarter.jpg" border="0" alt="Photo of Samuel Carter" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/swcarter">Mr.  Samuel   Carter</a> 
+									</h5>
+									<ul>
+										<h6>
+											Adjunct										</h6>
+										<h6>Friday Institute 127</h6>
+										<h6>919-513-8514</h6>
+										<h6>swcarter@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/bacassel.jpg" border="0" alt="Photo of Kara Cassell" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/bacassel">Dr.  Kara   Cassell</a> 
+									</h5>
+									<ul>
+										<h6>
+											Research Scholar										</h6>
+										<h6>Research IV</h6>
+										<h6></h6>
+										<h6>bacassel@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/vmcatete.jpg" border="0" alt="Photo of Veronica Catete" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/vmcatete">Dr.  Veronica   Catete</a> 
+									</h5>
+									<ul>
+										<h6>
+											Assistant Professor										</h6>
+										<h6>410 Venture 4</h6>
+										<h6>919-513-6569</h6>
+										<h6>vmcatete@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/mchi.jpg" border="0" alt="Photo of Min Chi" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/mchi">Dr.  Min   Chi</a> 
+									</h5>
+									<ul>
+										<h6>
+											Professor										</h6>
+										<h6>1627 Research IV</h6>
+										<h6>919-515-7825</h6>
+										<h6>mchi@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/rchilla.jpg" border="0" alt="Photo of Ram Chillarege" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/rchilla">Dr.  Ram   Chillarege</a> 
+									</h5>
+									<ul>
+										<h6>
+																					</h6>
+										<h6></h6>
+										<h6></h6>
+										<h6>rchilla@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/rychirko.jpg" border="0" alt="Photo of Rada  Chirkova" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/rychirko">Dr.  Rada    Chirkova</a> 
+									</h5>
+									<ul>
+										<h6>
+											Professor										</h6>
+										<h6>2276 EB II</h6>
+										<h6>919-513-3506</h6>
+										<h6>chirkova@csc.ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/chou.jpg" border="0" alt="Photo of Wu-show Chou" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/chou">Dr.  Wu-show   Chou</a> 
+									</h5>
+									<ul>
+										<h6>
+											Professor Emeritus										</h6>
+										<h6></h6>
+										<h6></h6>
+										<h6>chou@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/blank_profile_dark.jpg" border="0" alt="Blank profile photo"  class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/mtchu">Dr.  Moody   Chu</a> 
+									</h5>
+									<ul>
+										<h6>
+											Associate Faculty										</h6>
+										<h6>4112 SAS</h6>
+										<h6>919-515-3265</h6>
+										<h6>chu@math.ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/tscoates.jpg" border="0" alt="Photo of Tammy Coates" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/tscoates">  Tammy   Coates</a> 
+									</h5>
+									<ul>
+										<h6>
+											Asst. Director of External Relati...										</h6>
+										<h6>1204D EB II</h6>
+										<h6>919-513-7183</h6>
+										<h6>tscoates@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/blank_profile_dark.jpg" border="0" alt="Blank profile photo"  class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/jcrume">Dr.  Jeff   Crume</a> 
+									</h5>
+									<ul>
+										<h6>
+											Teaching Adjunct										</h6>
+										<h6></h6>
+										<h6></h6>
+										<h6>jcrume@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/mdamori.jpg" border="0" alt="Photo of Marcelo D'Amorim" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/mdamori">Dr.   Marcelo   D'Amorim</a> 
+									</h5>
+									<ul>
+										<h6>
+											Associate Professor										</h6>
+										<h6>3270 EB II</h6>
+										<h6>919-515-3644</h6>
+										<h6>mdamori@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/adagnin.jpg" border="0" alt="Photo of Aldo Dagnino" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/adagnin">Dr.  Aldo   Dagnino</a> 
+									</h5>
+									<ul>
+										<h6>
+											Adjunct Assistant Professor										</h6>
+										<h6></h6>
+										<h6></h6>
+										<h6>adagnin@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/tdang3.jpg" border="0" alt="Photo of Trung Dang" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/tdang3">  Trung   Dang</a> 
+									</h5>
+									<ul>
+										<h6>
+											Desktop Support Administrator										</h6>
+										<h6>2202 EB II</h6>
+										<h6>919-513-0423</h6>
+										<h6>tdang3@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/adas8.jpg" border="0" alt="Photo of Anupam Das" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/adas8">Dr.  Anupam   Das</a> 
+									</h5>
+									<ul>
+										<h6>
+											Assistant Professor										</h6>
+										<h6>2240G EB II</h6>
+										<h6>919-515-2683</h6>
+										<h6>anupam.das@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/davis.jpg" border="0" alt="Photo of Edward W. Davis" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/davis">Dr.  Edward W.   Davis</a> 
+									</h5>
+									<ul>
+										<h6>
+											Professor Emeritus										</h6>
+										<h6></h6>
+										<h6></h6>
+										<h6>davis@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/ixdoming.jpg" border="0" alt="Photo of Ignacio Dominguez" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/ixdoming">Dr.  Ignacio   Dominguez</a> 
+									</h5>
+									<ul>
+										<h6>
+											Assistant Teaching Professor										</h6>
+										<h6>3256 EB II</h6>
+										<h6>919-515-7354</h6>
+										<h6>ignacioxd@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/jdoyle2.jpg" border="0" alt="Photo of Jon Doyle" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/jdoyle2">Dr.  Jon   Doyle</a> 
+									</h5>
+									<ul>
+										<h6>
+											Professor Emeritus										</h6>
+										<h6></h6>
+										<h6></h6>
+										<h6>jdoyle2@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/rdutta.jpg" border="0" alt="Photo of Rudra Dutta" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/rdutta">Dr.  Rudra   Dutta</a> 
+									</h5>
+									<ul>
+										<h6>
+											Associate Department Head										</h6>
+										<h6>2402C EB 3</h6>
+										<h6>919-515-8650</h6>
+										<h6>rdutta@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/whenck.jpg" border="0" alt="Photo of William Enck" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/whenck">Dr.  William   Enck</a> 
+									</h5>
+									<ul>
+										<h6>
+											Professor										</h6>
+										<h6>2240M EB II</h6>
+										<h6>919-513-7905</h6>
+										<h6>whenck@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/fornaro.jpg" border="0" alt="Photo of Robert Fornaro" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/fornaro">Dr.  Robert   Fornaro</a> 
+									</h5>
+									<ul>
+										<h6>
+											Professor Emeritus										</h6>
+										<h6></h6>
+										<h6></h6>
+										<h6>fornaro@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/ctgardne.jpg" border="0" alt="Photo of Todd  Gardner" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/ctgardne">Mr.  Todd    Gardner</a> 
+									</h5>
+									<ul>
+										<h6>
+											Director of Operations										</h6>
+										<h6>3252 EB II</h6>
+										<h6>919-515-7001</h6>
+										<h6>ctgardne@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/agaweda.jpg" border="0" alt="Photo of Adam Gaweda" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/agaweda">Dr.  Adam   Gaweda</a> 
+									</h5>
+									<ul>
+										<h6>
+											Assistant Teaching Professor										</h6>
+										<h6>2409 EB 3</h6>
+										<h6>919-515-3931</h6>
+										<h6>agaweda@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/efg.jpg" border="0" alt="Photo of Edward Gehringer" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/efg">Dr.  Edward   Gehringer</a> 
+									</h5>
+									<ul>
+										<h6>
+											Professor										</h6>
+										<h6>2298 EB II</h6>
+										<h6>919-515-2066</h6>
+										<h6>efg@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/blank_profile_dark.jpg" border="0" alt="Blank profile photo"  class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/mlglatz">Ms  Michelle   Glatz</a> 
+									</h5>
+									<ul>
+										<h6>
+																					</h6>
+										<h6></h6>
+										<h6></h6>
+										<h6>mlglatz@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/cglover3.jpg" border="0" alt="Photo of Cara Glover" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/cglover3">  Cara   Glover</a> 
+									</h5>
+									<ul>
+										<h6>
+											Graduate Admissions Specialist										</h6>
+										<h6>2313 EB II</h6>
+										<h6>919-513-3038</h6>
+										<h6>cglover3@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/xgu.jpg" border="0" alt="Photo of Xiaohui (Helen) Gu" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/xgu">Dr.  Xiaohui (Helen)   Gu</a> 
+									</h5>
+									<ul>
+										<h6>
+											Professor										</h6>
+										<h6>3274 EB II</h6>
+										<h6>919-515-7045</h6>
+										<h6>gu@csc.ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/zguo32.jpg" border="0" alt="Photo of Zhishan Guo" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/zguo32">  Zhishan   Guo</a> 
+									</h5>
+									<ul>
+										<h6>
+											Associate Professor										</h6>
+										<h6>2262 EB II</h6>
+										<h6>919-515-3962</h6>
+										<h6>zguo32@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/alrose.jpg" border="0" alt="Photo of Ashley Hamilton" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/alrose">Ms.  Ashley   Hamilton</a> 
+									</h5>
+									<ul>
+										<h6>
+											Undergraduate Academic Advisor										</h6>
+										<h6>219C - 111 Lampe Dr.</h6>
+										<h6>919-513-2711</h6>
+										<h6>alrose@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/ahaque3.jpg" border="0" alt="Photo of Abida Haque" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/ahaque3">Dr.  Abida   Haque</a> 
+									</h5>
+									<ul>
+										<h6>
+											Assistant Teaching Professor										</h6>
+										<h6>223  - 111 Lampe Dr.</h6>
+										<h6>919-513-7973</h6>
+										<h6>ahaque3@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/kaharfou.jpg" border="0" alt="Photo of Khaled Harfoush" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/kaharfou">Dr.  Khaled   Harfoush</a> 
+									</h5>
+									<ul>
+										<h6>
+											Associate Professor										</h6>
+										<h6>2413 EB 3</h6>
+										<h6>919-513-7017</h6>
+										<h6>harfoush@csc.ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/healey.jpg" border="0" alt="Photo of Christopher  Healey" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/healey">Dr.  Christopher    Healey</a> 
+									</h5>
+									<ul>
+										<h6>
+											Goodnight Distinguished Professor										</h6>
+										<h6>2266 EB II</h6>
+										<h6>919-513-8112</h6>
+										<h6>healey@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/sheber.jpg" border="0" alt="Photo of Steffen Heber" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/sheber">Dr.  Steffen   Heber</a> 
+									</h5>
+									<ul>
+										<h6>
+											Professor										</h6>
+										<h6>2260 EB II</h6>
+										<h6>919-513-1118 & 3-2726</h6>
+										<h6>sheber@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/sesmith5.jpg" border="0" alt="Photo of Sarah Heckman" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/sesmith5">Dr.  Sarah   Heckman</a> 
+									</h5>
+									<ul>
+										<h6>
+											Director of Undergraduate Program...										</h6>
+										<h6>2299 EB II</h6>
+										<h6>919-515-2042</h6>
+										<h6>sarah_heckman@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/heil.jpg" border="0" alt="Photo of Margaret Heil" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/heil">Ms.  Margaret   Heil</a> 
+									</h5>
+									<ul>
+										<h6>
+											 Director, Senior Design Center										</h6>
+										<h6>1202A EB II</h6>
+										<h6>919-515-6020</h6>
+										<h6>heil@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/mehill6.jpg" border="0" alt="Photo of Marnie Hill" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/mehill6">  Marnie   Hill</a> 
+									</h5>
+									<ul>
+										<h6>
+											Program Manager										</h6>
+										<h6>413 Venture 4</h6>
+										<h6>919-513-6741</h6>
+										<h6>mehill6@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/blank_profile_dark.jpg" border="0" alt="Blank profile photo"  class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/lshoneyc">Mrs.  Linda   Honeycutt</a> 
+									</h5>
+									<ul>
+										<h6>
+											Dept Office Manager										</h6>
+										<h6>3310 EB II</h6>
+										<h6>919-515-7926</h6>
+										<h6>lshoneyc@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/honeycut.jpg" border="0" alt="Photo of Thomas L. Honeycutt" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/honeycut">Dr.  Thomas L.   Honeycutt</a> 
+									</h5>
+									<ul>
+										<h6>
+											Associate Professor Emeritus										</h6>
+										<h6></h6>
+										<h6></h6>
+										<h6>honeycut@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/jajenni3.jpg" border="0" alt="Photo of Jamie Jennings" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/jajenni3">Dr.  Jamie   Jennings</a> 
+									</h5>
+									<ul>
+										<h6>
+											Associate Teaching Professor										</h6>
+										<h6>2304 EB II</h6>
+										<h6>919-515-3208</h6>
+										<h6>jjennings@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/ahjhala.jpg" border="0" alt="Photo of Arnav Jhala" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/ahjhala">Dr.  Arnav   Jhala</a> 
+									</h5>
+									<ul>
+										<h6>
+											Associate Professor										</h6>
+										<h6>402 Venture 4</h6>
+										<h6>919-513-6698</h6>
+										<h6>ahjhala@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/sjiao2.jpg" border="0" alt="Photo of Shuyin Jiao" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/sjiao2">Dr.  Shuyin   Jiao</a> 
+									</h5>
+									<ul>
+										<h6>
+											Assistant Teaching Professor										</h6>
+										<h6>2297 EB II</h6>
+										<h6>919-515-9457</h6>
+										<h6>sjiao2@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/gjin2.jpg" border="0" alt="Photo of Guoliang Jin" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/gjin2">Dr.  Guoliang   Jin</a> 
+									</h5>
+									<ul>
+										<h6>
+											Adjunct Faculty										</h6>
+										<h6></h6>
+										<h6></h6>
+										<h6>gjin2@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/akaprav.jpg" border="0" alt="Photo of Alexandros Kapravelos" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/akaprav">Dr.  Alexandros   Kapravelos</a> 
+									</h5>
+									<ul>
+										<h6>
+											Associate Professor										</h6>
+										<h6>2240K EB II</h6>
+										<h6>919-513-4457</h6>
+										<h6>akaprav@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/jkim227.jpg" border="0" alt="Photo of Jung-Eun Kim" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/jkim227">Dr.  Jung-Eun   Kim</a> 
+									</h5>
+									<ul>
+										<h6>
+											Assistant Professor										</h6>
+										<h6>3298 EB II</h6>
+										<h6>919-515-5535</h6>
+										<h6>jung-eun.kim@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/ykim32.jpg" border="0" alt="Photo of Yeo Jin Kim" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/ykim32">Dr.   Yeo Jin   Kim</a> 
+									</h5>
+									<ul>
+										<h6>
+											Research Scholar										</h6>
+										<h6>1629 Research IV</h6>
+										<h6></h6>
+										<h6>ykim32@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/jtking.jpg" border="0" alt="Photo of Jason King" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/jtking">Dr.  Jason   King</a> 
+									</h5>
+									<ul>
+										<h6>
+											Associate Teaching Professor										</h6>
+										<h6>2258 EB II</h6>
+										<h6>919-515-8954</h6>
+										<h6>jtking@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/blank_profile_dark.jpg" border="0" alt="Blank profile photo"  class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/vkumara">  Vikram   Kumaran</a> 
+									</h5>
+									<ul>
+										<h6>
+											Research Scholar										</h6>
+										<h6>Research IV</h6>
+										<h6></h6>
+										<h6>vkumara@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/skuttal.jpg" border="0" alt="Photo of Sandeep Kuttal" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/skuttal">Dr.  Sandeep   Kuttal</a> 
+									</h5>
+									<ul>
+										<h6>
+											Associate Professor										</h6>
+										<h6>3264 EB II</h6>
+										<h6>919-513-7543</h6>
+										<h6>skuttal@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/clee45.jpg" border="0" alt="Photo of Chin Ho Lee" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/clee45">Dr.  Chin Ho   Lee</a> 
+									</h5>
+									<ul>
+										<h6>
+											Assistant Professor										</h6>
+										<h6>3292 EB II</h6>
+										<h6>919-513-3631</h6>
+										<h6>clee45@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/sylee.jpg" border="0" alt="Photo of Seung Lee" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/sylee">Dr.  Seung   Lee</a> 
+									</h5>
+									<ul>
+										<h6>
+											Research Scholar										</h6>
+										<h6>1647 Research IV</h6>
+										<h6></h6>
+										<h6>sylee@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/lester.jpg" border="0" alt="Photo of James  Lester" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/lester">Dr.  James    Lester</a> 
+									</h5>
+									<ul>
+										<h6>
+											Goodnight Distinguished Universit...										</h6>
+										<h6>1641 Research IV</h6>
+										<h6>919-515-7534</h6>
+										<h6>lester@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/jli256.jpg" border="0" alt="Photo of Jiajia Li" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/jli256">Dr.  Jiajia   Li</a> 
+									</h5>
+									<ul>
+										<h6>
+											Assistant Professor										</h6>
+										<h6>3260 EB II</h6>
+										<h6>919-515-0064</h6>
+										<h6>jli256@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/jliu96.jpg" border="0" alt="Photo of Jianqing Liu" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/jliu96">Dr.  Jianqing   Liu</a> 
+									</h5>
+									<ul>
+										<h6>
+											Assistant Professor										</h6>
+										<h6>2401 EB 3</h6>
+										<h6>919-515-2179</h6>
+										<h6>jliu96@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/xliu96.jpg" border="0" alt="Photo of Xiaorui Liu" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/xliu96">Dr.   Xiaorui   Liu</a> 
+									</h5>
+									<ul>
+										<h6>
+											Assistant Professor										</h6>
+										<h6>2296 EB II</h6>
+										<h6>919-513-7196</h6>
+										<h6>xliu96@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/xliu88.jpg" border="0" alt="Photo of Xu Liu" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/xliu88">Dr.  Xu   Liu</a> 
+									</h5>
+									<ul>
+										<h6>
+											Associate Professor										</h6>
+										<h6>3272 EB II</h6>
+										<h6>919-515-9605</h6>
+										<h6>xliu88@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/yliu335.jpg" border="0" alt="Photo of Yuan Liu" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/yliu335">Dr.  Yuan   Liu</a> 
+									</h5>
+									<ul>
+										<h6>
+											Assistant Professor										</h6>
+										<h6>2064 EB II</h6>
+										<h6>919-515-7360</h6>
+										<h6>yliu335@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/yliu322.jpg" border="0" alt="Photo of Yuchen Liu" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/yliu322">Dr.   Yuchen   Liu</a> 
+									</h5>
+									<ul>
+										<h6>
+											Assistant Professor										</h6>
+										<h6>2407 EB 3</h6>
+										<h6>919-515-3412</h6>
+										<h6>yliu322@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/kmluca.jpg" border="0" alt="Photo of Kathy Luca" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/kmluca">Ms.  Kathy   Luca</a> 
+									</h5>
+									<ul>
+										<h6>
+											Graduate Program Support Speciali...										</h6>
+										<h6></h6>
+										<h6></h6>
+										<h6>kmluca@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/cflynch.jpg" border="0" alt="Photo of Collin Lynch" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/cflynch">Dr.  Collin   Lynch</a> 
+									</h5>
+									<ul>
+										<h6>
+											Associate Professor										</h6>
+										<h6>3262 EB II</h6>
+										<h6>919-513-0876</h6>
+										<h6>cflynch@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/tnmacnei.jpg" border="0" alt="Photo of Tim MacNeil" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/tnmacnei">  Tim   MacNeil</a> 
+									</h5>
+									<ul>
+										<h6>
+											CSC Lab Coordinator										</h6>
+										<h6>219D - 111 Lampe Dr.</h6>
+										<h6>919-515-7480</h6>
+										<h6>tnmacnei@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/tamarini.jpg" border="0" alt="Photo of ToniAnn Marini" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/tamarini">Ms.  ToniAnn   Marini</a> 
+									</h5>
+									<ul>
+										<h6>
+											Assistant Director of Undergradua...										</h6>
+										<h6>219A - 111 Lampe Dr.</h6>
+										<h6>919-515-7920</h6>
+										<h6>tamarini@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/crmarten.jpg" border="0" alt="Photo of Chris Martens" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/crmarten">Dr.  Chris   Martens</a> 
+									</h5>
+									<ul>
+										<h6>
+											Adjunct Professor										</h6>
+										<h6></h6>
+										<h6></h6>
+										<h6>martens@csc.ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/nmatsud.jpg" border="0" alt="Photo of Noboru Matsuda" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/nmatsud">Dr.  Noboru   Matsuda</a> 
+									</h5>
+									<ul>
+										<h6>
+											Associate Professor										</h6>
+										<h6>408 Venture 4</h6>
+										<h6>919-513-6528</h6>
+										<h6>nmatsud@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/mcallist.jpg" border="0" alt="Photo of David  McAllister" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/mcallist">Dr.  David    McAllister</a> 
+									</h5>
+									<ul>
+										<h6>
+											Professor Emeritus										</h6>
+										<h6></h6>
+										<h6></h6>
+										<h6>mcallist@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/smmcleod.jpg" border="0" alt="Photo of Sterling McLeod" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/smmcleod">Dr.  Sterling   McLeod</a> 
+									</h5>
+									<ul>
+										<h6>
+											Assistant Teaching Professor										</h6>
+										<h6>3295 EB II</h6>
+										<h6>919-515-1719</h6>
+										<h6>smmcleod@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/tjmenzie.jpg" border="0" alt="Photo of Timothy  Menzies" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/tjmenzie">Dr.  Timothy    Menzies</a> 
+									</h5>
+									<ul>
+										<h6>
+											Professor										</h6>
+										<h6>3304 EB II</h6>
+										<h6>      304-376-2859</h6>
+										<h6>tjmenzie@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/wmin.jpg" border="0" alt="Photo of Wookhee Min" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/wmin">Dr.  Wookhee   Min</a> 
+									</h5>
+									<ul>
+										<h6>
+											Research Scientist										</h6>
+										<h6>1631 Research IV</h6>
+										<h6></h6>
+										<h6>wmin@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/tlmarti4.jpg" border="0" alt="Photo of Terri Moss" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/tlmarti4">  Terri   Moss</a> 
+									</h5>
+									<ul>
+										<h6>
+											Director of Finance and Administr...										</h6>
+										<h6>3314 EB II</h6>
+										<h6>919-515-2930</h6>
+										<h6>tlmarti4@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/bwmott.jpg" border="0" alt="Photo of Bradford Mott" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/bwmott">Dr.  Bradford   Mott</a> 
+									</h5>
+									<ul>
+										<h6>
+											Senior Research Scientist										</h6>
+										<h6>1643 Research IV</h6>
+										<h6>919-513-3436</h6>
+										<h6>bwmott@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/fmuelle.jpg" border="0" alt="Photo of Frank Mueller" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/fmuelle">Dr.  Frank   Mueller</a> 
+									</h5>
+									<ul>
+										<h6>
+											Professor										</h6>
+										<h6>3266 EB II</h6>
+										<h6>919-515-7889</h6>
+										<h6>mueller@csc.ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/rwmurdoc.jpg" border="0" alt="Photo of Trey Murdoch" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/rwmurdoc">Mr.  Trey   Murdoch</a> 
+									</h5>
+									<ul>
+										<h6>
+											Systems Programmer Analyst										</h6>
+										<h6>2206 EB II</h6>
+										<h6>919-513-0033</h6>
+										<h6>rwmurdoc@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/mjmushi.jpg" border="0" alt="Photo of Magreth Mushi" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/mjmushi">Dr.   Magreth   Mushi</a> 
+									</h5>
+									<ul>
+										<h6>
+											Research Scholar										</h6>
+										<h6>2402E EB 3</h6>
+										<h6></h6>
+										<h6>mjmushi@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/kfreema.jpg" border="0" alt="Photo of Kenya Oduor" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/kfreema">Dr.  Kenya   Oduor</a> 
+									</h5>
+									<ul>
+										<h6>
+																					</h6>
+										<h6></h6>
+										<h6></h6>
+										<h6>kfreema@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/nokoh.jpg" border="0" alt="Photo of Nia Okoh" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/nokoh">  Nia   Okoh</a> 
+									</h5>
+									<ul>
+										<h6>
+											CSC Undergraduate Student Service...										</h6>
+										<h6>1204B EB II</h6>
+										<h6>919-515-7847</h6>
+										<h6>nokoh@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/jwore.jpg" border="0" alt="Photo of John-Paul Ore" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/jwore">Dr  John-Paul   Ore</a> 
+									</h5>
+									<ul>
+										<h6>
+											Assistant Professor										</h6>
+										<h6>3296 EB II</h6>
+										<h6>919-515-5164</h6>
+										<h6>jwore@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/blank_profile_dark.jpg" border="0" alt="Blank profile photo"  class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/opala">Dr.  Okan   Pala</a> 
+									</h5>
+									<ul>
+										<h6>
+											Sr. Research Scholar										</h6>
+										<h6>407 Venture 4</h6>
+										<h6>919-515-5925</h6>
+										<h6>opala@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/blank_profile_dark.jpg" border="0" alt="Blank profile photo"  class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/rkharril">Mr.  Ricardo   Parchment</a> 
+									</h5>
+									<ul>
+										<h6>
+											Research Associate										</h6>
+										<h6></h6>
+										<h6></h6>
+										<h6>rkharril@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/cjparnin.jpg" border="0" alt="Photo of Christopher Parnin" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/cjparnin">Dr.  Christopher   Parnin</a> 
+									</h5>
+									<ul>
+										<h6>
+											Adjunct Associate Professor										</h6>
+										<h6></h6>
+										<h6></h6>
+										<h6>cjparnin@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/blank_profile_dark.jpg" border="0" alt="Blank profile photo"  class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/jpatel28">  Jignasa   Patel</a> 
+									</h5>
+									<ul>
+										<h6>
+											Sponsored Research Administrator										</h6>
+										<h6>2315 EB II</h6>
+										<h6>919-515-5088</h6>
+										<h6>jpatel28@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/hp.jpg" border="0" alt="Photo of Harry Perros" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/hp">Dr.  Harry   Perros</a> 
+									</h5>
+									<ul>
+										<h6>
+											Professor Emeritus										</h6>
+										<h6></h6>
+										<h6></h6>
+										<h6>hp@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/epiloso.jpg" border="0" alt="Photo of Ellie Piloso" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/epiloso">  Ellie   Piloso</a> 
+									</h5>
+									<ul>
+										<h6>
+											Contracts and Grants Specialist										</h6>
+										<h6>EB2 2303D</h6>
+										<h6></h6>
+										<h6>epiloso@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/twprice.jpg" border="0" alt="Photo of Thomas Price" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/twprice">Dr.  Thomas   Price</a> 
+									</h5>
+									<ul>
+										<h6>
+											Assistant Professor										</h6>
+										<h6>411 Venture 4</h6>
+										<h6>919-515-1286</h6>
+										<h6>twprice@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/tgpucket.jpg" border="0" alt="Photo of Tyler Puckett" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/tgpucket">Mr.  Tyler   Puckett</a> 
+									</h5>
+									<ul>
+										<h6>
+											Systems Programmer Analyst										</h6>
+										<h6>2212 EB II</h6>
+										<h6>919-513-0413</h6>
+										<h6>tgpucket@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/pdradey.jpg" border="0" alt="Photo of Petya Radey" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/pdradey">Ms.  Petya   Radey</a> 
+									</h5>
+									<ul>
+										<h6>
+											Contracts and Grants Manager										</h6>
+										<h6>2312 EB II</h6>
+										<h6>919-513-7300</h6>
+										<h6>pdradey@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/blank_profile_dark.jpg" border="0" alt="Blank profile photo"  class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/skraghve">Dr.  Sharath   Raghvendra</a> 
+									</h5>
+									<ul>
+										<h6>
+											Associate Professor										</h6>
+										<h6>2278 EB II</h6>
+										<h6></h6>
+										<h6>skraghve@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/lcrandpi.jpg" border="0" alt="Photo of Leslie Rand-Pickett" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/lcrandpi">Ms.  Leslie   Rand-Pickett</a> 
+									</h5>
+									<ul>
+										<h6>
+											Director of Graduate Career Servi...										</h6>
+										<h6>1222A EB II</h6>
+										<h6>919-513-7310</h6>
+										<h6>lcrandpi@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/mrappa.jpg" border="0" alt="Photo of Michael Rappa" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/mrappa">Dr.  Michael   Rappa</a> 
+									</h5>
+									<ul>
+										<h6>
+											Director, Institute for Advanced ...										</h6>
+										<h6>230 Alliance Center</h6>
+										<h6>919-513-0480</h6>
+										<h6>michael_rappa@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/bgreaves.jpg" border="0" alt="Photo of Bradley Reaves" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/bgreaves">Dr.  Bradley   Reaves</a> 
+									</h5>
+									<ul>
+										<h6>
+											Associate Professor										</h6>
+										<h6>2240J EB II</h6>
+										<h6>919-513-7835</h6>
+										<h6>bgreaves@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/sareave2.jpg" border="0" alt="Photo of Sarah Reaves" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/sareave2">  Sarah   Reaves</a> 
+									</h5>
+									<ul>
+										<h6>
+											Project Coordinator										</h6>
+										<h6>Research IV</h6>
+										<h6></h6>
+										<h6>sareave2@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/reeves.jpg" border="0" alt="Photo of Douglas  Reeves" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/reeves">Dr.  Douglas    Reeves</a> 
+									</h5>
+									<ul>
+										<h6>
+											Professor Emeritus										</h6>
+										<h6></h6>
+										<h6></h6>
+										<h6>reeves@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/rhee.jpg" border="0" alt="Photo of Injong Rhee" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/rhee">Dr.  Injong   Rhee</a> 
+									</h5>
+									<ul>
+										<h6>
+											Adjunct										</h6>
+										<h6></h6>
+										<h6></h6>
+										<h6>rhee@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/djricha5.jpg" border="0" alt="Photo of Donna  Richards" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/djricha5">Ms  Donna    Richards</a> 
+									</h5>
+									<ul>
+										<h6>
+																					</h6>
+										<h6>2314 EB II</h6>
+										<h6>919-515-7435</h6>
+										<h6>djricha5@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/blank_profile_dark.jpg" border="0" alt="Blank profile photo"  class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/robbins">Dr.  Woody   Robbins</a> 
+									</h5>
+									<ul>
+										<h6>
+											Professor Emeritus										</h6>
+										<h6></h6>
+										<h6></h6>
+										<h6></h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/dlrober4.jpg" border="0" alt="Photo of David  Roberts" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/dlrober4">Dr.  David    Roberts</a> 
+									</h5>
+									<ul>
+										<h6>
+											Associate Professor										</h6>
+										<h6>412 Venture 4</h6>
+										<h6>919-513-7182</h6>
+										<h6>robertsd@csc.ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/ldrodger.jpg" border="0" alt="Photo of Laura Rodgers" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/ldrodger">  Laura   Rodgers</a> 
+									</h5>
+									<ul>
+										<h6>
+											Director of Cybersecurity Practic...										</h6>
+										<h6>2240B EB II</h6>
+										<h6>919-515-5063</h6>
+										<h6>ldrodger@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/gerother.jpg" border="0" alt="Photo of Gregg Rothermel" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/gerother">Dr.  Gregg   Rothermel</a> 
+									</h5>
+									<ul>
+										<h6>
+											Department Head										</h6>
+										<h6>3308 EB II</h6>
+										<h6>919-513-0348</h6>
+										<h6>gerother@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/rouskas.jpg" border="0" alt="Photo of George  Rouskas" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/rouskas">Dr.  George    Rouskas</a> 
+									</h5>
+									<ul>
+										<h6>
+											Director of Graduate Programs										</h6>
+										<h6>2306 EB II</h6>
+										<h6>919-515-3860</h6>
+										<h6>rouskas@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/jprowe.jpg" border="0" alt="Photo of Jonathan Rowe" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/jprowe">Dr.  Jonathan   Rowe</a> 
+									</h5>
+									<ul>
+										<h6>
+											Research Scientist										</h6>
+										<h6>1645 Research IV</h6>
+										<h6>919-515-2476</h6>
+										<h6>jprowe@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/jsatyav.jpg" border="0" alt="Photo of Chandrika Satyavolu" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/jsatyav">Dr.   Chandrika   Satyavolu</a> 
+									</h5>
+									<ul>
+										<h6>
+											Associate Teaching Professor										</h6>
+										<h6>2272 EB II</h6>
+										<h6>919-513-5946</h6>
+										<h6>jsatyav@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/savage.jpg" border="0" alt="Photo of Carla  Savage" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/savage">Dr.  Carla    Savage</a> 
+									</h5>
+									<ul>
+										<h6>
+											Professor Emeritus										</h6>
+										<h6></h6>
+										<h6></h6>
+										<h6>savage@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/ascafur.jpg" border="0" alt="Photo of Alessandra Scafuro" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/ascafur">Dr.  Alessandra   Scafuro</a> 
+									</h5>
+									<ul>
+										<h6>
+											Associate Professor										</h6>
+										<h6>2240F EB II</h6>
+										<h6>919-515-7806</h6>
+										<h6>ascafur@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/jdyoung2.jpg" border="0" alt="Photo of Jessica Schmidt" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/jdyoung2">Dr.  Jessica   Schmidt</a> 
+									</h5>
+									<ul>
+										<h6>
+											Associate Teaching Professor										</h6>
+										<h6>219B - 111 Lampe Dr.</h6>
+										<h6>919-515-4859</h6>
+										<h6>jessica_schmidt@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/blank_profile_dark.jpg" border="0" alt="Blank profile photo"  class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/scroggs">Dr.  Jeffrey S.   Scroggs</a> 
+									</h5>
+									<ul>
+										<h6>
+											Associate Professor										</h6>
+										<h6>3140 SAS</h6>
+										<h6>919-515-7817</h6>
+										<h6>scroggs@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/skseltze.jpg" border="0" alt="Photo of Sara Seltzer" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/skseltze">  Sara   Seltzer</a> 
+									</h5>
+									<ul>
+										<h6>
+											Director of Development										</h6>
+										<h6>1222D EB II</h6>
+										<h6>919-515-3730</h6>
+										<h6>skseltze@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/mshahza.jpg" border="0" alt="Photo of Muhammad Shahzad" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/mshahza">Dr.  Muhammad   Shahzad</a> 
+									</h5>
+									<ul>
+										<h6>
+											Associate Professor										</h6>
+										<h6>2402D EB 3</h6>
+										<h6>919-515-8766</h6>
+										<h6>mshahza@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/wshearon.jpg" border="0" alt="Photo of Wendy Shearon" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/wshearon">  Wendy   Shearon</a> 
+									</h5>
+									<ul>
+										<h6>
+											Post Award Administrator										</h6>
+										<h6>2317 EB II </h6>
+										<h6>919-515-2041</h6>
+										<h6>wshearon@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/drsheehy.jpg" border="0" alt="Photo of Donald Sheehy" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/drsheehy">Dr.  Donald   Sheehy</a> 
+									</h5>
+									<ul>
+										<h6>
+											Associate Professor										</h6>
+										<h6>3280 EB II</h6>
+										<h6>919-513-0453</h6>
+										<h6>drsheehy@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/xshen5.jpg" border="0" alt="Photo of Xipeng Shen" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/xshen5">Dr.  Xipeng   Shen</a> 
+									</h5>
+									<ul>
+										<h6>
+											Professor										</h6>
+										<h6>3276 EB II</h6>
+										<h6>919-513-7577</h6>
+										<h6>xshen5@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/blank_profile_dark.jpg" border="0" alt="Blank profile photo"  class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/mlsichit">Dr.  Mihail   Sichitiu</a> 
+									</h5>
+									<ul>
+										<h6>
+											Associate Professor										</h6>
+										<h6>3058 EB II</h6>
+										<h6>919-515-7348</h6>
+										<h6>mlsichit@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/mpsingh.jpg" border="0" alt="Photo of Munindar P. Singh" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/mpsingh">Dr.  Munindar P.   Singh</a> 
+									</h5>
+									<ul>
+										<h6>
+											SAS Institute Distinguished Profe...										</h6>
+										<h6>2252 EB II</h6>
+										<h6>919-515-5677</h6>
+										<h6>mpsingh@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/pmsmith4.jpg" border="0" alt="Photo of Andy Smith" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/pmsmith4">Dr.  Andy   Smith</a> 
+									</h5>
+									<ul>
+										<h6>
+											Research Scholar										</h6>
+										<h6>1633 Research IV</h6>
+										<h6></h6>
+										<h6>pmsmith4@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/rasmit34.jpg" border="0" alt="Photo of Becky Smith" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/rasmit34">  Becky   Smith</a> 
+									</h5>
+									<ul>
+										<h6>
+											Accounting Technician										</h6>
+										<h6>2318 EB II</h6>
+										<h6>919-515-5601</h6>
+										<h6>rasmit34@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/blank_profile_dark.jpg" border="0" alt="Blank profile photo"  class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/wes">Dr.  Wesley E.   Snyder</a> 
+									</h5>
+									<ul>
+										<h6>
+											Professor										</h6>
+										<h6>2074 EB II</h6>
+										<h6>919-515-5114</h6>
+										<h6>wes@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/blank_profile_dark.jpg" border="0" alt="Blank profile photo"  class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/asrivas7">Mr.  Aditya   Srivastava</a> 
+									</h5>
+									<ul>
+										<h6>
+											Web Developer										</h6>
+										<h6></h6>
+										<h6></h6>
+										<h6>asrivas7@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/stamant.jpg" border="0" alt="Photo of Robert St. Amant" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/stamant">Dr.  Robert   St. Amant</a> 
+									</h5>
+									<ul>
+										<h6>
+											Adjunct Professor										</h6>
+										<h6></h6>
+										<h6></h6>
+										<h6>stamant@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/mfms.jpg" border="0" alt="Photo of Matthias Stallmann" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/mfms">Dr.  Matthias   Stallmann</a> 
+									</h5>
+									<ul>
+										<h6>
+											Professor										</h6>
+										<h6>2302 EB II</h6>
+										<h6>919-515-7978</h6>
+										<h6>matt_stallmann@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/billy.jpg" border="0" alt="Photo of William J. Stewart" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/billy">Dr.  William J.   Stewart</a> 
+									</h5>
+									<ul>
+										<h6>
+											Professor Emeritus										</h6>
+										<h6></h6>
+										<h6></h6>
+										<h6>billy@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/ktstolee.jpg" border="0" alt="Photo of Kathryn  Stolee" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/ktstolee">Dr.  Kathryn    Stolee</a> 
+									</h5>
+									<ul>
+										<h6>
+											Associate Professor										</h6>
+										<h6>3268 EB II</h6>
+										<h6>919-515-3305</h6>
+										<h6>ktstolee@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/dbsturgi.jpg" border="0" alt="Photo of David Sturgill" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/dbsturgi">Dr.  David   Sturgill</a> 
+									</h5>
+									<ul>
+										<h6>
+											Associate Teaching Professor										</h6>
+										<h6>2294 EB II</h6>
+										<h6>919-515-1986</h6>
+										<h6>dbsturgi@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/kmtate2.jpg" border="0" alt="Photo of Ken Tate" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/kmtate2">  Ken   Tate</a> 
+									</h5>
+									<ul>
+										<h6>
+											Director of Engagement & External...										</h6>
+										<h6>1204F EB II</h6>
+										<h6>919-513-4292</h6>
+										<h6>kmtate2@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/svalliy.jpg" border="0" alt="Photo of Sharma Thankachan" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/svalliy">Dr.   Sharma   Thankachan</a> 
+									</h5>
+									<ul>
+										<h6>
+											Associate Professor										</h6>
+										<h6>3278 EB II</h6>
+										<h6>919-513-0816</h6>
+										<h6>svalliy@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/tharp.jpg" border="0" alt="Photo of Alan L. Tharp" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/tharp">Dr.  Alan L.   Tharp</a> 
+									</h5>
+									<ul>
+										<h6>
+											Professor Emeritus										</h6>
+										<h6></h6>
+										<h6></h6>
+										<h6>alan_tharp@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/djthuent.jpg" border="0" alt="Photo of David Thuente" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/djthuent">Dr.  David   Thuente</a> 
+									</h5>
+									<ul>
+										<h6>
+											Professor Emeritus										</h6>
+										<h6></h6>
+										<h6></h6>
+										<h6>thuente@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/kjtitus3.jpg" border="0" alt="Photo of Kimberly Titus" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/kjtitus3">Dr.   Kimberly   Titus</a> 
+									</h5>
+									<ul>
+										<h6>
+											 Associate Teaching Professor										</h6>
+										<h6>2274 EB II</h6>
+										<h6>919-513-3131</h6>
+										<h6>kjtitus3@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/jvanden2.jpg" border="0" alt="Photo of Jessica Vandenberg" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/jvanden2">Dr.  Jessica   Vandenberg</a> 
+									</h5>
+									<ul>
+										<h6>
+											Research Scholar										</h6>
+										<h6>1625 Research IV</h6>
+										<h6></h6>
+										<h6>jvanden2@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/rrvatsav.jpg" border="0" alt="Photo of Ranga Raju Vatsavai" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/rrvatsav">Dr.  Ranga Raju   Vatsavai</a> 
+									</h5>
+									<ul>
+										<h6>
+											Professor										</h6>
+										<h6>2254 EB II</h6>
+										<h6>919-515-6019</h6>
+										<h6>rrvatsav@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/vouk.jpg" border="0" alt="Photo of Mladen Vouk" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/vouk">Dr.  Mladen   Vouk</a> 
+									</h5>
+									<ul>
+										<h6>
+											Distinguished Professor and VC fo...										</h6>
+										<h6></h6>
+										<h6>919-513-6113</h6>
+										<h6>vouk@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/blank_profile_dark.jpg" border="0" alt="Blank profile photo"  class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/xwang4">Dr.  Xiaogang (Cliff)   Wang</a> 
+									</h5>
+									<ul>
+										<h6>
+											Adjunct										</h6>
+										<h6></h6>
+										<h6></h6>
+										<h6>xwang4@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/blank_profile_dark.jpg" border="0" alt="Blank profile photo"  class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/awwatkin">  Alan   Watkins</a> 
+									</h5>
+									<ul>
+										<h6>
+											Adjunct										</h6>
+										<h6></h6>
+										<h6></h6>
+										<h6>awwatkin@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/bwatson.jpg" border="0" alt="Photo of Ben Watson" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/bwatson">Dr.  Ben   Watson</a> 
+									</h5>
+									<ul>
+										<h6>
+											Associate Professor										</h6>
+										<h6>2280 EB II</h6>
+										<h6>919-513-0325</h6>
+										<h6>bwatson@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/weinberg.jpg" border="0" alt="Photo of Gary Weinberg" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/weinberg">Dr.  Gary   Weinberg</a> 
+									</h5>
+									<ul>
+										<h6>
+											Academic Advisor										</h6>
+										<h6>1204A EB II</h6>
+										<h6></h6>
+										<h6>weinberg@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/wwen2.jpg" border="0" alt="Photo of Wujie Wen" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/wwen2">Dr.  Wujie   Wen</a> 
+									</h5>
+									<ul>
+										<h6>
+											Associate Professor										</h6>
+										<h6>2264 EB II</h6>
+										<h6>919-513-3184</h6>
+										<h6>wwen2@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/dwermke.jpg" border="0" alt="Photo of Dominik Wermke" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/dwermke">Dr.  Dominik   Wermke</a> 
+									</h5>
+									<ul>
+										<h6>
+											Assistant Professor										</h6>
+										<h6>2240H EB II</h6>
+										<h6>919-513-3926</h6>
+										<h6>dwermke@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/lawilli3.jpg" border="0" alt="Photo of Laurie Williams" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/lawilli3">Dr.  Laurie   Williams</a> 
+									</h5>
+									<ul>
+										<h6>
+											Goodnight Distinguished Universit...										</h6>
+										<h6>2240D EB II</h6>
+										<h6>919-513-4151</h6>
+										<h6>lawilli3@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/lgwilli2.jpg" border="0" alt="Photo of Lauren Williamson" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/lgwilli2">  Lauren   Williamson</a> 
+									</h5>
+									<ul>
+										<h6>
+											Accounting Tech										</h6>
+										<h6>3312 EB II</h6>
+										<h6>919-513-2985</h6>
+										<h6>lgwilli2@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/bsnell.jpg" border="0" alt="Photo of Bianca Woodard" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/bsnell">  Bianca   Woodard</a> 
+									</h5>
+									<ul>
+										<h6>
+											Business Services Coordinator										</h6>
+										<h6>3311 EB II</h6>
+										<h6>919-515-6535</h6>
+										<h6>bsnell@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/drwrigh3.jpg" border="0" alt="Photo of David Wright" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/drwrigh3">Dr.  David   Wright</a> 
+									</h5>
+									<ul>
+										<h6>
+											Director of Project Management										</h6>
+										<h6>3250 EB II</h6>
+										<h6>919-515-0315</h6>
+										<h6>drwrigh3@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/txie.jpg" border="0" alt="Photo of Tao Xie" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/txie">Dr.  Tao   Xie</a> 
+									</h5>
+									<ul>
+										<h6>
+											Adjunct Associate Professor										</h6>
+										<h6></h6>
+										<h6></h6>
+										<h6>txie@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/bxu22.jpg" border="0" alt="Photo of Bowen Xu" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/bxu22">Dr.  Bowen   Xu</a> 
+									</h5>
+									<ul>
+										<h6>
+											Assistant Professor										</h6>
+										<h6>3261 EB II</h6>
+										<h6>      984-242-5909</h6>
+										<h6>bxu22@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/cxu34.jpg" border="0" alt="Photo of Chenhan Xu" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/cxu34">Dr.  Chenhan   Xu</a> 
+									</h5>
+									<ul>
+										<h6>
+											Assistant Professor										</h6>
+										<h6>2268 EB II</h6>
+										<h6>919-513-5901</h6>
+										<h6>cxu34@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/dxu27.jpg" border="0" alt="Photo of Dongkuan (DK) Xu" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/dxu27">Dr.  Dongkuan (DK)   Xu</a> 
+									</h5>
+									<ul>
+										<h6>
+											Assistant Professor										</h6>
+										<h6>3258 EB II</h6>
+										<h6>      814-699-0860</h6>
+										<h6>dxu27@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/myoon2.jpg" border="0" alt="Photo of Man-Ki Yoon" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/myoon2">Dr.  Man-Ki   Yoon</a> 
+									</h5>
+									<ul>
+										<h6>
+											Assistant Professor										</h6>
+										<h6>3254 EB II</h6>
+										<h6>919-513-7796</h6>
+										<h6>man-ki.yoon@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/ryu5.jpg" border="0" alt="Photo of Ruozhou Yu" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/ryu5">Dr.  Ruozhou   Yu</a> 
+									</h5>
+									<ul>
+										<h6>
+											Assistant Professor										</h6>
+										<h6>2403 EB3</h6>
+										<h6>919-515-7938</h6>
+										<h6>ryu5@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+													<div class="person"> 
+														<img width="90px" src="/directories/photos/kmzak.jpg" border="0" alt="Photo of Kimberly Zak" class="person_img" />
+															<div class="info">
+									<h5 class="speaker"><a style="color:#CC0000; font-size:12px;" href="/people/kmzak">  Kimberly   Zak</a> 
+									</h5>
+									<ul>
+										<h6>
+											Assistant Departmental Human Reso...										</h6>
+										<h6>3305 EB II</h6>
+										<h6>919-515-0127</h6>
+										<h6>kmzak@ncsu.edu</h6>
+									</ul>
+								</div>	
+							</div>
+									</div>
+		</div><!-- end main -->
+	</div> <!-- End of Content -->
+
+	</div><!-- end container --> <!-- .container opens in navbar_brand.php -->
+ 
+     <div class="row container" style="margin: 0 auto;"> 
+
+<footer class="col-lg-12">
+    <div class="col-md-4 col-sm-6 L_footer">
+<!--    	<img src="https://www.csc.ncsu.edu/images/logo-900.jpg" alt="NC State University" alt="NCSU" width="100px" />-->
+		<a href="https://www.ncsu.edu" target="_blank"><img src="https://www.csc.ncsu.edu/images/ncsu_logo.svg" alt="NC State University" style="width: 120px; padding: 15px 0 0 10px;" /></a>
+        <p style="padding: 30px 0 20px 10px;">
+        <a href="https://www.csc.ncsu.edu/">Department of Computer Science</a><br />
+        <a href="https://www.engr.ncsu.edu/" target="_blank">College of Engineering</a><br />
+        Campus Box 8206<br />
+        890 Oval Drive<br />
+        Engineering Building II<br />
+        Raleigh, NC 27695<br />
+        </p>
+    </div>
+    
+    <div class="col-lg-4 col-md-3 col-sm-6 M_footer">
+    	<ul>
+            <li><a href="/contactus.php">Contact Us</a></li>
+            <li><a href="/employment/index.php">Employment</a></li>
+            <li><a href="/calendar/index.php">Events</a></li>
+            <li><a href="http://www.flickr.com/photos/cscncsu/albums" target="_blank">Gallery</a></li>
+        </ul>
+        <div class="social_media">
+            <a href="http://www.facebook.com/csc.ncsu" alt="NCSU CSC Facebook" target="_blank"><span class="glyphicon glyphicon-fb" data-alt="facebook"></span><span class="sr-only">Facebook</span></a>
+            <a href="http://www.twitter.com/cscncsu" alt="NCSU CSC Twitter" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style=" height: 25px; margin-right: 5px; color: white; padding-right: 10px; width: 40px;"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" fill="#ffffff"></path></svg><span class="sr-only">Twitter</span></a>
+            <a href="https://www.instagram.com/ncstatecsc/" alt="NCSU CSC Instagram" target="_blank"><span class="glyphicon glyphicon-instagram" data-alt="instagram"></span><span class="sr-only">Instagram</span></a>
+            <br />
+            <a href="http://go.ncsu.edu/csc-youtube\" alt="NCSU CSC YouTube" target="_blank"><span class="glyphicon glyphicon-youtube" data-alt="youtube"></span><span class="sr-only">YouTube</span></a>
+            <a href="http://www.linkedin.com/groups/1797254/" alt="NCSU CSC Linked In" target="_blank"><span class="glyphicon glyphicon-linkedin" data-alt="linked in"></span><span class="sr-only">Linked In</span></a>
+            <a href="http://www.flickr.com/photos/cscncsu" alt="NCSU CSC Flickr" target="_blank"><span class="glyphicon glyphicon-flickr" data-alt="flickr"></span><span class="sr-only">Flickr</span></a>
+        </div>
+        
+    </div>
+    
+    <div class="col-md-4 R_footer">
+    	<h6>Campus Map</h6>
+    	<a href="http://maps.ncsu.edu/#/buildings/eb2" target="_blank"><img src="https://www.csc.ncsu.edu/images/eb2_map.jpg" alt="EB2 Map" class="map" /></a>
+    </div>
+    
+    <h6 class="copyright">© 2024 NC State University. All rights reserved.<br /><a href="/about.php">About this site</a></h6>
+        
+</footer>
+
+</div>
+</body>
+</html>

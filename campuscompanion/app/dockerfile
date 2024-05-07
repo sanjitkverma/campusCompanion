@@ -1,0 +1,12 @@
+# image will have node and npm installed before
+FROM node:21
+# set container directory
+WORKDIR /app 
+
+COPY package*.json ./
+
+RUN npm install
+
+COPY ./ ./ 
+
+CMD [ "npm", "run", "dev" ]
