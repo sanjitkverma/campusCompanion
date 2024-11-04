@@ -19,7 +19,7 @@ To deploy/run Campus Companion, ensure the following:
 - A `.env` file with all necessary environment variables in the /api folder.</br>
 MODEL=gpt-3.5-turbo </br>
 OPENAI_API_KEY= 'ENTER API KEY'</br>
-SENDGRID_API_KEY=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</br>
+SENDGRID_API_KEY='ENTER API KEY'</br>
 MONGO_URI=mongodb+srv://user:password@campuscompanion.emw2a4f.mongodb.net/?retryWrites=true&w=majority</br>
 MONGODB_DATABASE=campusCompanion_DATABASE</br>
 MONGODB_VECTORS= MONGODB_VECTORS</br>
